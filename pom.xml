@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <!-- ***** NOTE: ******
+  Before Releasing, remove all -SNAPSHOTs from properties (put them back afterwards)
+  Remove release repository (should be maven central for oss)
+  Also, change <snapshots> to false.
+   *********** -->
+  <parent>
+    <artifactId>oss-parent</artifactId>
+    <groupId>org.sonatype.oss</groupId>
+    <version>6</version>
+  </parent>
+
+  <groupId>org.jbundle.config</groupId>
+  <artifactId>jbundle-parent</artifactId>
+  <version>1.0.1-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>jbundle-parent - Shared properties</name>
+  <description>Top level properties and features</description>
+  <url>http://www.jbundle.org</url>
+
+  <organization>
+  	<name>jbundle.org</name>
+  	<url>http://www.jbundle.org</url>
+  </organization>
+
+  <developers>
+  	<developer>
+  		<id>doncorley</id>
+  		<name>Don Corley</name>
+  		<email>don@tourgeek.com</email>
+  		<url>http://www.tourgeek.com</url>
+  		<timezone>-8</timezone> <!-- -8:00 PDT – Pacific Daylight Time (UTC -08:00) -->
+  	</developer>
+  </developers>
+
+  <properties>
+    <releaseRepository>http://releases.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
+    <snapshotRepository>http://snapshots.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
+    <publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
+    <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
+    <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
+
+    <!-- OBRRepositoryIndex>jbundle-snapshot-obr.xml</OBRRepositoryIndex -->	<!-- Doesn't work for snapshots - turn it off and use bindex -->
+    <OBRRepositoryIndex>NONE</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+
+    <jbundle.package>${project.artifactId}</jbundle.package>	<!-- artifactId is usually the package -->
+    <jbundle.package.filter>${jbundle.package}.*</jbundle.package.filter>	<!-- All packages in this filter and beyond -->
+    <jbundle.package.export>${jbundle.package.filter};version=${project.version}</jbundle.package.export>	<!-- Bundle package to export -->
+    <jbundle.package.import>*;resolution:=optional,!javax.swing.*</jbundle.package.import>
+    <jbundle.mainClass>org.jbundle.Main</jbundle.mainClass>
+
+    <!-- Move these to settings -->
+    <jbundle.workspace>${user.home}/workspace</jbundle.workspace>
+    <jbundle.policyfile>${jbundle.workspace}/workspace/tourapp-root/bin/policy/policy.all</jbundle.policyfile>
+    <jbundle.server>linux-laptop</jbundle.server>
+    <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
+    <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
+
+    <jbundleVersion>0.7.6</jbundleVersion>
+    <jbundle-utilVersion>0.7.6</jbundle-utilVersion>
+    <jbundle-util-webappVersion>0.9.0</jbundle-util-webappVersion>
+
+    <jbundle-calendarpanelVersion>0.8.0</jbundle-calendarpanelVersion>
+    <jbundle-config-web-cocoonVersion>0.7.6</jbundle-config-web-cocoonVersion>
+
+    <jbundle-jcalendarbuttonVersion>1.5.2</jbundle-jcalendarbuttonVersion>
+
+    <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
+    <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
+
+    <base64coderVersion>2010-12-19</base64coderVersion>
+    <otaVersion>1.1.0</otaVersion>
+    <jibxVersion>1.2.2</jibxVersion>
+    <jibx.osgiVersion>1.2.2-beta-1</jibx.osgiVersion>
+
+    <jbundle-app-contactVersion>${jbundleVersion}</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>${jbundleVersion}</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>${jbundleVersion}</jbundle-app-danceVersion>
+
+    <tourappVersion>${jbundleVersion}</tourappVersion>
+    
+    <junitVersion>3.8.1</junitVersion>
+    <maven-compiler-pluginVersion>2.3.2</maven-compiler-pluginVersion>
+    <maven-bundle-pluginVersion>2.2.0</maven-bundle-pluginVersion>
+    <maven-javadoc-pluginVersion>2.7</maven-javadoc-pluginVersion>
+    <maven-gpg-pluginVersion>1.1</maven-gpg-pluginVersion>
+    <maven-source-pluginVersion>2.1.2</maven-source-pluginVersion>
+    <maven-resources-pluginVersion>2.4.3</maven-resources-pluginVersion>
+    <maven-site-pluginVersion><!-- 2.2 -->3.0-beta-3</maven-site-pluginVersion>
+    <maven-jar-pluginVersion>2.3.1</maven-jar-pluginVersion>
+    <maven-antrun-pluginVersion>1.3</maven-antrun-pluginVersion>
+    <maven-assembly-pluginVersion>2.2</maven-assembly-pluginVersion>
+    <maven-dependency-pluginVersion>2.1</maven-dependency-pluginVersion>
+    <javawsVersion>${java.specification.version}</javawsVersion>
+    <pluginVersion>${java.specification.version}</pluginVersion>
+    <webstart-jnlp-servletVersion>1.0-6.0-02_ea_b02</webstart-jnlp-servletVersion>
+    <jardiffVersion>0.2</jardiffVersion>
+    <exec-maven-pluginVersion>1.2</exec-maven-pluginVersion>
+    <mysql-connector-javaVersion>5.1.14</mysql-connector-javaVersion>
+    <org.osgi.coreVersion>4.2.0</org.osgi.coreVersion>
+    <httpclientVersion>4.0.1</httpclientVersion>
+    <catalinaVersion>6.0.29</catalinaVersion>
+    <webstart-maven-pluginVersion>1.0-beta-1</webstart-maven-pluginVersion>
+    <maven-war-pluginVersion>2.1.1</maven-war-pluginVersion>
+    <jtidyVersion>4aug2000r7-dev</jtidyVersion>
+    <jsonVersion>20090211</jsonVersion>
+    <servlet-apiVersion>2.5</servlet-apiVersion>
+    <tomcatVersion>6.0.26</tomcatVersion>
+    <cocoonVersion>2.1.11</cocoonVersion>
+    <avalonVersion>2.1.0</avalonVersion>
+    <cosVersion>05Nov2002</cosVersion>
+    <dojoVersion>1.5.0</dojoVersion>
+    <jetty-maven-pluginVersion>8.0.0.M2</jetty-maven-pluginVersion>
+    <mailVersion>1.4.4</mailVersion>	<!-- javax.mail -->
+    <jaxm-apiVersion>4.4.2</jaxm-apiVersion>
+    <maven-jaxb2-pluginVersion>0.7.4</maven-jaxb2-pluginVersion>
+    <maven-ipojo-pluginVersion>1.6.0</maven-ipojo-pluginVersion>
+  </properties>
+  
+  <profiles>
+    <profile> 
+      <id>sonatype-oss-release</id>
+      <properties>
+        <OBRRepositoryIndex>jbundle-release-obr.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+	<!-- +++
+        <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
+        <snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
+        <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
+        <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
+        <publicReleaseRepository>http://repo2.maven.org/maven2</publicReleaseRepository>	
+	-->
+      </properties>
+    </profile>
+  </profiles>
+  
+  <licenses>
+    <license>
+      <name>The GNU General Public License, Version 3.0</name>
+      <url>http://www.gnu.org/licenses/gpl.txt</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+
+  <scm>	<!-- scm:hg:ssh://scm.jbundle.org/ -->
+    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/jbundle/jbundle-parent</url>
+    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/jbundle/jbundle-parent</connection>
+    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/jbundle/jbundle-parent</developerConnection>
+  </scm>
+
+  <ciManagement>
+    <system>Hudson</system>
+    <url>www.jbundle.org/hudson</url>
+    <notifiers>
+      <notifier>
+        <address>don@tourgeek.com</address>
+      </notifier>
+    </notifiers>
+  </ciManagement>
+  
+  <distributionManagement>
+    <snapshotRepository>
+      <id>sonatype-nexus-snapshots</id>
+      <name>Nexus Snapshot Repository</name>
+      <url>${snapshotRepository}</url>
+      <uniqueVersion>true</uniqueVersion>
+    </snapshotRepository>
+    <repository>
+      <id>sonatype-nexus-staging</id>
+      <name>Nexus Release Repository</name>
+      <url>${releaseRepository}</url>
+    </repository>
+  </distributionManagement>
+
+  <repositories>
+    <repository>
+      <id>jbundle-repository</id>
+      <name>jbundle repository</name>
+      <url>http://repository.jbundle.org:8081/nexus/content/groups/public</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+      <releases>
+        <enabled>true</enabled>
+      </releases>
+    </repository>
+  </repositories>
+
+  <build>
+    <plugins>
+      <plugin>
+        <inherited>true</inherited>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>${maven-compiler-pluginVersion}</version>
+        <configuration>
+          <source>1.6</source>  <!-- By default, I target java 6 -->
+          <target>1.6</target>
+        </configuration>
+      </plugin>
+      
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-bundle-plugin</artifactId>
+        <version>${maven-bundle-pluginVersion}</version>
+        <extensions>true</extensions>
+        <configuration>
+	  <prefixUrl>${publicReleaseRepository}</prefixUrl>
+	  <remoteOBR>${OBRRepositoryIndex}</remoteOBR>
+	  <!-- The obr is copied to the site root in the jbundle-site project -->
+	  <altDeploymentRepository>local-file::default::file:///${jbundle.workspace}/bin/obr</altDeploymentRepository>
+          <!--
+	  	repository name (not file name or path, although remoteOBR defaults to this)
+		- careful, this doesn't work for snapshots becuase the filename has the -xxxxx-xxx extension
+	  <remoteOBR>${OBRRepositoryIndex}</remoteOBR >	< Please update the remote OBR at root location, repository.xml >
+	  	The filename of the remote obj (uses name if blank)
+	  <obrRepository>sonatype-nexus-staging::obr::file://home/don/temp/snapshot-obr</obrRepository>
+	  	optional public URL prefix for the remote repository
+	  <prefixUrl>http://releases.jbundle.org:8081/nexus/content/repositories/snapshot-prefix</prefixUrl>
+	  	optional public URL where the bundle has been deployed
+	  <bundleUrl>http://releases.jbundle.org:8081/nexus/content/repositories/snapshot-obr/${project.artifact}</bundleUrl>
+		  By default, deploys to the snapshot/release repository in distribution mgmt, else goes here
+	  <altDeploymentRepository>sonatype-nexus-staging::obr::file://releases.jbundle.org:8081/nexus/content/repositories/snapshot-alt</altDeploymentRepository>
+	  	This ends up in the manifest as is
+	  <obrRepository>http://snapshots.jbundle.org:8081/nexus/content/repositories/snapshot-obr</obrRepository>
+	  	optional OBR specific deployment repository.
+	  <obrDeploymentRepository>sonatype-nexus-staging::obr::http://snapshots.jbundle.org:8081/nexus/content/repositories/snapshot-obr-deploy</obrDeploymentRepository>
+	  -->
+          <instructions>
+            <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
+            <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>	<!-- This is better name than the package -->
+            <Bundle-Version>${project.version}</Bundle-Version>	<!-- Just being careful -->
+            <Export-Package>${jbundle.package.export}</Export-Package>	<!-- Override jbundle.package or jbundle.package.export with actual packages -->
+            <Import-Package>${jbundle.package.import}</Import-Package>	<!-- Since I want these to be optional -->
+          </instructions>
+        </configuration>
+      </plugin>
+
+      <plugin>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>maven-ipojo-plugin</artifactId>
+        <version>${maven-ipojo-pluginVersion}</version>
+        <executions>
+          <execution>
+            <goals>
+              <goal>ipojo-bundle</goal>
+            </goals>
+	        <configuration>
+	             <metadata>src/main/ipojo/metadata.xml</metadata>
+	        </configuration>
+          </execution>
+        </executions>
+      </plugin>
+      
+      <!-- plugin>
+	    <groupId>org.sonatype.maven.plugins</groupId>
+	    <artifactId>maven-p2-publisher-plugin</artifactId>
+	    <version>0.2.0</version>
+      </plugin -->
+
+ <!-- Override the signing plugin to supply my keystore passphrase (in settings.xml) -->
+  <!-- Match version in my parent oss.sonatype... -->
+<!-- 
+		<plugin>
+			<groupId>org.apache.maven.plugins</groupId> 
+			<artifactId>maven-gpg-plugin</artifactId> 
+			<version>1.1</version>
+			<executions> 
+				<execution> 
+					<id>sign-artifacts</id> 
+					<phase>verify</phase> 
+					<goals> 
+						<goal>sign</goal> 
+					</goals> 
+					<configuration>
+						<passphrase>${gpg.passphrase}</passphrase>
+					</configuration>
+				</execution> 
+			</executions> 
+		</plugin> 
+-->
+    </plugins>
+  </build>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>${junitVersion}</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+  
+</project>
