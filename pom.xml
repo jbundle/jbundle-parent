@@ -46,6 +46,7 @@
 
     <!-- OBRRepositoryIndex>jbundle-snapshot-obr.xml</OBRRepositoryIndex -->	<!-- Doesn't work for snapshots - turn it off and use bindex -->
     <OBRRepositoryIndex>NONE</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+    <jbundleScmPath>jbundle-parent</jbundleScmPath>
 
     <jbundle.package>${project.artifactId}</jbundle.package>	<!-- artifactId is usually the package -->
     <jbundle.package.filter>${jbundle.package}.*</jbundle.package.filter>	<!-- All packages in this filter and beyond -->
@@ -145,10 +146,10 @@
     </license>
   </licenses>
 
-  <scm>	<!-- scm:hg:ssh://scm.jbundle.org/ -->
-    <url>http://scm.jbundle.org/gitweb/scm/git/workspace/jbundle/jbundle-parent</url>
-    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/jbundle/jbundle-parent</connection>
-    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/jbundle/jbundle-parent</developerConnection>
+  <scm>
+    <url>http://scm.jbundle.org/scm/git/workspace/jbundle/gitweb.cgi?p=${jbundleScmPath};a=tree</url>
+    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/jbundle/${jbundleScmPath}</connection>
+    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/jbundle/${jbundleScmPath}</developerConnection>
   </scm>
 
   <ciManagement>
