@@ -240,7 +240,7 @@
         </configuration>
       </plugin>
 
-      <plugin>
+      <!-- plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-ipojo-plugin</artifactId>
         <version>${maven-ipojo-pluginVersion}</version>
@@ -254,7 +254,7 @@
 	        </configuration>
           </execution>
         </executions>
-      </plugin>
+      </plugin -->
       
       <!-- plugin>
 	    <groupId>org.sonatype.maven.plugins</groupId>
