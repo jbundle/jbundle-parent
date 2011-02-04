@@ -46,6 +46,7 @@
 
     <!-- OBRRepositoryIndex>jbundle-snapshot-obr.xml</OBRRepositoryIndex -->	<!-- Doesn't work for snapshots - turn it off and use bindex -->
     <OBRRepositoryIndex>NONE</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+    <OBRRepositoryIndexURL>${project.organization.url}/${OBRRepositoryIndex}</OBRRepositoryIndexURL>	<!-- Full URL to the repository ? This SHOULD be the same as the OBRRepositoryIndex in the manifest -->
     <jbundleScmPath>jbundle-parent</jbundleScmPath>
 
     <jbundle.package>${project.artifactId}</jbundle.package>	<!-- artifactId is usually the package -->
