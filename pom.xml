@@ -49,11 +49,11 @@
     <OBRRepositoryIndexURL>${project.organization.url}/${OBRRepositoryIndex}</OBRRepositoryIndexURL>	<!-- Full URL to the repository ? This SHOULD be the same as the OBRRepositoryIndex in the manifest -->
     <jbundleScmPath>jbundle-parent</jbundleScmPath>
 
-    <jbundle.package>${project.artifactId}</jbundle.package>	<!-- artifactId is usually the package -->
-    <jbundle.package.filter>${jbundle.package}.*</jbundle.package.filter>	<!-- All packages in this filter and beyond -->
-    <jbundle.package.export>${jbundle.package.filter};version=${project.version}</jbundle.package.export>	<!-- Bundle package to export -->
-    <jbundle.package.import>*;resolution:=optional,!javax.swing.*</jbundle.package.import>
-    <jbundle.mainClass>org.jbundle.Main</jbundle.mainClass>
+    <jbundlePackage>${project.artifactId}</jbundlePackage>	<!-- artifactId is usually the package -->
+    <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>	<!-- All packages in this filter and beyond -->
+    <jbundlePackageExport>${jbundlePackageFilter};version=${project.version}</jbundlePackageExport>	<!-- Bundle package to export -->
+    <jbundlePackageImport>*;resolution:=optional,!javax.swing.*</jbundlePackageImport>
+    <jbundleMainClass>org.jbundle.Main</jbundleMainClass>
 
     <!-- Move these to settings -->
     <jbundle.workspace>${user.home}/workspace</jbundle.workspace>
@@ -235,8 +235,8 @@
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
             <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName>	<!-- This is better name than the package -->
             <Bundle-Version>${project.version}</Bundle-Version>	<!-- Just being careful -->
-            <Export-Package>${jbundle.package.export}</Export-Package>	<!-- Override jbundle.package or jbundle.package.export with actual packages -->
-            <Import-Package>${jbundle.package.import}</Import-Package>	<!-- Since I want these to be optional -->
+            <Export-Package>${jbundlePackageExport}</Export-Package>	<!-- Override jbundlePackage or jbundlePackageExport with actual packages -->
+            <Import-Package>${jbundlePackageImport}</Import-Package>	<!-- Since I want these to be optional -->
           </instructions>
         </configuration>
       </plugin>
