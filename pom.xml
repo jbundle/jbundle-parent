@@ -52,7 +52,7 @@
     <jbundlePackage>${project.artifactId}</jbundlePackage>	<!-- artifactId is usually the package -->
     <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>	<!-- All packages in this filter and beyond -->
     <jbundlePackageExport>${jbundlePackageFilter};version=${project.version}</jbundlePackageExport>	<!-- Bundle package to export -->
-    <jbundlePackageImport>*;resolution:=optional,!javax.swing.*</jbundlePackageImport>
+    <jbundlePackageImport>*;resolution:=optional</jbundlePackageImport>
     <jbundleMainClass>org.jbundle.Main</jbundleMainClass>
 
     <!-- Move these to settings -->
