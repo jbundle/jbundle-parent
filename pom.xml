@@ -128,13 +128,11 @@
       <id>sonatype-oss-release</id>
       <properties>
         <OBRRepositoryIndex>jbundle-release-obr.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
-	<!-- +++
         <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
         <snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
         <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
         <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
         <publicReleaseRepository>http://repo2.maven.org/maven2</publicReleaseRepository>	
-	-->
       </properties>
     </profile>
   </profiles>
