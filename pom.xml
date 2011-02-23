@@ -15,7 +15,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.0.2-SNAPSHOT</version>
+  <version>1.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -127,7 +127,7 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <OBRRepositoryIndex>jbundle-release-obr.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
+        <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex>	<!-- Set to NONE if not used -->
         <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
         <snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
         <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
