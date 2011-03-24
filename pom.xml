@@ -475,6 +475,31 @@
 	   <artifactId>base64coder</artifactId>
 	   <version>2010-12-19</version>
 	</dependency>
+	<dependency>
+	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
+	  <artifactId>org.jibx.schema.org.opentravel._2010B.ping</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
+	  <artifactId>org.jibx.schema.org.opentravel._2010B.hotel</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.jibx.schema.org.xmlsoap.schemas</groupId>
+	  <artifactId>org.jibx.schema.org.xmlsoap.schemas.wsdl</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+	<dependency>
+	  <groupId>org.jibx.schema.org.w3</groupId>
+	  <artifactId>org.jibx.schema.org.w3._2006._03.wsdl.wsdl20</artifactId>
+	  <version>1.0.0</version>
+	</dependency>
+    <dependency>
+      <groupId>org.jibx.schema.net.webservicex</groupId>
+      <artifactId>org.jibx.schema.net.webservicex.currencyconvertor</artifactId>
+      <version>1.0.0</version>
+    </dependency>
     </dependencies>
   </dependencyManagement>
   
