@@ -75,6 +75,7 @@
     <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
 
     <otaVersion>1.1.0</otaVersion>
+    <base64coderVersion>2010-12-19</base64coderVersion>
 
     <jbundle-app-contactVersion>${jbundleVersion}</jbundle-app-contactVersion>
     <jbundle-app-pictureVersion>${jbundleVersion}</jbundle-app-pictureVersion>
@@ -484,7 +485,7 @@
 	<dependency>
 	   <groupId>biz.source_code</groupId>
 	   <artifactId>base64coder</artifactId>
-	   <version>2010-12-19</version>
+	   <version>${base64coderVersion}</version>
 	</dependency>
 	<dependency>
 	  <groupId>org.jibx.schema.org.opentravel._2010B</groupId>
