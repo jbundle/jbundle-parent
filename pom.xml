@@ -76,6 +76,7 @@
 
     <otaVersion>1.1.0</otaVersion>
     <base64coderVersion>2010-12-19</base64coderVersion>
+	<tycho-version>0.11.0</tycho-version>
 
     <jbundle-app-contactVersion>${jbundleVersion}</jbundle-app-contactVersion>
     <jbundle-app-pictureVersion>${jbundleVersion}</jbundle-app-pictureVersion>
