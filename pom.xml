@@ -10,7 +10,7 @@
   <parent>
     <artifactId>oss-parent</artifactId>
     <groupId>org.sonatype.oss</groupId>
-    <version>7</version>
+    <version>6</version>
   </parent>
 
   <groupId>org.jbundle.config</groupId>
@@ -72,8 +72,8 @@
 
     <jbundle-jcalendarbuttonVersion>1.5.3</jbundle-jcalendarbuttonVersion>
 
-    <jbundle-util-muffinmanagerVersion>0.7.7</jbundle-util-muffinmanagerVersion>
-    <jbundle-util-wsdlVersion>0.7.7</jbundle-util-wsdlVersion>
+    <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
+    <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
 
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
