@@ -119,8 +119,8 @@
 
   <scm>
     <url>https://github.com/jbundle/jbundle-parent</url>
-    <connection>git://github.com/jbundle/jbundle-parent.git</connection>
-    <developerConnection>git@github.com:jbundle/jbundle-parent.git</developerConnection>
+    <connection>scm:git:git://github.com/jbundle/jbundle-parent.git</connection>
+    <developerConnection>scm:git:git@github.com:jbundle/jbundle-parent.git</developerConnection>
   </scm>
 
   <ciManagement>
