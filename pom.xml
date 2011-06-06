@@ -56,24 +56,24 @@
     <jbundleMainClass>org.jbundle.Main</jbundleMainClass>
 
     <!-- Move these to settings -->
-    <jbundle.workspace>${user.home}/workspace</jbundle.workspace>
+    <jbundle.workspace>${user.home}/workspace/workspace</jbundle.workspace>
     <jbundle.policyfile>${jbundle.workspace}/workspace/tourapp-root/bin/policy/policy.all</jbundle.policyfile>
     <jbundle.server>linux-laptop</jbundle.server>
     <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundleVersion>0.7.7-SNAPSHOT</jbundleVersion>
-    <jbundle-utilVersion>0.7.7-SNAPSHOT</jbundle-utilVersion>
-    <jbundle-util-webappVersion>0.9.1-SNAPSHOT</jbundle-util-webappVersion>
-    <jbundleOsgiVersion>1.0.1-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleVersion>0.7.7</jbundleVersion>
+    <jbundle-utilVersion>0.7.7</jbundle-utilVersion>
+    <jbundle-util-webappVersion>0.9.1</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.0.1</jbundleOsgiVersion>
 
-    <jbundle-calendarpanelVersion>0.8.1-SNAPSHOT</jbundle-calendarpanelVersion>
-    <jbundle-config-web-cocoonVersion>0.7.7-SNAPSHOT</jbundle-config-web-cocoonVersion>
+    <jbundle-calendarpanelVersion>0.8.1</jbundle-calendarpanelVersion>
+    <jbundle-config-web-cocoonVersion>0.7.7</jbundle-config-web-cocoonVersion>
 
-    <jbundle-jcalendarbuttonVersion>1.5.3-SNAPSHOT</jbundle-jcalendarbuttonVersion>
+    <jbundle-jcalendarbuttonVersion>1.5.3</jbundle-jcalendarbuttonVersion>
 
-    <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
-    <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
+    <jbundle-util-muffinmanagerVersion>0.7.7</jbundle-util-muffinmanagerVersion>
+    <jbundle-util-wsdlVersion>0.7.7</jbundle-util-wsdlVersion>
 
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
