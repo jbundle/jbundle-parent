@@ -65,6 +65,7 @@
     <jbundleVersion>0.7.7-SNAPSHOT</jbundleVersion>
     <jbundle-utilVersion>0.7.7-SNAPSHOT</jbundle-utilVersion>
     <jbundle-util-webappVersion>0.9.1-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.0.1-SNAPSHOT</jbundleOsgiVersion>
 
     <jbundle-calendarpanelVersion>0.8.1-SNAPSHOT</jbundle-calendarpanelVersion>
     <jbundle-config-web-cocoonVersion>0.7.7-SNAPSHOT</jbundle-config-web-cocoonVersion>
@@ -117,9 +118,9 @@
   </licenses>
 
   <scm>
-    <url>http://scm.jbundle.org/scm/git/workspace/jbundle/gitweb.cgi?p=${jbundleScmPath};a=tree</url>
-    <connection>scm:git:http://scm.jbundle.org/scm/git/workspace/jbundle/${jbundleScmPath}</connection>
-    <developerConnection>scm:git:ssh://scm.jbundle.org/scm/git/workspace/jbundle/${jbundleScmPath}</developerConnection>
+    <url>https://github.com/jbundle/jbundle-parent</url>
+    <connection>git://github.com/jbundle/jbundle-parent.git</connection>
+    <developerConnection>git@github.com:jbundle/jbundle-parent.git</developerConnection>
   </scm>
 
   <ciManagement>
