@@ -63,17 +63,17 @@
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
     <jbundleVersion>0.7.7</jbundleVersion>
-    <jbundle-utilVersion>0.7.7</jbundle-utilVersion>
-    <jbundle-util-webappVersion>0.9.1</jbundle-util-webappVersion>
-    <jbundleOsgiVersion>1.0.1</jbundleOsgiVersion>
+    <jbundleOsgiVersion>1.1.1</jbundleOsgiVersion>
 
     <jbundle-calendarpanelVersion>0.8.1</jbundle-calendarpanelVersion>
     <jbundle-config-web-cocoonVersion>0.7.7</jbundle-config-web-cocoonVersion>
 
     <jbundle-jcalendarbuttonVersion>1.5.3</jbundle-jcalendarbuttonVersion>
 
+    <jbundle-utilVersion>0.7.7</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
+    <jbundle-util-webappVersion>0.9.1</jbundle-util-webappVersion>
 
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
@@ -368,6 +368,40 @@
   <!-- TODO Should move this to a dependency POM and do an import (only works after maven 2.0.9) -->
   <dependencyManagement>
     <dependencies>
+    <!-- These are mine -->
+    <dependency>
+      <groupId>org.jbundle.util.osgi</groupId>
+      <version>${jbundleOsgiVersion}</version>
+      <artifactId>org.jbundle.util.osgi</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.util.webapp</groupId>
+      <artifactId>org.jbundle.util.webapp.redirect</artifactId>
+      <version>${jbundle-util-webappVersion}</version>
+      <classifier>classes</classifier>
+    </dependency>
+	<dependency>
+	  <groupId>org.jbundle.util.webapp</groupId>
+	  <artifactId>org.jbundle.util.webapp.jnlpservlet</artifactId>
+	  <version>${jbundle-util-webappVersion}</version>
+	</dependency>
+    <dependency>
+      <groupId>org.jbundle.util.calendarpanel</groupId>
+      <artifactId>org.jbundle.util.calendarpanel</artifactId>
+      <version>${jbundle-calendarpanelVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.util.jcalendarbutton</groupId>
+      <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
+      <version>${jbundle-jcalendarbuttonVersion}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.jbundle.util</groupId>
+      <artifactId>org.jbundle.util.muffinmanager</artifactId>
+      <version>${jbundle-util-muffinmanagerVersion}</version>
+    </dependency>
+    
+    <!-- External dependencies -->
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-run</artifactId>
