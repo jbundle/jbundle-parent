@@ -133,6 +133,11 @@
     </notifiers>
   </ciManagement>
   
+  <issueManagement>
+    <system>github issues</system>
+    <url>https://github.com/jbundle/jbundle/issues</url>
+  </issueManagement>
+  
   <distributionManagement>
     <snapshotRepository>
       <id>sonatype-nexus-snapshots</id>
