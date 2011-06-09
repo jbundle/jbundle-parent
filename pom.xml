@@ -73,7 +73,7 @@
     <jbundle-utilVersion>0.7.7</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
-    <jbundle-util-webappVersion>0.9.2-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundle-util-webappVersion>0.9.2</jbundle-util-webappVersion>
 
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
@@ -83,9 +83,9 @@
     <osgi.version>4.2.0</osgi.version>
     <felix.bundlerepository.version>1.6.4</felix.bundlerepository.version>
 
-    <jbundle-app-contactVersion>0.7.7-SNAPSHOT</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.7-SNAPSHOT</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.7-SNAPSHOT</jbundle-app-danceVersion>
+    <jbundle-app-contactVersion>0.7.7</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.7</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.7</jbundle-app-danceVersion>
 
     <tourappVersion>${jbundleVersion}</tourappVersion>
     
