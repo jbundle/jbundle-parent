@@ -15,7 +15,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.0.5-SNAPSHOT</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -73,7 +73,7 @@
     <jbundle-utilVersion>0.7.7</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>${jbundle-utilVersion}</jbundle-util-wsdlVersion>
-    <jbundle-util-webappVersion>0.9.2-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundle-util-webappVersion>0.9.2</jbundle-util-webappVersion>
 
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
