@@ -125,7 +125,7 @@
 
   <ciManagement>
     <system>Hudson</system>
-    <url>www.jbundle.org/hudson</url>
+    <url>www.jbundle.org/jenkins</url>
     <notifiers>
       <notifier>
         <address>don@tourgeek.com</address>
@@ -143,7 +143,6 @@
       <id>sonatype-nexus-snapshots</id>
       <name>Nexus Snapshot Repository</name>
       <url>${snapshotRepository}</url>
-      <uniqueVersion>true</uniqueVersion>
     </snapshotRepository>
     <repository>
       <id>sonatype-nexus-staging</id>
