@@ -64,11 +64,11 @@
 
     <jbundleVersion>0.7.8-SNAPSHOT</jbundleVersion>
 
-    <jbundle-calendarpanelVersion>0.8.1</jbundle-calendarpanelVersion>
-    <jbundle-jcalendarbuttonVersion>1.5.3</jbundle-jcalendarbuttonVersion>
+    <jbundle-calendarpanelVersion>0.8.2-SNAPSHOT</jbundle-calendarpanelVersion>
+    <jbundle-jcalendarbuttonVersion>1.5.4-SNAPSHOT</jbundle-jcalendarbuttonVersion>
     <jbundle-utilVersion>0.8.0-SNAPSHOT</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
-    <jbundle-util-wsdlVersion>0.7.7</jbundle-util-wsdlVersion>
+    <jbundle-util-wsdlVersion>0.7.8-SNAPSHOT</jbundle-util-wsdlVersion>
 
     <jbundleOsgiVersion>1.1.4-SNAPSHOT</jbundleOsgiVersion>
     <jbundle-util-webappVersion>0.9.4-SNAPSHOT</jbundle-util-webappVersion>
