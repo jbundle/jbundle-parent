@@ -62,22 +62,22 @@
     <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundleVersion>0.7.8-SNAPSHOT</jbundleVersion>
+    <jbundleVersion>0.7.8</jbundleVersion>
 
-    <jbundle-calendarpanelVersion>0.8.2-SNAPSHOT</jbundle-calendarpanelVersion>
-    <jbundle-jcalendarbuttonVersion>1.5.4-SNAPSHOT</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>0.8.0-SNAPSHOT</jbundle-utilVersion>
+    <jbundle-calendarpanelVersion>0.8.2</jbundle-calendarpanelVersion>
+    <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
+    <jbundle-utilVersion>0.8.0</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
-    <jbundle-util-wsdlVersion>0.7.8-SNAPSHOT</jbundle-util-wsdlVersion>
+    <jbundle-util-wsdlVersion>0.7.8</jbundle-util-wsdlVersion>
 
-    <jbundleOsgiVersion>1.1.4-SNAPSHOT</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>0.9.4-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.1.4</jbundleOsgiVersion>
+    <jbundle-util-webappVersion>0.9.4</jbundle-util-webappVersion>
 
-    <jbundle-app-contactVersion>0.7.7-SNAPSHOT</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.7-SNAPSHOT</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.7-SNAPSHOT</jbundle-app-danceVersion>
+    <jbundle-app-contactVersion>0.7.7</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.7</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.7</jbundle-app-danceVersion>
 
-    <tourappVersion>0.7.7-SNAPSHOT</tourappVersion>
+    <tourappVersion>0.7.7</tourappVersion>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
@@ -157,7 +157,7 @@
       <name>jbundle-repository</name>
       <url>http://repository.jbundle.org:8081/nexus/content/groups/public</url>
       <snapshots>
-        <enabled>true</enabled>
+        <enabled>false</enabled>
       </snapshots>
       <releases>
         <enabled>true</enabled>
