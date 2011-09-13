@@ -38,8 +38,8 @@
   </developers>
 
   <properties>
-    <releaseRepository>http://releases.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
-    <snapshotRepository>http://snapshots.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
+    <releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
+    <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
     <publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
     <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
     <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
