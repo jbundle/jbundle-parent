@@ -62,22 +62,22 @@
     <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundleVersion>0.7.8</jbundleVersion>
+    <jbundleVersion>0.7.9-SNAPSHOT</jbundleVersion>
 
     <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
     <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>0.8.0</jbundle-utilVersion>
+    <jbundle-utilVersion>0.8.1-SNAPSHOT</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>0.7.8</jbundle-util-wsdlVersion>
 
-    <jbundleOsgiVersion>1.1.4</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>0.9.4</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.1.5-SNAPSHOT</jbundleOsgiVersion>
+    <jbundle-util-webappVersion>0.9.5-SNAPSHOT</jbundle-util-webappVersion>
 
-    <jbundle-app-contactVersion>0.7.7</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.7</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.7</jbundle-app-danceVersion>
+    <jbundle-app-contactVersion>0.7.8-SNAPSHOT</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.8-SNAPSHOT</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.8-SNAPSHOT</jbundle-app-danceVersion>
 
-    <tourappVersion>0.7.7</tourappVersion>
+    <tourappVersion>0.7.8-SNAPSHOT</tourappVersion>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
@@ -98,13 +98,10 @@
       <id>sonatype-oss-release</id>
       <properties>
         <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex> <!-- Set to NONE if not used -->
-<!-- releaseRepository>http://localhost:8081/nexus/content/repositories/releases/</releaseRepository -->
-        <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
+        <!-- releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository -->
         <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
-        <!-- snapshotRepository>http://oss.sonatype.org/content/repositories/snapshots</snapshotRepository -->
         <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
         <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
-<!-- publicReleaseRepository>http://localhost:8081/nexus/content/groups/public</publicReleaseRepository -->
         <publicReleaseRepository>http://repo2.maven.org/maven2</publicReleaseRepository>
       </properties>
     </profile>
@@ -207,9 +204,10 @@
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
             <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName> <!-- This is better name than the package -->
-            <Bundle-Version>${project.version}</Bundle-Version> <!-- Just being careful -->
+            <Bundle-Version>${project.version}</Bundle-Version>         <!-- Just being careful -->
             <Export-Package>${jbundlePackageExport}</Export-Package>    <!-- Override jbundlePackage or jbundlePackageExport with actual packages -->
             <Import-Package>${jbundlePackageImport}</Import-Package>    <!-- Since I want these to be optional -->
+            <Bundle-ActivationPolicy>lazy</Bundle-ActivationPolicy>     <!-- This is used mostly to pass this policy to jnlp - override to eager to change -->
           </instructions>
         </configuration>
       </plugin>
