@@ -15,7 +15,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.0.7-SNAPSHOT</version>
+  <version>1.0.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -62,22 +62,22 @@
     <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundleVersion>0.7.9-SNAPSHOT</jbundleVersion>
+    <jbundleVersion>0.7.9</jbundleVersion>
 
-    <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
+    <jbundle-calendarpanelVersion>1.0.1</jbundle-calendarpanelVersion>
     <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>0.8.1-SNAPSHOT</jbundle-utilVersion>
+    <jbundle-utilVersion>0.8.1</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>0.7.8</jbundle-util-wsdlVersion>
 
-    <jbundleOsgiVersion>1.1.5-SNAPSHOT</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>0.9.5-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.1.5</jbundleOsgiVersion>
+    <jbundle-util-webappVersion>0.9.5</jbundle-util-webappVersion>
 
-    <jbundle-app-contactVersion>0.7.8-SNAPSHOT</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.8-SNAPSHOT</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.8-SNAPSHOT</jbundle-app-danceVersion>
+    <jbundle-app-contactVersion>0.8.0</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.8</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.8</jbundle-app-danceVersion>
 
-    <tourappVersion>0.7.8-SNAPSHOT</tourappVersion>
+    <tourappVersion>0.7.8</tourappVersion>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
