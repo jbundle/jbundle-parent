@@ -64,9 +64,9 @@
 
     <jbundleVersion>0.7.9</jbundleVersion>
 
-    <jbundle-calendarpanelVersion>1.0.1</jbundle-calendarpanelVersion>
+    <jbundle-calendarpanelVersion>1.0.3</jbundle-calendarpanelVersion>
     <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>0.8.2</jbundle-utilVersion>
+    <jbundle-utilVersion>1.8.3</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>0.7.8</jbundle-util-wsdlVersion>
 
