@@ -10,7 +10,7 @@
   <parent>
     <artifactId>oss-parent</artifactId>
     <groupId>org.sonatype.oss</groupId>
-    <version>7</version>
+    <version>6</version>
   </parent>
 
   <groupId>org.jbundle.config</groupId>
