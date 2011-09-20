@@ -62,22 +62,23 @@
     <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundleVersion>0.7.9</jbundleVersion>
-
-    <jbundle-calendarpanelVersion>1.0.5</jbundle-calendarpanelVersion>
     <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>1.8.3</jbundle-utilVersion>
+    <jbundle-utilVersion>1.8.4-SNAPSHOT</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
-    <jbundle-util-wsdlVersion>0.7.8</jbundle-util-wsdlVersion>
+    <jbundle-util-wsdlVersion>1.0.0-SNAPSHOT</jbundle-util-wsdlVersion>
+    <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
 
-    <jbundleOsgiVersion>1.1.5</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>0.9.5</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.1.6-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiWebStartVersion>1.1.8-SNAPSHOT</jbundleOsgiWebStartVersion>
+    <jbundle-util-webappVersion>0.9.6-SNAPSHOT</jbundle-util-webappVersion>
 
-    <jbundle-app-contactVersion>0.8.0</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.8</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.8</jbundle-app-danceVersion>
+    <jbundleVersion>0.7.10-SNAPSHOT</jbundleVersion>
 
-    <tourappVersion>0.7.8</tourappVersion>
+    <jbundle-app-contactVersion>0.8.1-SNAPSHOT</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.9-SNAPSHOT</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.9-SNAPSHOT</jbundle-app-danceVersion>
+
+    <tourappVersion>0.7.9-SNAPSHOT</tourappVersion>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
@@ -91,6 +92,9 @@
     <pluginVersion>${java.specification.version}</pluginVersion>
 
     <dojoVersion>1.5.0</dojoVersion>
+    
+    <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
+    <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
   </properties>
   
   <profiles>
