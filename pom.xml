@@ -63,22 +63,22 @@
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
     <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>1.8.4-SNAPSHOT</jbundle-utilVersion>
+    <jbundle-utilVersion>2.0.0-SNAPSHOT</jbundle-utilVersion>
     <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
     <jbundle-util-wsdlVersion>1.0.0-SNAPSHOT</jbundle-util-wsdlVersion>
     <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
 
-    <jbundleOsgiVersion>1.1.6-SNAPSHOT</jbundleOsgiVersion>
-    <jbundleOsgiWebStartVersion>1.1.8-SNAPSHOT</jbundleOsgiWebStartVersion>
-    <jbundle-util-webappVersion>0.9.6-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundleOsgiVersion>1.2.0-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiWebStartVersion>1.2.0-SNAPSHOT</jbundleOsgiWebStartVersion>
+    <jbundle-util-webappVersion>1.0.0-SNAPSHOT</jbundle-util-webappVersion>
 
-    <jbundleVersion>0.7.10-SNAPSHOT</jbundleVersion>
+    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
 
-    <jbundle-app-contactVersion>0.8.1-SNAPSHOT</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.9-SNAPSHOT</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.9-SNAPSHOT</jbundle-app-danceVersion>
+    <jbundle-app-contactVersion>0.9.0-SNAPSHOT</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.8-SNAPSHOT</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.8-SNAPSHOT</jbundle-app-danceVersion>
 
-    <tourappVersion>0.7.9-SNAPSHOT</tourappVersion>
+    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
