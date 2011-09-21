@@ -153,20 +153,6 @@
     </repository>
   </distributionManagement>
 
-  <!-- repositories>
-    <repository>
-      <id>jbundle-repository</id>
-      <name>jbundle-repository</name>
-      <url>http://repository.jbundle.org:8081/nexus/content/groups/public</url>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-    </repository>
-  </repositories -->
-
   <build>
     <plugins>
       <plugin>
