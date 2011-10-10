@@ -101,7 +101,7 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex> <!-- Set to NONE if not used -->
+        <OBRRepositoryIndex>jbundle-repository.xml</OBRRepositoryIndex> <!-- Set to NONE if not used -->
         <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
         <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
         <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
