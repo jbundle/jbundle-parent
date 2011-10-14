@@ -59,7 +59,7 @@
     <jbundle.workspace>${user.home}/workspace/workspace</jbundle.workspace>
     <jbundle.policyfile>${jbundle.workspace}/workspace/tourapp-root/bin/policy/policy.all</jbundle.policyfile>
     <jbundle.server>linux-laptop</jbundle.server>
-    <jbundle.codebase>${jbundle.server}:8080/</jbundle.codebase>
+    <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
     <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
