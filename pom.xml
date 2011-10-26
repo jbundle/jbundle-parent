@@ -91,7 +91,7 @@
     <javawsVersion>${java.specification.version}</javawsVersion>
     <pluginVersion>${java.specification.version}</pluginVersion>
 
-    <dojoVersion>1.5.0</dojoVersion>
+    <dojoVersion>1.6.1</dojoVersion>
     
     <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
@@ -451,7 +451,7 @@
     <dependency>     <!-- **** NOTE: This should be a 'runtime' dependency! Fix your code ***** -->
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.17</version>
+      <version>5.1.18</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
