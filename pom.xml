@@ -68,17 +68,17 @@
     <jbundle-util-wsdlVersion>1.0.0</jbundle-util-wsdlVersion>
     <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
 
-    <jbundleOsgiVersion>1.3.0-SNAPSHOT</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>1.0.0</jbundle-util-webappVersion>
-    <jbundleOsgiWebStartVersion>1.2.1-SNAPSHOT</jbundleOsgiWebStartVersion>
+    <jbundleOsgiVersion>1.3.0</jbundleOsgiVersion>
+    <jbundle-util-webappVersion>1.0.1</jbundle-util-webappVersion>
+    <jbundleOsgiWebStartVersion>1.2.1</jbundleOsgiWebStartVersion>
 
-    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
+    <jbundleVersion>0.8.0</jbundleVersion>
 
-    <jbundle-app-contactVersion>0.9.0-SNAPSHOT</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.8-SNAPSHOT</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.8-SNAPSHOT</jbundle-app-danceVersion>
+    <jbundle-app-contactVersion>0.9.0</jbundle-app-contactVersion>
+    <jbundle-app-pictureVersion>0.7.8</jbundle-app-pictureVersion>
+    <jbundle-app-danceVersion>0.7.8</jbundle-app-danceVersion>
 
-    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
+    <tourappVersion>0.8.0</tourappVersion>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
