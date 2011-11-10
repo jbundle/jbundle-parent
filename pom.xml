@@ -68,9 +68,9 @@
     <jbundle-util-wsdlVersion>1.0.0</jbundle-util-wsdlVersion>
     <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
 
-    <jbundleOsgiVersion>1.3.0</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>1.0.1</jbundle-util-webappVersion>
-    <jbundleOsgiWebStartVersion>1.2.1</jbundleOsgiWebStartVersion>
+    <jbundleOsgiVersion>1.3.1-SNAPSHOT</jbundleOsgiVersion>
+    <jbundle-util-webappVersion>1.0.2-SNAPSHOT</jbundle-util-webappVersion>
+    <jbundleOsgiWebStartVersion>1.2.2-SNAPSHOT</jbundleOsgiWebStartVersion>
 
     <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
 
