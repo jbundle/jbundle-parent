@@ -92,6 +92,8 @@
     <pluginVersion>${java.specification.version}</pluginVersion>
 
     <dojoVersion>1.6.1</dojoVersion>
+    <httpclientVersion>4.1.2</httpclientVersion>
+    <tomcat-catalinaVersion>7.0.22</tomcat-catalinaVersion>
     
     <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
@@ -456,12 +458,12 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>4.1.2</version>
+      <version>${httpclientVersion}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.tomcat</groupId>
-      <artifactId>catalina</artifactId>
-      <version>6.0.33</version>
+      <artifactId>tomcat-catalina</artifactId>
+      <version>${tomcat-catalinaVersion}</version>
     </dependency>
     <dependency>
       <groupId>jtidy</groupId>  <!-- net.sourceforge.jtidy -->
