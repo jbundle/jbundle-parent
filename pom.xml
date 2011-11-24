@@ -195,7 +195,7 @@
       -->
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
-            <Bundle-SymbolicName>${project.groupId}.${project.artifactId}</Bundle-SymbolicName> <!-- This is better name than the package -->
+            <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName> <!-- This is better name than the package -->
             <Bundle-Version>${project.version}</Bundle-Version>         <!-- Just being careful -->
             <Export-Package>${jbundlePackageExport}</Export-Package>    <!-- Override jbundlePackage or jbundlePackageExport with actual packages -->
             <Import-Package>${jbundlePackageImport}</Import-Package>    <!-- Since I want these to be optional -->
