@@ -343,11 +343,6 @@
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
-      <artifactId>org.jbundle.util.webapp.jnlpservlet</artifactId>
-      <version>${jbundle-util-webappVersion}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.osgi</artifactId>
       <version>${jbundle-util-webappVersion}</version>
     </dependency>
@@ -441,8 +436,10 @@
       <version>1.2.16</version>
     </dependency>
     <dependency>
-      <groupId>org.codehaus.mojo.webstart</groupId> <!-- Hopefully this will become available from java.net -->
-      <artifactId>webstart-jnlp-servlet</artifactId>
+      <!-- groupId>org.codehaus.mojo.webstart</groupId>
+      <artifactId>webstart-jnlp-servlet</artifactId -->
+      <groupId>org.jbundle.util.osgi.wrapped</groupId>
+      <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId>
       <version>1.0-6.0.02_ea_b02.1</version>
     </dependency>
     <dependency>
