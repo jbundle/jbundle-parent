@@ -87,6 +87,7 @@
     <tycho-version>0.11.0</tycho-version>
     <osgi.version>4.2.0</osgi.version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
     <felix.bundlerepository.version>1.6.4</felix.bundlerepository.version> <!-- See all the exclusions under the bundlerespository dependency -->
+    <jnlp-servlet.version>1.0-6.0.02_ea_b02.1</jnlp-servlet.version>
 
     <javawsVersion>${java.specification.version}</javawsVersion>
     <pluginVersion>${java.specification.version}</pluginVersion>
@@ -440,7 +441,7 @@
       <artifactId>webstart-jnlp-servlet</artifactId -->
       <groupId>org.jbundle.util.osgi.wrapped</groupId>
       <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId>
-      <version>1.0-6.0.02_ea_b02.1</version>
+      <version>${jnlp-servlet.version}</version>
     </dependency>
     <dependency>
       <groupId>jardiff</groupId>
