@@ -62,21 +62,26 @@
     <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundle-jcalendarbuttonVersion>1.5.4</jbundle-jcalendarbuttonVersion>
-    <jbundle-utilVersion>2.0.0</jbundle-utilVersion>
-    <jbundle-util-muffinmanagerVersion>${jbundle-utilVersion}</jbundle-util-muffinmanagerVersion>
-    <jbundle-util-wsdlVersion>1.0.0</jbundle-util-wsdlVersion>
-    <jbundle-calendarpanelVersion>1.0.0</jbundle-calendarpanelVersion>
+    <jbundleJcalendarbuttonVersion>1.5.4</jbundleJcalendarbuttonVersion>
+    <jbundleJcalendarbuttonVersionRange>[1.5.0,1.6.0)</jbundleJcalendarbuttonVersionRange>
+    <jbundleUtilVersion>2.0.0</jbundleUtilVersion>
+    <jbundleUtilVersionRange>[2.0.0,2.1.0)</jbundleUtilVersionRange>
+    <jbundleUtilMuffinmanagerVersion>${jbundleUtilVersion}</jbundleUtilMuffinmanagerVersion>
+    <jbundleUtilMuffinmanagerVersionRange>${jbundleUtilVersionRange}</jbundleUtilMuffinmanagerVersionRange>
+    <jbundleUtilWsdlVersionRange>[1.0.0,1.1.0)</jbundleUtilWsdlVersionRange>
+    <jbundleCalendarpanelVersion>1.0.0</jbundleCalendarpanelVersion>
+    <jbundleCalendarpanelVersionRange>[1.0.0,1.1.0)</jbundleCalendarpanelVersionRange>
 
-    <jbundleOsgiVersion>1.4.1-SNAPSHOT</jbundleOsgiVersion>
-    <jbundle-util-webappVersion>1.1.0</jbundle-util-webappVersion>
-    <jbundleOsgiWebStartVersion>1.3.0</jbundleOsgiWebStartVersion>
+    <jbundleOsgiVersion>1.5.0-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiVersionEnd>1.6.0-SNAPSHOT</jbundleOsgiVersionEnd>
+    <jbundleUtilWebappVersionRange>[1.2.0-SNAPSHOT,1.3.0-SNAPSHOT)</jbundleUtilWebappVersionRange>
+    <jbundleOsgiWebStartVersion>[1.4.0-SNAPSHOT,1.5.0-SNAPSHOT)</jbundleOsgiWebStartVersion>
 
     <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
 
-    <jbundle-app-contactVersion>0.9.0-SNAPSHOT</jbundle-app-contactVersion>
-    <jbundle-app-pictureVersion>0.7.8-SNAPSHOT</jbundle-app-pictureVersion>
-    <jbundle-app-danceVersion>0.7.8-SNAPSHOT</jbundle-app-danceVersion>
+    <jbundleAppContactVersion>0.9.0-SNAPSHOT</jbundleAppContactVersion>
+    <jbundleAppPictureVersionRange>[0.7.8-SNAPSHOT,0.8.0-SNAPSHOT)</jbundleAppPictureVersionRange>
+    <jbundleAppDanceVersionRange>[0.7.8-SNAPSHOT,0.8.0-SNAPSHOT)</jbundleAppDanceVersionRange>
 
     <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
     
@@ -324,43 +329,43 @@
     <!-- These are mine -->
     <dependency>
       <groupId>org.jbundle.util.osgi</groupId>
-      <version>${jbundleOsgiVersion}</version>
+      <version>[${jbundleOsgiVersion},${jbundleOsgiVersionEnd})</version>
       <artifactId>org.jbundle.util.osgi</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util</groupId>
       <artifactId>org.jbundle.util.jbackup</artifactId>
-      <version>${jbundle-utilVersion}</version>
+      <version>${jbundleUtilVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.redirect</artifactId>
-      <version>${jbundle-util-webappVersion}</version>
+      <version>${jbundleUtilWebappVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.files</artifactId>
-      <version>${jbundle-util-webappVersion}</version>
+      <version>${jbundleUtilWebappVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.base</artifactId>
-      <version>${jbundle-util-webappVersion}</version>
+      <version>${jbundleUtilWebappVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel</artifactId>
-      <version>${jbundle-calendarpanelVersion}</version>
+      <version>${jbundleCalendarpanelVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.jcalendarbutton</groupId>
       <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
-      <version>${jbundle-jcalendarbuttonVersion}</version>
+      <version>${jbundleJcalendarbuttonVersionRange}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util</groupId>
       <artifactId>org.jbundle.util.muffinmanager</artifactId>
-      <version>${jbundle-util-muffinmanagerVersion}</version>
+      <version>${jbundleUtilMuffinmanagerVersionRange}</version>
     </dependency>
     
     <!-- External dependencies -->
