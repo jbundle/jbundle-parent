@@ -75,16 +75,16 @@
     <jbundleOsgiVersion>1.5.0</jbundleOsgiVersion>
     <jbundleOsgiVersionRange>[1.5.0,1.6.0)</jbundleOsgiVersionRange>
     <jbundleUtilWebappVersionRange>[1.2.0,1.3.0)</jbundleUtilWebappVersionRange>
-    <jbundleOsgiWebStartVersionRange>[1.4.1,1.5.0)</jbundleOsgiWebStartVersionRange>
+    <jbundleOsgiWebStartVersionRange>[1.4.1-SNAPSHOT,1.5.0-SNAPSHOT)</jbundleOsgiWebStartVersionRange>
 
-    <jbundleVersion>0.8.0</jbundleVersion>
-    <jbundleVersionRange>[0.8.0,0.9.0)</jbundleVersionRange>
+    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
+    <jbundleVersionRange>[0.8.0-SNAPSHOT,0.9.0-SNAPSHOT)</jbundleVersionRange>
 
-    <jbundleAppContactVersionRange>[1.0.0,1.1.0)</jbundleAppContactVersionRange>
-    <jbundleAppPictureVersionRange>[0.7.8,0.8.0)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersionRange>[0.7.8,0.8.0)</jbundleAppDanceVersionRange>
+    <jbundleAppContactVersionRange>[1.0.0-SNAPSHOT,1.1.0-SNAPSHOT)</jbundleAppContactVersionRange>
+    <jbundleAppPictureVersionRange>[0.7.8-SNAPSHOT,0.8.0-SNAPSHOT)</jbundleAppPictureVersionRange>
+    <jbundleAppDanceVersionRange>[0.7.8-SNAPSHOT,0.8.0-SNAPSHOT)</jbundleAppDanceVersionRange>
 
-    <tourappVersionRange>[0.8.0,0.9.0)</tourappVersionRange>
+    <tourappVersionRange>[0.8.0-SNAPSHOT,0.9.0-SNAPSHOT)</tourappVersionRange>
     
     <jibxVersion>1.2.3</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>
