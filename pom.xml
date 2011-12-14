@@ -72,9 +72,9 @@
     <jbundleCalendarpanelVersion>1.0.1</jbundleCalendarpanelVersion>
     <jbundleCalendarpanelVersionRange>[1.0.1,1.1.0)</jbundleCalendarpanelVersionRange>
 
-    <jbundleOsgiVersion>1.5.0</jbundleOsgiVersion>
-    <jbundleOsgiVersionRange>[1.5.0,1.6.0)</jbundleOsgiVersionRange>
-    <jbundleUtilWebappVersionRange>[1.2.0,1.3.0)</jbundleUtilWebappVersionRange>
+    <jbundleOsgiVersion>1.5.1-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiVersionRange>[1.5.1-SNAPSHOT,1.6.0-SNAPSHOT)</jbundleOsgiVersionRange>
+    <jbundleUtilWebappVersionRange>[1.2.1-SNAPSHOT,1.3.0-SNAPSHOT)</jbundleUtilWebappVersionRange>
     <jbundleOsgiWebStartVersionRange>[1.4.1-SNAPSHOT,1.5.0-SNAPSHOT)</jbundleOsgiWebStartVersionRange>
 
     <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
