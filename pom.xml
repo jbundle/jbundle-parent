@@ -102,6 +102,7 @@
     <httpclientVersion>4.1.2</httpclientVersion>
     <tomcat-catalinaVersion>7.0.23</tomcat-catalinaVersion>
     <j2eeVersion>6</j2eeVersion>
+    <mailVersion>1.4.4</mailVersion>
     
     <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
@@ -493,7 +494,7 @@
     <dependency>
       <groupId>javax.mail</groupId>
       <artifactId>mail</artifactId>
-      <version>1.4.4</version>
+      <version>${mailVersion}</version>
     </dependency>
     <dependency>
       <groupId>com.sun.messaging.mq</groupId>
