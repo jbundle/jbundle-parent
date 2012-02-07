@@ -62,15 +62,15 @@
     <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundleJcalendarbuttonVersion>1.5.4</jbundleJcalendarbuttonVersion>
-    <jbundleJcalendarbuttonVersionRange>[1.5.0,1.6.0)</jbundleJcalendarbuttonVersionRange>
-    <jbundleUtilVersion>2.0.0</jbundleUtilVersion>
-    <jbundleUtilVersionRange>[2.0.0,2.1.0)</jbundleUtilVersionRange>
+    <jbundleJcalendarbuttonVersion>1.6.0-SNAPSHOT</jbundleJcalendarbuttonVersion>
+    <jbundleJcalendarbuttonVersionRange>[1.6.0-SNAPSHOT,1.7.0-SNAPSHOT)</jbundleJcalendarbuttonVersionRange>
+    <jbundleUtilVersion>2.0.1-SNAPSHOT</jbundleUtilVersion>
+    <jbundleUtilVersionRange>[2.0.0-SNAPSHOT,2.1.0-SNAPSHOT)</jbundleUtilVersionRange>
     <jbundleUtilMuffinmanagerVersion>${jbundleUtilVersion}</jbundleUtilMuffinmanagerVersion>
     <jbundleUtilMuffinmanagerVersionRange>${jbundleUtilVersionRange}</jbundleUtilMuffinmanagerVersionRange>
     <jbundleUtilWsdlVersionRange>[1.0.0,1.1.0)</jbundleUtilWsdlVersionRange>
-    <jbundleCalendarpanelVersion>1.0.1</jbundleCalendarpanelVersion>
-    <jbundleCalendarpanelVersionRange>[1.0.1,1.1.0)</jbundleCalendarpanelVersionRange>
+    <jbundleCalendarpanelVersion>1.0.2-SNAPSHOT</jbundleCalendarpanelVersion>
+    <jbundleCalendarpanelVersionRange>[1.0.1-SNAPSHOT,1.1.0-SNAPSHOT)</jbundleCalendarpanelVersionRange>
 
     <jbundleOsgiVersion>1.5.1-SNAPSHOT</jbundleOsgiVersion>
     <jbundleOsgiVersionRange>[1.5.1-SNAPSHOT,1.6.0-SNAPSHOT)</jbundleOsgiVersionRange>
