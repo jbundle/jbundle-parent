@@ -98,7 +98,7 @@
     <javawsVersion>${java.specification.version}</javawsVersion>
     <pluginVersion>${java.specification.version}</pluginVersion>
 
-    <dojoVersion>1.6.1</dojoVersion>
+    <dojoVersion>1.7.2</dojoVersion>
     <httpclientVersion>4.1.2</httpclientVersion>
     <tomcat-catalinaVersion>7.0.23</tomcat-catalinaVersion>
     <j2eeVersion>6</j2eeVersion>
