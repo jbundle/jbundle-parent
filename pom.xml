@@ -44,11 +44,13 @@
     <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
     <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
 
-    <!-- OBRRepositoryIndex>jbundle-snapshot-obr.xml</OBRRepositoryIndex -->    <!-- Doesn't work for snapshots - turn it off and use bindex -->
-    <OBRRepositoryIndex>NONE</OBRRepositoryIndex>   <!-- Set to NONE if not used -->
+    <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex>
+    <!-- OBRRepositoryIndex>NONE</OBRRepositoryIndex -->   <!-- Set to NONE if not used -->
     <OBRRepositoryIndexURL>${project.organization.url}/${OBRRepositoryIndex}</OBRRepositoryIndexURL>    <!-- Full URL to the repository ? This SHOULD be the same as the OBRRepositoryIndex in the manifest -->
     <jbundleScmPath>jbundle-parent</jbundleScmPath>
-
+    <jbundle.obr.path>/jbundle/jbundle/config/obr/target/classes</jbundle.obr.path>
+    <jbundle.obr.deploy>${jbundle.workspace}${jbundle.obr.path}</jbundle.obr.deploy>
+    
     <jbundlePackage>${project.artifactId}</jbundlePackage>  <!-- artifactId is usually the package -->
     <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>    <!-- All packages in this filter and beyond -->
     <jbundlePackageExport>${jbundlePackageFilter};version=${project.version}</jbundlePackageExport> <!-- Bundle package to export -->
@@ -112,7 +114,7 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <OBRRepositoryIndex>jbundle-repository.xml</OBRRepositoryIndex> <!-- Set to NONE if not used -->
+        <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex> <!-- Set to NONE if not used -->
         <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
         <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
         <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
@@ -184,7 +186,7 @@
       <prefixUrl>${publicReleaseRepository}</prefixUrl>
       <remoteOBR>${OBRRepositoryIndex}</remoteOBR>
       <!-- The obr is copied to the site root in the jbundle-site project -->
-      <altDeploymentRepository>local-file::default::file:///${jbundle.workspace}/bin/obr</altDeploymentRepository>
+      <altDeploymentRepository>local-file::default::file:///${jbundle.obr.deploy}</altDeploymentRepository>
           <!--
         repository name (not file name or path, although remoteOBR defaults to this)
         - careful, this doesn't work for snapshots becuase the filename has the -xxxxx-xxx extension
