@@ -44,12 +44,11 @@
     <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
     <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
 
-    <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex>
-    <!-- OBRRepositoryIndex>NONE</OBRRepositoryIndex -->   <!-- Set to NONE if not used -->
-    <OBRRepositoryIndexURL>${project.organization.url}/${OBRRepositoryIndex}</OBRRepositoryIndexURL>    <!-- Full URL to the repository ? This SHOULD be the same as the OBRRepositoryIndex in the manifest -->
-    <jbundleScmPath>jbundle-parent</jbundleScmPath>
-    <jbundle.obr.path>/jbundle/jbundle/config/obr/target/classes</jbundle.obr.path>
-    <jbundle.obr.deploy>${jbundle.workspace}${jbundle.obr.path}</jbundle.obr.deploy>
+    <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
+    <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
+    <projectName>jbundle-parent</projectName>
+    <!-- obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/src/main/resources/obr</obrDeploy --> <!-- Local -->
+    <obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy> <!-- Remote -->
     
     <jbundlePackage>${project.artifactId}</jbundlePackage>  <!-- artifactId is usually the package -->
     <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>    <!-- All packages in this filter and beyond -->
@@ -114,7 +113,6 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <OBRRepositoryIndex>repository.xml</OBRRepositoryIndex> <!-- Set to NONE if not used -->
         <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
         <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
         <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
@@ -183,27 +181,10 @@
         <artifactId>maven-bundle-plugin</artifactId>
         <extensions>true</extensions>
         <configuration>
-      <prefixUrl>${publicReleaseRepository}</prefixUrl>
-      <remoteOBR>${OBRRepositoryIndex}</remoteOBR>
-      <!-- The obr is copied to the site root in the jbundle-site project -->
-      <altDeploymentRepository>local-file::default::file:///${jbundle.obr.deploy}</altDeploymentRepository>
-          <!--
-        repository name (not file name or path, although remoteOBR defaults to this)
-        - careful, this doesn't work for snapshots becuase the filename has the -xxxxx-xxx extension
-      <remoteOBR>${OBRRepositoryIndex}</remoteOBR > < Please update the remote OBR at root location, repository.xml >
-        The filename of the remote obj (uses name if blank)
-      <obrRepository>sonatype-nexus-staging::obr::file://home/don/temp/snapshot-obr</obrRepository>
-        optional public URL prefix for the remote repository
-      <prefixUrl>http://releases.jbundle.org:8081/nexus/content/repositories/snapshot-prefix</prefixUrl>
-        optional public URL where the bundle has been deployed
-      <bundleUrl>http://releases.jbundle.org:8081/nexus/content/repositories/snapshot-obr/${project.artifact}</bundleUrl>
-          By default, deploys to the snapshot/release repository in distribution mgmt, else goes here
-      <altDeploymentRepository>sonatype-nexus-staging::obr::file://releases.jbundle.org:8081/nexus/content/repositories/snapshot-alt</altDeploymentRepository>
-        This ends up in the manifest as is
-      <obrRepository>http://snapshots.jbundle.org:8081/nexus/content/repositories/snapshot-obr</obrRepository>
-        optional OBR specific deployment repository.
-      <obrDeploymentRepository>sonatype-nexus-staging::obr::http://snapshots.jbundle.org:8081/nexus/content/repositories/snapshot-obr-deploy</obrDeploymentRepository>
-      -->
+          <prefixUrl>${publicReleaseRepository}</prefixUrl>
+          <remoteOBR>${remoteOBRName}</remoteOBR> <!-- The filename of the remote obj (NONE if not used) -->
+          <obrDeploymentRepository>${obrDeploy}</obrDeploymentRepository>   <!-- The location to deploy obr xml file -->
+          <!-- bundleUrl>${publicReleaseRepository}/${groupPath}/${project.artifact}</bundleUrl --> <!-- Location of this bundle -->
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName> <!-- This is better name than the package -->
