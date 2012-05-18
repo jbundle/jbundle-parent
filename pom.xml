@@ -87,7 +87,7 @@
 
     <tourappVersionRange>[0.8.0-SNAPSHOT,0.9.0-SNAPSHOT)</tourappVersionRange>
     
-    <jibxVersion>1.2.4.2</jibxVersion>
+    <jibxVersion>1.2.4.5</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
     <otaVersion>1.1.0</otaVersion>
     <base64coderVersion>2010-12-19</base64coderVersion>
