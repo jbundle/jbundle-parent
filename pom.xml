@@ -47,8 +47,8 @@
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <projectName>jbundle-parent</projectName>
-    <!-- obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/src/main/resources/obr</obrDeploy --> <!-- Local -->
-    <obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy> <!-- Remote -->
+    <obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
+    <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
     
     <jbundlePackage>${project.artifactId}</jbundlePackage>  <!-- artifactId is usually the package -->
     <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>    <!-- All packages in this filter and beyond -->
@@ -64,28 +64,40 @@
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
     <jbundleJcalendarbuttonVersion>1.6.0</jbundleJcalendarbuttonVersion>
-    <jbundleJcalendarbuttonVersionRange>[1.6.0,1.7.0)</jbundleJcalendarbuttonVersionRange>
+    <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},1.7.0)</jbundleJcalendarbuttonVersionRange>
     <jbundleUtilVersion>2.0.1</jbundleUtilVersion>
-    <jbundleUtilVersionRange>[2.0.0,2.1.0)</jbundleUtilVersionRange>
+    <jbundleUtilVersionRange>[${jbundleUtilVersion},2.1.0)</jbundleUtilVersionRange>
     <jbundleUtilMuffinmanagerVersion>${jbundleUtilVersion}</jbundleUtilMuffinmanagerVersion>
     <jbundleUtilMuffinmanagerVersionRange>${jbundleUtilVersionRange}</jbundleUtilMuffinmanagerVersionRange>
-    <jbundleUtilWsdlVersionRange>[1.0.0,1.1.0)</jbundleUtilWsdlVersionRange>
+    <jbundleUtilWsdlVersion>1.0.0</jbundleUtilWsdlVersion>
+    <jbundleUtilWsdlVersionRange>[${jbundleUtilWsdlVersion},1.1.0)</jbundleUtilWsdlVersionRange>
     <jbundleCalendarpanelVersion>1.1.0</jbundleCalendarpanelVersion>
-    <jbundleCalendarpanelVersionRange>[1.1.0,1.2.0)</jbundleCalendarpanelVersionRange>
+    <jbundleCalendarpanelVersionRange>[${jbundleCalendarpanelVersion},1.2.0)</jbundleCalendarpanelVersionRange>
 
+    <jbundleMiscVersion>0.8.0</jbundleMiscVersion>
+    <jbundleOtherVersion>0.7.7</jbundleOtherVersion>
+    <jbundleUtilOtherVersion>0.7.6</jbundleUtilOtherVersion>
+    <jbundleUtilBiorhythmVersion>0.8.1</jbundleUtilBiorhythmVersion>
+    
     <jbundleOsgiVersion>1.5.2</jbundleOsgiVersion>
-    <jbundleOsgiVersionRange>[1.5.2,1.6.0)</jbundleOsgiVersionRange>
-    <jbundleUtilWebappVersionRange>[1.2.1,1.3.0)</jbundleUtilWebappVersionRange>
-    <jbundleOsgiWebStartVersionRange>[1.5.0,1.6.0)</jbundleOsgiWebStartVersionRange>
+    <jbundleOsgiVersionRange>[${jbundleOsgiVersion},1.6.0)</jbundleOsgiVersionRange>
+    <jbundleUtilWebappVersion>1.2.1</jbundleUtilWebappVersion>
+    <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.3.0)</jbundleUtilWebappVersionRange>
+    <jbundleOsgiWebStartVersion>1.5.1</jbundleOsgiWebStartVersion>
+    <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.6.0)</jbundleOsgiWebStartVersionRange>
+    
+    <jbundleVersion>0.8.0</jbundleVersion>
+    <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
 
-    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
-    <jbundleVersionRange>[0.8.0-SNAPSHOT,0.9.0-SNAPSHOT)</jbundleVersionRange>
-
-    <jbundleAppContactVersionRange>[1.0.0-SNAPSHOT,1.1.0-SNAPSHOT)</jbundleAppContactVersionRange>
-    <jbundleAppPictureVersionRange>[0.7.8-SNAPSHOT,0.8.0-SNAPSHOT)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersionRange>[0.7.8-SNAPSHOT,0.8.0-SNAPSHOT)</jbundleAppDanceVersionRange>
-
-    <tourappVersionRange>[0.8.0-SNAPSHOT,0.9.0-SNAPSHOT)</tourappVersionRange>
+    <jbundleAppContactVersion>1.0.0</jbundleAppContactVersion>
+    <jbundleAppPictureVersion>0.7.8</jbundleAppPictureVersion>
+    <jbundleAppDanceVersion>0.7.8</jbundleAppDanceVersion>
+    <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0)</jbundleAppContactVersionRange>
+    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
+    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
+    
+    <tourappVersion>0.8.0</tourappVersion>
+    <tourappVersionRange>[${tourappVersion},0.9.0)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
     <jibxSchemaVersion>1.0.0</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
