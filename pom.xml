@@ -79,11 +79,11 @@
     <jbundleUtilOtherVersion>0.7.6</jbundleUtilOtherVersion>
     <jbundleUtilBiorhythmVersion>0.8.1</jbundleUtilBiorhythmVersion>
     
-    <jbundleOsgiVersion>1.5.2</jbundleOsgiVersion>
-    <jbundleOsgiVersionRange>[${jbundleOsgiVersion},1.6.0)</jbundleOsgiVersionRange>
-    <jbundleUtilWebappVersion>1.2.1</jbundleUtilWebappVersion>
+    <jbundleOsgiVersion>2.0.0-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiVersionRange>[${jbundleOsgiVersion},2.1.0)</jbundleOsgiVersionRange>
+    <jbundleUtilWebappVersion>1.2.2-SNAPSHOT</jbundleUtilWebappVersion>
     <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.3.0)</jbundleUtilWebappVersionRange>
-    <jbundleOsgiWebStartVersion>1.5.1</jbundleOsgiWebStartVersion>
+    <jbundleOsgiWebStartVersion>1.5.2-SNAPSHOT</jbundleOsgiWebStartVersion>
     <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.6.0)</jbundleOsgiWebStartVersionRange>
     
     <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
