@@ -13,7 +13,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.1.8-SNAPSHOT</version>
+  <version>1.1.8</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
