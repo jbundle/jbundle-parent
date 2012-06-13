@@ -84,18 +84,18 @@
     <jbundleOsgiWebStartVersion>1.6.0</jbundleOsgiWebStartVersion>
     <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
     
-    <jbundleVersion>0.8.0</jbundleVersion>
-    <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
+    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
+    <jbundleVersionRange>[${jbundleVersion},0.9.0-SNAPSHOT)</jbundleVersionRange>
 
-    <jbundleAppContactVersion>1.0.0</jbundleAppContactVersion>
-    <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0)</jbundleAppContactVersionRange>
-    <jbundleAppPictureVersion>0.7.8</jbundleAppPictureVersion>
-    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersion>0.7.8</jbundleAppDanceVersion>
-    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
+    <jbundleAppContactVersion>1.0.0-SNAPSHOT</jbundleAppContactVersion>
+    <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0-SNAPSHOT)</jbundleAppContactVersionRange>
+    <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
+    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0-SNAPSHOT)</jbundleAppPictureVersionRange>
+    <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
+    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0-SNAPSHOT)</jbundleAppDanceVersionRange>
     
-    <tourappVersion>0.8.0</tourappVersion>
-    <tourappVersionRange>[${tourappVersion},0.9.0)</tourappVersionRange>
+    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
+    <tourappVersionRange>[${tourappVersion},0.9.0-SNAPSHOT)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
     <jibxSchemaVersion>1.0.4</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
