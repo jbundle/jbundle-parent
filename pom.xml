@@ -13,7 +13,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.2.1-SNAPSHOT</version>
+  <version>1.2.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -80,9 +80,9 @@
     <jbundleOsgiVersion>2.0.1</jbundleOsgiVersion>
     <jbundleOsgiVersionRange>[${jbundleOsgiVersion},2.1.0)</jbundleOsgiVersionRange>
     <jbundleUtilWebappVersion>1.3.0</jbundleUtilWebappVersion>
-    <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.3.0)</jbundleUtilWebappVersionRange>
+    <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.4.0)</jbundleUtilWebappVersionRange>
     <jbundleOsgiWebStartVersion>1.6.0</jbundleOsgiWebStartVersion>
-    <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.6.0)</jbundleOsgiWebStartVersionRange>
+    <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
     
     <jbundleVersion>0.8.0</jbundleVersion>
     <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
