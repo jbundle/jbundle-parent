@@ -110,7 +110,7 @@
     <pluginVersion>${java.specification.version}</pluginVersion>
 
     <dojoVersion>1.7.2</dojoVersion>
-    <httpclientVersion>4.1.3</httpclientVersion>
+    <httpclientVersion>4.2</httpclientVersion>
     <tomcat-catalinaVersion>7.0.27</tomcat-catalinaVersion>
     <j2eeVersion>6</j2eeVersion>
     <mailVersion>1.4.5</mailVersion>
@@ -261,7 +261,7 @@
       <plugin>
         <groupId>org.codehaus.mojo</groupId>
         <artifactId>exec-maven-plugin</artifactId>
-        <version>1.2</version>
+        <version>1.2.1</version>
       </plugin>
       <plugin>
         <groupId>org.codehaus.mojo.webstart</groupId>
@@ -435,7 +435,7 @@
     <dependency>
       <groupId>log4j</groupId>
       <artifactId>log4j</artifactId>
-      <version>1.2.16</version>
+      <version>1.2.17</version>
     </dependency>
     <dependency>
       <!-- groupId>org.codehaus.mojo.webstart</groupId>
