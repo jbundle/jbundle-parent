@@ -77,25 +77,25 @@
     <jbundleUtilOtherVersion>0.7.6</jbundleUtilOtherVersion>
     <jbundleUtilBiorhythmVersion>0.8.1</jbundleUtilBiorhythmVersion>
     
-    <jbundleOsgiVersion>2.0.2-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiVersion>2.0.2</jbundleOsgiVersion>
     <jbundleOsgiVersionRange>[${jbundleOsgiVersion},2.1.0)</jbundleOsgiVersionRange>
     <jbundleUtilWebappVersion>1.3.0</jbundleUtilWebappVersion>
     <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.4.0)</jbundleUtilWebappVersionRange>
     <jbundleOsgiWebStartVersion>1.6.0</jbundleOsgiWebStartVersion>
     <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
     
-    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
-    <jbundleVersionRange>[${jbundleVersion},0.9.0-SNAPSHOT)</jbundleVersionRange>
+    <jbundleVersion>0.8.0</jbundleVersion>
+    <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
 
-    <jbundleAppContactVersion>1.0.0-SNAPSHOT</jbundleAppContactVersion>
-    <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0-SNAPSHOT)</jbundleAppContactVersionRange>
-    <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
-    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0-SNAPSHOT)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
-    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0-SNAPSHOT)</jbundleAppDanceVersionRange>
+    <jbundleAppContactVersion>1.0.0</jbundleAppContactVersion>
+    <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0)</jbundleAppContactVersionRange>
+    <jbundleAppPictureVersion>0.7.8</jbundleAppPictureVersion>
+    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
+    <jbundleAppDanceVersion>0.7.8</jbundleAppDanceVersion>
+    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
     
-    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
-    <tourappVersionRange>[${tourappVersion},0.9.0-SNAPSHOT)</tourappVersionRange>
+    <tourappVersion>0.8.0</tourappVersion>
+    <tourappVersionRange>[${tourappVersion},0.9.0)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
     <jibxSchemaVersion>1.0.4</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
@@ -142,8 +142,8 @@
 
   <scm>
     <url>https://github.com/jbundle/jbundle-parent</url>
-    <connection>scm:git:git://github.com/jbundle/jbundle-parent.git</connection>
-    <developerConnection>scm:git:git@github.com:jbundle/jbundle-parent.git</developerConnection>
+    <connection>scm:git:https://github.com/jbundle/jbundle-parent.git</connection>
+    <developerConnection>scm:git:https://github.com/jbundle/jbundle-parent.git</developerConnection>
   </scm>
 
   <ciManagement>
