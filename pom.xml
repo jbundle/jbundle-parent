@@ -4,7 +4,7 @@
 
   <!-- ***** NOTE: ******
   Before Releasing, remove all -SNAPSHOTs from properties (put them back afterwards)
-   *********** -->
+   ********** -->
   <parent>
     <artifactId>oss-parent</artifactId>
     <groupId>org.sonatype.oss</groupId>
