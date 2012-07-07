@@ -94,6 +94,9 @@
     <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
     <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0-SNAPSHOT)</jbundleAppDanceVersionRange>
     
+    <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
+    <jbundleAndroidVersionRange>[${jbundleAndroidVersion},1.1.0-SNAPSHOT)</jbundleAndroidVersionRange>
+
     <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
     <tourappVersionRange>[${tourappVersion},0.9.0-SNAPSHOT)</tourappVersionRange>
     
@@ -114,6 +117,8 @@
     <tomcat-catalinaVersion>7.0.27</tomcat-catalinaVersion>
     <j2eeVersion>6</j2eeVersion>
     <mailVersion>1.4.5</mailVersion>
+    <androidVersion>4.0.3_r3</androidVersion>
+    <androidMinVersion>4.0.3_r3</androidMinVersion>
     
     <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
