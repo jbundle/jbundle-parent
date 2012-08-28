@@ -113,8 +113,8 @@
     <pluginVersion>${java.specification.version}</pluginVersion>
 
     <dojoVersion>1.7.2</dojoVersion>
-    <httpclientVersion>4.2</httpclientVersion>
-    <tomcat-catalinaVersion>7.0.27</tomcat-catalinaVersion>
+    <httpclientVersion>4.2.1</httpclientVersion>
+    <tomcat-catalinaVersion>7.0.29</tomcat-catalinaVersion>
     <j2eeVersion>6</j2eeVersion>
     <mailVersion>1.4.5</mailVersion>
     <androidVersion>4.0.3_r3</androidVersion>
@@ -231,7 +231,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-site-plugin</artifactId>
-            <version>3.0-beta-3</version>
+            <version>3.1</version>
         </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -462,7 +462,7 @@
     <dependency>     <!-- **** NOTE: This should be a 'runtime' dependency! Fix your code ***** -->
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.20</version>
+      <version>5.1.21</version>
     </dependency>
     <dependency>
         <groupId>org.apache.derby</groupId>
