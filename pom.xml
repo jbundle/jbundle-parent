@@ -45,7 +45,7 @@
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <projectName>jbundle-parent</projectName>
-    <obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
+    <obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
     <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
     
     <jbundlePackage>${project.artifactId}</jbundlePackage>  <!-- artifactId is usually the package -->
