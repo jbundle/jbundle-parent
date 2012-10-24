@@ -47,19 +47,12 @@
     <projectName>jbundle-parent</projectName>
     <obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
     <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
-    
+
     <jbundlePackage>${project.artifactId}</jbundlePackage>  <!-- artifactId is usually the package -->
     <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>    <!-- All packages in this filter and beyond -->
     <jbundlePackageExport>${jbundlePackageFilter};version=${project.version}</jbundlePackageExport> <!-- Bundle package to export -->
     <jbundlePackageImport>*;resolution:=optional</jbundlePackageImport>
     <jbundleMainClass>org.jbundle.Main</jbundleMainClass>
-
-    <!-- Move these to settings -->
-    <jbundle.workspace>${user.home}/workspace/workspace</jbundle.workspace>
-    <jbundle.policyfile>${jbundle.workspace}/workspace/tourapp-root/bin/policy/policy.all</jbundle.policyfile>
-    <jbundle.server>linux-laptop</jbundle.server>
-    <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
-    <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
     <jbundleJcalendarbuttonVersion>1.6.0</jbundleJcalendarbuttonVersion>
     <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},1.7.0)</jbundleJcalendarbuttonVersionRange>
@@ -122,7 +115,18 @@
     
     <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
-    <databaseproduct></databaseproduct>
+
+    <!-- Move these to settings -->
+    <jbundle.workspace>${user.home}/workspace/workspace</jbundle.workspace>
+    <jbundle.policyfile>${jbundle.workspace}/workspace/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle.policyfile>
+    <jbundle.server>localhost</jbundle.server>
+    <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
+    <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
+
+    <jbundle.db.databaseproduct></jbundle.db.databaseproduct>
+    <jbundle.db.local>Client</jbundle.db.local>
+    <jbundle.db.remote>Client</jbundle.db.remote>
+    <jbundle.db.table>Net</jbundle.db.table>
   </properties>
   
   <profiles>
