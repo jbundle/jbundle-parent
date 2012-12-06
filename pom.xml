@@ -99,15 +99,14 @@
     <base64coderVersion>2010-12-19</base64coderVersion>
     <tycho-version>0.11.0</tycho-version>
     <osgi.version>4.2.0</osgi.version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
-    <felix.bundlerepository.version>1.6.4</felix.bundlerepository.version> <!-- See all the exclusions under the bundlerespository dependency -->
+    <felix.bundlerepository.version>1.6.6</felix.bundlerepository.version> <!-- See all the exclusions under the bundlerespository dependency -->
     <jnlp-servlet.version>1.0-6.0.02_ea_b02.1</jnlp-servlet.version>
 
     <javawsVersion>${java.specification.version}</javawsVersion>
     <pluginVersion>${java.specification.version}</pluginVersion>
-
-    <dojoVersion>1.7.2</dojoVersion>
-    <httpclientVersion>4.2.1</httpclientVersion>
-    <tomcat-catalinaVersion>7.0.32</tomcat-catalinaVersion>
+    <dojoVersion>1.8.1</dojoVersion>
+    <httpclientVersion>4.2.2</httpclientVersion>
+    <tomcat-catalinaVersion>7.0.33</tomcat-catalinaVersion>
     <j2eeVersion>6</j2eeVersion>
     <mailVersion>1.4.5</mailVersion>
     <androidVersion>4.0.3_r3</androidVersion>
@@ -453,7 +452,7 @@
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.10</version>
+      <version>4.11</version>
     </dependency>
     <dependency>
       <groupId>log4j</groupId>
@@ -475,7 +474,7 @@
     <dependency>     <!-- **** NOTE: This should be a 'runtime' dependency! Fix your code ***** -->
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.21</version>
+      <version>5.1.22</version>
     </dependency>
     <dependency>
         <groupId>org.apache.derby</groupId>
