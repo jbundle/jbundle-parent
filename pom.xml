@@ -13,7 +13,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.2.4-SNAPSHOT</version>
+  <version>1.2.4</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -125,14 +125,14 @@
     <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
 
-    <jbundle.db.databaseproduct></jbundle.db.databaseproduct>
+    <jbundle.db.databaseproduct />
     <jbundle.db.local>Client</jbundle.db.local>
     <jbundle.db.remote>Client</jbundle.db.remote>
     <jbundle.db.table>Net</jbundle.db.table>
 
-    <record></record>
-    <screen></screen>
-    <menu></menu>
+    <record />
+    <screen />
+    <menu />
     
     <documentationSite>http://www.jbundle.org</documentationSite>
     <documentationPath>web</documentationPath>
