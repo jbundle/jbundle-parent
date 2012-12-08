@@ -94,7 +94,7 @@
     <tourappVersionRange>[${tourappVersion},0.9.0-SNAPSHOT)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
-    <jibxSchemaVersion>1.0.6</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
+    <jibxSchemaVersion>1.0.8</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
     <otaVersion>1.1.0</otaVersion>
     <base64coderVersion>2010-12-19</base64coderVersion>
     <tycho-version>0.11.0</tycho-version>
@@ -542,13 +542,13 @@
        <version>${base64coderVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.jibx.schema.org.opentravel._2011B</groupId>
-      <artifactId>org.jibx.schema.org.opentravel._2011B.ping</artifactId>
+      <groupId>org.jibx.schema.org.opentravel._2012A</groupId>
+      <artifactId>org.jibx.schema.org.opentravel._2012A.ping</artifactId>
       <version>${jibxSchemaVersion}</version>
     </dependency>
     <dependency>
-      <groupId>org.jibx.schema.org.opentravel._2011B</groupId>
-      <artifactId>org.jibx.schema.org.opentravel._2011B.hotel</artifactId>
+      <groupId>org.jibx.schema.org.opentravel._2012A</groupId>
+      <artifactId>org.jibx.schema.org.opentravel._2012A.hotel</artifactId>
       <version>${jibxSchemaVersion}</version>
     </dependency>
     <dependency>
