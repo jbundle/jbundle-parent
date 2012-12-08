@@ -77,23 +77,23 @@
     <jbundleOsgiWebStartVersion>1.6.1</jbundleOsgiWebStartVersion>
     <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
     
-    <jbundleVersion>0.8.0</jbundleVersion>
+    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
     <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
 
-    <jbundleAppContactVersion>1.0.0</jbundleAppContactVersion>
+    <jbundleAppContactVersion>1.0.0-SNAPSHOT</jbundleAppContactVersion>
     <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0)</jbundleAppContactVersionRange>
-    <jbundleAppPictureVersion>0.7.8</jbundleAppPictureVersion>
+    <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
     <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersion>0.7.8</jbundleAppDanceVersion>
+    <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
     <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
     
-    <jbundleAndroidVersion>1.0.0</jbundleAndroidVersion>
+    <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
     <jbundleAndroidVersionRange>[${jbundleAndroidVersion},1.1.0)</jbundleAndroidVersionRange>
     <jbundleJavaFXVersion>1.0.0</jbundleJavaFXVersion>
     <jbundleJavaFXVersionRange>[${jbundleJavaFXVersion},1.1.0)</jbundleJavaFXVersionRange>
     <javaFXVersion>2.1</javaFXVersion>
 
-    <tourappVersion>0.8.0</tourappVersion>
+    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
     <tourappVersionRange>[${tourappVersion},0.9.0)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
