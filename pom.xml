@@ -89,6 +89,9 @@
     
     <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
     <jbundleAndroidVersionRange>[${jbundleAndroidVersion},1.1.0-SNAPSHOT)</jbundleAndroidVersionRange>
+    <jbundleJavaFXVersion>1.0.0-SNAPSHOT</jbundleJavaFXVersion>
+    <jbundleJavaFXVersionRange>[${jbundleJavaFXVersion},1.1.0-SNAPSHOT)</jbundleJavaFXVersionRange>
+    <javaFXVersion>2.1</javaFXVersion>
 
     <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
     <tourappVersionRange>[${tourappVersion},0.9.0-SNAPSHOT)</tourappVersionRange>
