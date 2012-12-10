@@ -120,25 +120,36 @@
 
     <!-- Move these to settings -->
     <jbundle.workspace>${user.home}/workspace/workspace</jbundle.workspace>
-    <jbundle.policyfile>${jbundle.workspace}/workspace/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle.policyfile>
-    <jbundle.server>localhost</jbundle.server>
-    <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
-    <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
+    <jbundle.policyfile>${jbundle.workspace}/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle.policyfile>
 
+    <documentationSite>http://www.jbundle.org</documentationSite>
+    <documentationPath>web</documentationPath>
+    <documentationURL>scp:/${documentationSite}://${documentationPath}</documentationURL>
+
+    <!-- Runtime parameter (dot notation is okay) -->
     <jbundle.db.databaseproduct />
     <jbundle.db.local>Client</jbundle.db.local>
     <jbundle.db.remote>Client</jbundle.db.remote>
     <jbundle.db.table>Net</jbundle.db.table>
 
-    <record />
-    <screen />
-    <menu />
-    
-    <documentationSite>http://www.jbundle.org</documentationSite>
-    <documentationPath>web</documentationPath>
-    <documentationURL>scp:/${documentationSite}://${documentationPath}</documentationURL>
+    <record></record>
+    <screen></screen>
+    <menu></menu>
+
+    <systemname>${projectname}</systemname>
+    <jbundle.db.local>Client</jbundle.db.local>
+    <jbundle.db.remote>Client</jbundle.db.remote>
+    <jbundle.db.table>Client</jbundle.db.table>
+    <jbundle.connectiontype>Proxy</jbundle.connectiontype>
+    <jbundle.server></jbundle.server>
+    <jbundle.codebase></jbundle.codebase>
+    <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
+    <jbundle.mode></jbundle.mode>
+    <jbundle.jmsserver>false</jbundle.jmsserver>
+    <jbundle.backgroundcolor>#EEEEFF</jbundle.backgroundcolor>
+    <jbundle.background>backgrounds/worldmapalpha.gif</jbundle.background>
   </properties>
-  
+    
   <profiles>
     <profile> 
       <id>sonatype-oss-release</id>
@@ -150,6 +161,31 @@
         <publicReleaseRepository>http://repo.maven.apache.org/maven2</publicReleaseRepository>
       </properties>
     </profile>
+    
+    <profile>
+        <id>localdev</id>   <!-- Used with exec:java for local development -->
+        <properties>
+            <jbundle.db.local>Jdbc</jbundle.db.local>
+            <jbundle.db.remote>Jdbc</jbundle.db.remote>
+            <jbundle.db.table>Jdbc</jbundle.db.table>
+            <jbundle.mode>dev</jbundle.mode>
+        </properties>
+    </profile>
+    <profile>
+        <id>remotedev</id>
+        <properties>
+            <jbundle.mode>dev</jbundle.mode>
+        </properties>
+    </profile>
+    <profile>
+        <id>localrun</id>
+        <properties>
+            <jbundle.db.local>Jdbc</jbundle.db.local>
+            <jbundle.db.remote>Jdbc</jbundle.db.remote>
+            <jbundle.db.table>Jdbc</jbundle.db.table>
+        </properties>
+    </profile>
+
   </profiles>
 
   <licenses>
@@ -308,7 +344,41 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>2.4</version>
       </plugin>
-      </plugins>
+
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <executions>
+              <execution>
+                  <phase>run</phase>
+                  <goals>
+                      <goal>exec</goal>
+                  </goals>
+              </execution>
+          </executions>
+          <configuration>
+              <mainClass>org.jbundle.Main</mainClass>
+              <arguments>
+                  <argument>background=${jbundle.background}</argument>
+                  <argument>backgroundcolor=${jbundle.backgroundcolor}</argument>
+                  <argument>jmsserver=${jbundle.jmsserver}</argument>
+                  <argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
+                  <argument>local=${jbundle.db.local}</argument>
+                  <argument>remote=${jbundle.db.remote}</argument>
+                  <argument>table=${jbundle.db.table}</argument>
+                  <argument>systemname=${systemname}</argument>
+                  <argument>mode=${jbundle.mode}</argument>
+                  <argument>record=${record}</argument>
+                  <argument>screen=${screen}</argument>
+                  <argument>menu=${menu}</argument>
+                  <argument>connectionType=${jbundle.connectiontype}</argument>
+                  <argument>remotehost=${jbundle.server}</argument>
+                  <argument>codebase=${jbundle.codebase}</argument>
+              </arguments>
+          </configuration>
+      </plugin>
+
+     </plugins>
     </pluginManagement>
 
     <extensions> 
