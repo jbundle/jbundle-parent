@@ -141,11 +141,11 @@
     <jbundle.db.remote>Client</jbundle.db.remote>
     <jbundle.db.table>Client</jbundle.db.table>
     <jbundle.connectiontype>Proxy</jbundle.connectiontype>
-    <jbundle.server></jbundle.server>
-    <jbundle.codebase></jbundle.codebase>
+    <jbundle.server>localhost</jbundle.server>
+    <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
     <jbundle.mode></jbundle.mode>
-    <jbundle.jmsserver>false</jbundle.jmsserver>
+    <jbundle.messageserver>false</jbundle.messageserver>
     <jbundle.backgroundcolor>#EEEEFF</jbundle.backgroundcolor>
     <jbundle.background>backgrounds/worldmapalpha.gif</jbundle.background>
   </properties>
@@ -163,23 +163,15 @@
     </profile>
     
     <profile>
-        <id>localdev</id>   <!-- Used with exec:java for local development -->
-        <properties>
-            <jbundle.db.local>Jdbc</jbundle.db.local>
-            <jbundle.db.remote>Jdbc</jbundle.db.remote>
-            <jbundle.db.table>Jdbc</jbundle.db.table>
-            <jbundle.mode>dev</jbundle.mode>
-        </properties>
-    </profile>
-    <profile>
-        <id>remotedev</id>
+        <id>dev</id>   <!-- Used with exec:java for local development -->
         <properties>
             <jbundle.mode>dev</jbundle.mode>
         </properties>
     </profile>
     <profile>
-        <id>localrun</id>
+        <id>local</id>
         <properties>
+            <jbundle.server></jbundle.server>
             <jbundle.db.local>Jdbc</jbundle.db.local>
             <jbundle.db.remote>Jdbc</jbundle.db.remote>
             <jbundle.db.table>Jdbc</jbundle.db.table>
@@ -361,7 +353,7 @@
               <arguments>
                   <argument>background=${jbundle.background}</argument>
                   <argument>backgroundcolor=${jbundle.backgroundcolor}</argument>
-                  <argument>jmsserver=${jbundle.jmsserver}</argument>
+                  <argument>messageserver=${jbundle.messageserver}</argument>
                   <argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
                   <argument>local=${jbundle.db.local}</argument>
                   <argument>remote=${jbundle.db.remote}</argument>
