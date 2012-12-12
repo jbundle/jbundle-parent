@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <!-- ***** NOTE: ******
-  Before Releasing, remove all -SNAPSHOTs from properties (put them back afterwards)
+  Before Releasing, remove all -SNAPSHOTs from properties (put them back afterwards). Also set all archetype poms to the release version
    ********** -->
   <parent>
     <artifactId>oss-parent</artifactId>
