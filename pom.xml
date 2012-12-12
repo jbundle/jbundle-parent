@@ -177,7 +177,31 @@
             <jbundle.db.table>Jdbc</jbundle.db.table>
         </properties>
     </profile>
-
+    <profile>
+        <id>tour</id>
+        <properties>
+            <systemname>tour</systemname>
+        </properties>
+    </profile>
+    <profile>
+        <id>app</id>
+        <properties>
+            <systemname>app</systemname>
+        </properties>
+    </profile>
+        <profile>
+        <id>test</id>
+        <properties>
+            <systemname>test</systemname>
+        </properties>
+    </profile>
+        <profile>
+        <id>base</id>
+        <properties>
+            <systemname>base</systemname>
+        </properties>
+    </profile>
+        
   </profiles>
 
   <licenses>
