@@ -36,11 +36,16 @@
   </developers>
 
   <properties>
-    <releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
+    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
+    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
+    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
+    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
+    <publicReleaseRepository>http://repo.maven.apache.org/maven2</publicReleaseRepository>
+    <!-- releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
     <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
     <publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
     <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
-    <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository>
+    <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository -->
 
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
@@ -80,8 +85,8 @@
     <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
     <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
 
-    <jbundleAppContactVersion>1.0.0-SNAPSHOT</jbundleAppContactVersion>
-    <jbundleAppContactVersionRange>[${jbundleAppContactVersion},1.1.0)</jbundleAppContactVersionRange>
+    <jbundleAppOfficeVersion>1.0.0-SNAPSHOT</jbundleAppOfficeVersion>
+    <jbundleAppOfficeVersionRange>[${jbundleAppOfficeVersion},1.1.0)</jbundleAppOfficeVersionRange>
     <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
     <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
     <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
@@ -154,10 +159,10 @@
     <profile> 
       <id>sonatype-oss-release</id>
       <properties>
-        <releaseRepository>http://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-        <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
-        <publicRepository>http://oss.sonatype.org/content/groups/public</publicRepository>
-        <stagingRepository>http://oss.sonatype.org/content/groups/staging</stagingRepository>
+        <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
+        <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
+        <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
+        <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
         <publicReleaseRepository>http://repo.maven.apache.org/maven2</publicReleaseRepository>
       </properties>
     </profile>
