@@ -92,6 +92,8 @@
     <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
     <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
     
+    <jbundleSwingVersion>1.0.0-SNAPSHOT</jbundleSwingVersion>
+    <jbundleSwingVersionRange>[${jbundleSwingVersion},1.1.0)</jbundleSwingVersionRange>
     <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
     <jbundleAndroidVersionRange>[${jbundleAndroidVersion},1.1.0)</jbundleAndroidVersionRange>
     <jbundleJavaFXVersion>1.0.0</jbundleJavaFXVersion>
