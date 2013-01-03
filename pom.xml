@@ -152,7 +152,7 @@
     <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
     <jbundle.mode></jbundle.mode>
-    <jbundle.messageserver>false</jbundle.messageserver>
+    <jbundle.messageserver></jbundle.messageserver>	<!-- (remote) -->
     <jbundle.backgroundcolor>#EEEEFF</jbundle.backgroundcolor>
     <jbundle.background>backgrounds/worldmapalpha.gif</jbundle.background>
   </properties>
@@ -182,6 +182,7 @@
             <jbundle.db.local>Jdbc</jbundle.db.local>
             <jbundle.db.remote>Jdbc</jbundle.db.remote>
             <jbundle.db.table>Jdbc</jbundle.db.table>
+	    <jbundle.messageserver>local</jbundle.messageserver>
         </properties>
     </profile>
     <profile>
