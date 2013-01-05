@@ -61,7 +61,7 @@
 
     <jbundleJcalendarbuttonVersion>1.6.0</jbundleJcalendarbuttonVersion>
     <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},1.7.0)</jbundleJcalendarbuttonVersionRange>
-    <jbundleUtilVersion>2.0.1</jbundleUtilVersion>
+    <jbundleUtilVersion>2.0.2</jbundleUtilVersion>
     <jbundleUtilVersionRange>[${jbundleUtilVersion},2.1.0)</jbundleUtilVersionRange>
     <jbundleUtilMuffinmanagerVersion>${jbundleUtilVersion}</jbundleUtilMuffinmanagerVersion>
     <jbundleUtilMuffinmanagerVersionRange>${jbundleUtilVersionRange}</jbundleUtilMuffinmanagerVersionRange>
@@ -82,25 +82,25 @@
     <jbundleOsgiWebStartVersion>1.6.1</jbundleOsgiWebStartVersion>
     <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
     
-    <jbundleVersion>0.8.0</jbundleVersion>
+    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
     <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
 
-    <jbundleAppOfficeVersion>1.0.0</jbundleAppOfficeVersion>
+    <jbundleAppOfficeVersion>1.0.0-SNAPSHOT</jbundleAppOfficeVersion>
     <jbundleAppOfficeVersionRange>[${jbundleAppOfficeVersion},1.1.0)</jbundleAppOfficeVersionRange>
-    <jbundleAppPictureVersion>0.7.8</jbundleAppPictureVersion>
+    <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
     <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersion>0.7.8</jbundleAppDanceVersion>
+    <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
     <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
     
-    <jbundleSwingVersion>1.0.0</jbundleSwingVersion>
+    <jbundleSwingVersion>1.0.0-SNAPSHOT</jbundleSwingVersion>
     <jbundleSwingVersionRange>[${jbundleSwingVersion},1.1.0)</jbundleSwingVersionRange>
-    <jbundleAndroidVersion>1.0.0</jbundleAndroidVersion>
+    <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
     <jbundleAndroidVersionRange>[${jbundleAndroidVersion},1.1.0)</jbundleAndroidVersionRange>
-    <jbundleJavaFXVersion>1.0.0</jbundleJavaFXVersion>
+    <jbundleJavaFXVersion>1.0.0-SNAPSHOT</jbundleJavaFXVersion>
     <jbundleJavaFXVersionRange>[${jbundleJavaFXVersion},1.1.0)</jbundleJavaFXVersionRange>
     <javaFXVersion>2.1</javaFXVersion>
 
-    <tourappVersion>0.8.0</tourappVersion>
+    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
     <tourappVersionRange>[${tourappVersion},0.9.0)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
