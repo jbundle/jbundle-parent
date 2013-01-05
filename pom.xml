@@ -13,7 +13,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.2.5-SNAPSHOT</version>
+  <version>1.2.5</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -139,9 +139,9 @@
     <jbundle.db.remote>Client</jbundle.db.remote>
     <jbundle.db.table>Net</jbundle.db.table>
 
-    <record></record>
-    <screen></screen>
-    <menu></menu>
+    <record />
+    <screen />
+    <menu />
 
     <systemname>${projectName}</systemname>
     <jbundle.db.local>Client</jbundle.db.local>
@@ -151,8 +151,8 @@
     <jbundle.server>localhost</jbundle.server>
     <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
     <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
-    <jbundle.mode></jbundle.mode>
-    <jbundle.messageserver></jbundle.messageserver>	<!-- (remote) -->
+    <jbundle.mode />
+    <jbundle.messageserver />	<!-- (remote) -->
     <jbundle.backgroundcolor>#EEEEFF</jbundle.backgroundcolor>
     <jbundle.background>backgrounds/worldmapalpha.gif</jbundle.background>
   </properties>
@@ -178,7 +178,7 @@
     <profile>
         <id>local</id>
         <properties>
-            <jbundle.server></jbundle.server>
+            <jbundle.server />
             <jbundle.db.local>Jdbc</jbundle.db.local>
             <jbundle.db.remote>Jdbc</jbundle.db.remote>
             <jbundle.db.table>Jdbc</jbundle.db.table>
