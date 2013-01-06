@@ -79,7 +79,7 @@
     <jbundleOsgiVersionRange>[${jbundleOsgiVersion},2.1.0)</jbundleOsgiVersionRange>
     <jbundleUtilWebappVersion>1.3.0</jbundleUtilWebappVersion>
     <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.4.0)</jbundleUtilWebappVersionRange>
-    <jbundleOsgiWebStartVersion>1.6.1</jbundleOsgiWebStartVersion>
+    <jbundleOsgiWebStartVersion>1.6.2</jbundleOsgiWebStartVersion>
     <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
     
     <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
