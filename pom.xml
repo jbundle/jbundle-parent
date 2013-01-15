@@ -4,7 +4,12 @@
 
   <!-- ***** NOTE: ******
   Before Releasing, remove all -SNAPSHOTs from properties (put them back afterwards). Also set all archetype poms to the release version
-   ********** -->
+  Version numbers follow the OSGi recommendations:
+  major.minor.micro
+   major – An incompatible update
+   minor – A backward compatible update
+   micro – A change that does not affect the interface: for example, a bug fix
+  ********** -->
   <parent>
     <artifactId>oss-parent</artifactId>
     <groupId>org.sonatype.oss</groupId>
@@ -59,49 +64,49 @@
     <jbundlePackageImport>*;resolution:=optional</jbundlePackageImport>
     <jbundleMainClass>org.jbundle.Main</jbundleMainClass>
 
-    <jbundleJcalendarbuttonVersion>1.6.0</jbundleJcalendarbuttonVersion>
-    <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},1.7.0)</jbundleJcalendarbuttonVersionRange>
-    <jbundleUtilVersion>2.0.2</jbundleUtilVersion>
-    <jbundleUtilVersionRange>[${jbundleUtilVersion},2.1.0)</jbundleUtilVersionRange>
+    <jbundleJcalendarbuttonVersion>1.6.0-SNAPSHOT</jbundleJcalendarbuttonVersion>
+    <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},2.0.0)</jbundleJcalendarbuttonVersionRange>
+    <jbundleUtilVersion>2.0.2-SNAPSHOT</jbundleUtilVersion>
+    <jbundleUtilVersionRange>[${jbundleUtilVersion},3.0.0)</jbundleUtilVersionRange>
     <jbundleUtilMuffinmanagerVersion>${jbundleUtilVersion}</jbundleUtilMuffinmanagerVersion>
     <jbundleUtilMuffinmanagerVersionRange>${jbundleUtilVersionRange}</jbundleUtilMuffinmanagerVersionRange>
-    <jbundleUtilWsdlVersion>1.0.0</jbundleUtilWsdlVersion>
-    <jbundleUtilWsdlVersionRange>[${jbundleUtilWsdlVersion},1.1.0)</jbundleUtilWsdlVersionRange>
-    <jbundleCalendarpanelVersion>1.1.1</jbundleCalendarpanelVersion>
-    <jbundleCalendarpanelVersionRange>[${jbundleCalendarpanelVersion},1.2.0)</jbundleCalendarpanelVersionRange>
+    <jbundleUtilWsdlVersion>1.0.0-SNAPSHOT</jbundleUtilWsdlVersion>
+    <jbundleUtilWsdlVersionRange>[${jbundleUtilWsdlVersion},2.0.0)</jbundleUtilWsdlVersionRange>
+    <jbundleCalendarpanelVersion>1.1.1-SNAPSHOT</jbundleCalendarpanelVersion>
+    <jbundleCalendarpanelVersionRange>[${jbundleCalendarpanelVersion},2.0.0)</jbundleCalendarpanelVersionRange>
 
-    <jbundleMiscVersion>0.8.0</jbundleMiscVersion>
-    <jbundleOtherVersion>0.7.7</jbundleOtherVersion>
-    <jbundleUtilOtherVersion>0.7.6</jbundleUtilOtherVersion>
-    <jbundleUtilBiorhythmVersion>0.8.1</jbundleUtilBiorhythmVersion>
+    <jbundleMiscVersion>0.8.0-SNAPSHOT</jbundleMiscVersion>
+    <jbundleOtherVersion>0.7.7-SNAPSHOT</jbundleOtherVersion>
+    <jbundleUtilOtherVersion>0.7.6-SNAPSHOT</jbundleUtilOtherVersion>
+    <jbundleUtilBiorhythmVersion>0.8.1-SNAPSHOT</jbundleUtilBiorhythmVersion>
     
-    <jbundleOsgiVersion>2.0.4</jbundleOsgiVersion>
-    <jbundleOsgiVersionRange>[${jbundleOsgiVersion},2.1.0)</jbundleOsgiVersionRange>
-    <jbundleUtilWebappVersion>1.3.0</jbundleUtilWebappVersion>
-    <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},1.4.0)</jbundleUtilWebappVersionRange>
-    <jbundleOsgiWebStartVersion>1.6.2</jbundleOsgiWebStartVersion>
-    <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},1.7.0)</jbundleOsgiWebStartVersionRange>
+    <jbundleOsgiVersion>2.0.4-SNAPSHOT</jbundleOsgiVersion>
+    <jbundleOsgiVersionRange>[${jbundleOsgiVersion},3.0.0)</jbundleOsgiVersionRange>
+    <jbundleUtilWebappVersion>1.3.0-SNAPSHOT</jbundleUtilWebappVersion>
+    <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},2.0.0)</jbundleUtilWebappVersionRange>
+    <jbundleOsgiWebStartVersion>1.6.2-SNAPSHOT</jbundleOsgiWebStartVersion>
+    <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},2.0.0)</jbundleOsgiWebStartVersionRange>
     
-    <jbundleVersion>0.8.0-SNAPSHOT</jbundleVersion>
-    <jbundleVersionRange>[${jbundleVersion},0.9.0)</jbundleVersionRange>
+    <jbundleVersion>1.0.1-SNAPSHOT</jbundleVersion>
+    <jbundleVersionRange>[${jbundleVersion},2.0.0)</jbundleVersionRange>
 
-    <jbundleAppOfficeVersion>1.0.0-SNAPSHOT</jbundleAppOfficeVersion>
-    <jbundleAppOfficeVersionRange>[${jbundleAppOfficeVersion},1.1.0)</jbundleAppOfficeVersionRange>
+    <jbundleAppOfficeVersion>1.1.0-SNAPSHOT</jbundleAppOfficeVersion>
+    <jbundleAppOfficeVersionRange>[${jbundleAppOfficeVersion},2.0.0)</jbundleAppOfficeVersionRange>
     <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
-    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},0.8.0)</jbundleAppPictureVersionRange>
+    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},1.0.0)</jbundleAppPictureVersionRange>
     <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
-    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},0.8.0)</jbundleAppDanceVersionRange>
-    
+    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},1.0.0)</jbundleAppDanceVersionRange>
+
     <jbundleSwingVersion>1.0.0-SNAPSHOT</jbundleSwingVersion>
-    <jbundleSwingVersionRange>[${jbundleSwingVersion},1.1.0)</jbundleSwingVersionRange>
+    <jbundleSwingVersionRange>[${jbundleSwingVersion},2.0.0)</jbundleSwingVersionRange>
     <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
-    <jbundleAndroidVersionRange>[${jbundleAndroidVersion},1.1.0)</jbundleAndroidVersionRange>
+    <jbundleAndroidVersionRange>[${jbundleAndroidVersion},2.0.0)</jbundleAndroidVersionRange>
     <jbundleJavaFXVersion>1.0.0-SNAPSHOT</jbundleJavaFXVersion>
-    <jbundleJavaFXVersionRange>[${jbundleJavaFXVersion},1.1.0)</jbundleJavaFXVersionRange>
+    <jbundleJavaFXVersionRange>[${jbundleJavaFXVersion},2.0.0)</jbundleJavaFXVersionRange>
     <javaFXVersion>2.1</javaFXVersion>
 
     <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
-    <tourappVersionRange>[${tourappVersion},0.9.0)</tourappVersionRange>
+    <tourappVersionRange>[${tourappVersion},1.0.0)</tourappVersionRange>
     
     <jibxVersion>1.2.4.5</jibxVersion>
     <jibxSchemaVersion>1.0.8</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
