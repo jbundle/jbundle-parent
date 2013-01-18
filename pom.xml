@@ -4,11 +4,12 @@
 
   <!-- ***** NOTE: ******
   Before Releasing, remove all -SNAPSHOTs from properties (put them back afterwards). Also set all archetype poms to the release version
-  Version numbers follow the OSGi recommendations:
+  jbundle version numbers follow the OSGi recommendations:
   major.minor.micro
    major – An incompatible update
-   minor – A backward compatible update
-   micro – A change that does not affect the interface: for example, a bug fix
+   minor – A backward compatible update (A release is the full project tree)
+   micro – A change that does not affect the interface: for example, a bug fix (Release individual sub-projects)
+   -qualifier – I tend not to use qualifiers because they don't end up correctly in the OSGi manifest
   ********** -->
   <parent>
     <artifactId>oss-parent</artifactId>
