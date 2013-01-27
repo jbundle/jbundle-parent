@@ -63,7 +63,7 @@
     <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>    <!-- All packages in this filter and beyond -->
     <jbundlePackageExport>${jbundlePackageFilter};version=${project.version}</jbundlePackageExport> <!-- Bundle package to export -->
     <jbundlePackageImport>*;resolution:=optional</jbundlePackageImport>
-    <jbundleMainClass>org.jbundle.Main</jbundleMainClass>
+    <mainClass>org.jbundle.Main</mainClass>
 
     <jbundleJcalendarbuttonVersion>1.6.1-SNAPSHOT</jbundleJcalendarbuttonVersion>
     <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},2.0.0)</jbundleJcalendarbuttonVersionRange>
