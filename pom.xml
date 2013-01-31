@@ -67,7 +67,7 @@
 
     <jbundle-jcalendarbutton-version>1.6.1-SNAPSHOT</jbundle-jcalendarbutton-version>
     <jbundle-jcalendarbutton-version-range>[${jbundle-jcalendarbutton-version},2.0.0)</jbundle-jcalendarbutton-version-range>
-    <jbundle-util-version>2.0.3-SNAPSHOT</jbundle-util-version>
+    <jbundle-util-version>2.0.3</jbundle-util-version>
     <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
     <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
     <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
@@ -701,7 +701,7 @@
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
-      <version>2.1</version>	<!-- 2.0 Is much better -->
+      <version>2.1</version>
     </dependency>
     <dependency>
        <groupId>biz.source_code</groupId>
