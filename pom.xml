@@ -19,7 +19,7 @@
 
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.3.1-SNAPSHOT</version>
+  <version>1.3.0-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -67,7 +67,7 @@
 
     <jbundle-jcalendarbutton-version>1.6.1-SNAPSHOT</jbundle-jcalendarbutton-version>
     <jbundle-jcalendarbutton-version-range>[${jbundle-jcalendarbutton-version},2.0.0)</jbundle-jcalendarbutton-version-range>
-    <jbundle-util-version>2.0.3</jbundle-util-version>
+    <jbundle-util-version>2.0.4-SNAPSHOT</jbundle-util-version>
     <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
     <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
     <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
@@ -76,8 +76,6 @@
     <jbundle-calendarpanel-version>1.1.2-SNAPSHOT</jbundle-calendarpanel-version>
     <jbundle-calendarpanel-version-range>[${jbundle-calendarpanel-version},2.0.0)</jbundle-calendarpanel-version-range>
 
-    <jbundle-misc-version>0.8.0-SNAPSHOT</jbundle-misc-version>
-    <jbundle-other-version>0.7.7-SNAPSHOT</jbundle-other-version>
     <jbundle-util-other-version>0.7.7-SNAPSHOT</jbundle-util-other-version>
     <jbundle-util-biorhythm-version>0.8.2-SNAPSHOT</jbundle-util-biorhythm-version>
     
