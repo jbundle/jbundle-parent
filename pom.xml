@@ -56,84 +56,84 @@
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <projectName>jbundle-parent</projectName>
-    <obrDeploy>local-file::default::file://${jbundle.workspace}/artifacts/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
+    <obrDeploy>local-file::default::file://${jbundle-workspace}/artifacts/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
     <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
 
-    <jbundlePackage>${project.artifactId}</jbundlePackage>  <!-- artifactId is usually the package -->
-    <jbundlePackageFilter>${jbundlePackage}.*</jbundlePackageFilter>    <!-- All packages in this filter and beyond -->
-    <jbundlePackageExport>${jbundlePackageFilter};version=${project.version}</jbundlePackageExport> <!-- Bundle package to export -->
-    <jbundlePackageImport>*;resolution:=optional</jbundlePackageImport>
+    <jbundle-package>${project.artifactId}</jbundle-package>  <!-- artifactId is usually the package -->
+    <jbundle-package-filter>${jbundle-package}.*</jbundle-package-filter>    <!-- All packages in this filter and beyond -->
+    <jbundle-package-export>${jbundle-package-filter};version=${project.version}</jbundle-package-export> <!-- Bundle package to export -->
+    <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
     <mainClass>org.jbundle.Main</mainClass>
 
-    <jbundleJcalendarbuttonVersion>1.6.1-SNAPSHOT</jbundleJcalendarbuttonVersion>
-    <jbundleJcalendarbuttonVersionRange>[${jbundleJcalendarbuttonVersion},2.0.0)</jbundleJcalendarbuttonVersionRange>
-    <jbundleUtilVersion>2.0.3-SNAPSHOT</jbundleUtilVersion>
-    <jbundleUtilVersionRange>[${jbundleUtilVersion},3.0.0)</jbundleUtilVersionRange>
-    <jbundleUtilMuffinmanagerVersion>${jbundleUtilVersion}</jbundleUtilMuffinmanagerVersion>
-    <jbundleUtilMuffinmanagerVersionRange>${jbundleUtilVersionRange}</jbundleUtilMuffinmanagerVersionRange>
-    <jbundleUtilWsdlVersion>1.0.1-SNAPSHOT</jbundleUtilWsdlVersion>
-    <jbundleUtilWsdlVersionRange>[${jbundleUtilWsdlVersion},2.0.0)</jbundleUtilWsdlVersionRange>
-    <jbundleCalendarpanelVersion>1.1.2-SNAPSHOT</jbundleCalendarpanelVersion>
-    <jbundleCalendarpanelVersionRange>[${jbundleCalendarpanelVersion},2.0.0)</jbundleCalendarpanelVersionRange>
+    <jbundle-jcalendarbutton-version>1.6.1-SNAPSHOT</jbundle-jcalendarbutton-version>
+    <jbundle-jcalendarbutton-version-range>[${jbundle-jcalendarbutton-version},2.0.0)</jbundle-jcalendarbutton-version-range>
+    <jbundle-util-version>2.0.3-SNAPSHOT</jbundle-util-version>
+    <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
+    <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
+    <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
+    <jbundle-util-wsdl-version>1.0.1-SNAPSHOT</jbundle-util-wsdl-version>
+    <jbundle-util-wsdl-version-range>[${jbundle-util-wsdl-version},2.0.0)</jbundle-util-wsdl-version-range>
+    <jbundle-calendarpanel-version>1.1.2-SNAPSHOT</jbundle-calendarpanel-version>
+    <jbundle-calendarpanel-version-range>[${jbundle-calendarpanel-version},2.0.0)</jbundle-calendarpanel-version-range>
 
-    <jbundleMiscVersion>0.8.0-SNAPSHOT</jbundleMiscVersion>
-    <jbundleOtherVersion>0.7.7-SNAPSHOT</jbundleOtherVersion>
-    <jbundleUtilOtherVersion>0.7.7-SNAPSHOT</jbundleUtilOtherVersion>
-    <jbundleUtilBiorhythmVersion>0.8.2-SNAPSHOT</jbundleUtilBiorhythmVersion>
+    <jbundle-misc-version>0.8.0-SNAPSHOT</jbundle-misc-version>
+    <jbundle-other-version>0.7.7-SNAPSHOT</jbundle-other-version>
+    <jbundle-util-other-version>0.7.7-SNAPSHOT</jbundle-util-other-version>
+    <jbundle-util-biorhythm-version>0.8.2-SNAPSHOT</jbundle-util-biorhythm-version>
     
-    <jbundleOsgiVersion>2.0.5-SNAPSHOT</jbundleOsgiVersion>
-    <jbundleOsgiVersionRange>[${jbundleOsgiVersion},3.0.0)</jbundleOsgiVersionRange>
-    <jbundleUtilWebappVersion>1.3.1-SNAPSHOT</jbundleUtilWebappVersion>
-    <jbundleUtilWebappVersionRange>[${jbundleUtilWebappVersion},2.0.0)</jbundleUtilWebappVersionRange>
-    <jbundleOsgiWebStartVersion>1.6.3-SNAPSHOT</jbundleOsgiWebStartVersion>
-    <jbundleOsgiWebStartVersionRange>[${jbundleOsgiWebStartVersion},2.0.0)</jbundleOsgiWebStartVersionRange>
+    <jbundle-osgi-version>2.0.5-SNAPSHOT</jbundle-osgi-version>
+    <jbundle-osgi-version-range>[${jbundle-osgi-version},3.0.0)</jbundle-osgi-version-range>
+    <jbundle-util-webapp-version>1.3.1-SNAPSHOT</jbundle-util-webapp-version>
+    <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
+    <jbundle-auto-webstart-version>1.6.3-SNAPSHOT</jbundle-auto-webstart-version>
+    <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
     
-    <jbundleVersion>1.0.1-SNAPSHOT</jbundleVersion>
-    <jbundleVersionRange>[${jbundleVersion},2.0.0)</jbundleVersionRange>
+    <jbundle-version>1.0.1-SNAPSHOT</jbundle-version>
+    <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range>
 
-    <jbundleAppOfficeVersion>1.1.0-SNAPSHOT</jbundleAppOfficeVersion>
-    <jbundleAppOfficeVersionRange>[${jbundleAppOfficeVersion},2.0.0)</jbundleAppOfficeVersionRange>
-    <jbundleAppPictureVersion>0.7.8-SNAPSHOT</jbundleAppPictureVersion>
-    <jbundleAppPictureVersionRange>[${jbundleAppPictureVersion},1.0.0)</jbundleAppPictureVersionRange>
-    <jbundleAppDanceVersion>0.7.8-SNAPSHOT</jbundleAppDanceVersion>
-    <jbundleAppDanceVersionRange>[${jbundleAppDanceVersion},1.0.0)</jbundleAppDanceVersionRange>
+    <jbundle-app-office-version>1.1.0-SNAPSHOT</jbundle-app-office-version>
+    <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
+    <jbundle-app-picture-version>0.7.8-SNAPSHOT</jbundle-app-picture-version>
+    <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
+    <jbundle-app-dance-version>0.7.8-SNAPSHOT</jbundle-app-dance-version>
+    <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
 
-    <jbundleSwingVersion>1.0.0-SNAPSHOT</jbundleSwingVersion>
-    <jbundleSwingVersionRange>[${jbundleSwingVersion},2.0.0)</jbundleSwingVersionRange>
-    <jbundleAndroidVersion>1.0.0-SNAPSHOT</jbundleAndroidVersion>
-    <jbundleAndroidVersionRange>[${jbundleAndroidVersion},2.0.0)</jbundleAndroidVersionRange>
-    <jbundleJavaFXVersion>1.0.0-SNAPSHOT</jbundleJavaFXVersion>
-    <jbundleJavaFXVersionRange>[${jbundleJavaFXVersion},2.0.0)</jbundleJavaFXVersionRange>
-    <javaFXVersion>2.1</javaFXVersion>
+    <jbundle-swing-version>1.0.0-SNAPSHOT</jbundle-swing-version>
+    <jbundle-swing-version-range>[${jbundle-swing-version},2.0.0)</jbundle-swing-version-range>
+    <jbundle-android-version>1.0.0-SNAPSHOT</jbundle-android-version>
+    <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
+    <jbundle-javafx-version>1.0.0-SNAPSHOT</jbundle-javafx-version>
+    <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
+    <javaFX-version>2.1</javaFX-version>
 
-    <tourappVersion>0.8.0-SNAPSHOT</tourappVersion>
-    <tourappVersionRange>[${tourappVersion},1.0.0)</tourappVersionRange>
+    <tourapp-version>0.8.0-SNAPSHOT</tourapp-version>
+    <tourapp-version-range>[${tourapp-version},1.0.0)</tourapp-version-range>
     
-    <jibxVersion>1.2.4.5</jibxVersion>
-    <jibxSchemaVersion>1.0.9-SNAPSHOT</jibxSchemaVersion>	<!-- Note: Some schema have a different version -->
-    <otaVersion>1.1.0</otaVersion>
-    <base64coderVersion>2010-12-19</base64coderVersion>
+    <jibx-version>1.2.4.5</jibx-version>
+    <jibx-schema-version>1.0.9-SNAPSHOT</jibx-schema-version>	<!-- Note: Some schema have a different version -->
+    <ota-version>1.1.0</ota-version>
+    <base64coder-version>2010-12-19</base64coder-version>
     <tycho-version>0.11.0</tycho-version>
-    <osgi.version>4.2.0</osgi.version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
-    <felix.bundlerepository.version>1.6.6</felix.bundlerepository.version> <!-- See all the exclusions under the bundlerespository dependency -->
+    <osgi-version>4.2.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
+    <felix-bundlerepository-version>1.6.6</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
     <jnlp-servlet.version>1.0-6.0.02_ea_b02.1</jnlp-servlet.version>
 
-    <javawsVersion>${java.specification.version}</javawsVersion>
-    <pluginVersion>${java.specification.version}</pluginVersion>
-    <dojoVersion>1.8.1</dojoVersion>
-    <httpclientVersion>4.2.2</httpclientVersion>
-    <tomcat-catalinaVersion>7.0.33</tomcat-catalinaVersion>
-    <j2eeVersion>6</j2eeVersion>
-    <mailVersion>1.4.5</mailVersion>
-    <androidVersion>4.0.3_r3</androidVersion>
-    <androidMinVersion>4.0.3_r3</androidMinVersion>
+    <javaws-version>${java.specification.version}</javaws-version>
+    <plugin-version>${java.specification.version}</plugin-version>
+    <dojo-version>1.8.1</dojo-version>
+    <httpclient-version>4.2.2</httpclient-version>
+    <tomcat-catalina-version>7.0.33</tomcat-catalina-version>
+    <j2ee-version>6</j2ee-version>
+    <mail-version>1.4.5</mail-version>
+    <android-version>4.0.3_r3</android-version>
+    <androidMin-version>4.0.3_r3</androidMin-version>
     
     <commapiPath>/usr/local/java/util/commapi/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
 
     <!-- Move these to settings -->
-    <jbundle.workspace>${user.home}/workspace/workspace</jbundle.workspace>
-    <jbundle.policyfile>${jbundle.workspace}/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle.policyfile>
+    <jbundle-workspace>${user.home}/workspace/workspace</jbundle-workspace>
+    <jbundle-policyfile>${jbundle-workspace}/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle-policyfile>
 
     <documentationSite>http://www.jbundle.org</documentationSite>
     <documentationPath>web</documentationPath>
@@ -349,8 +349,8 @@
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
             <Bundle-SymbolicName>${project.artifactId}</Bundle-SymbolicName> <!-- This is better name than the package -->
             <Bundle-Version>${project.version}</Bundle-Version>         <!-- Just being careful -->
-            <Export-Package>${jbundlePackageExport}</Export-Package>    <!-- Override jbundlePackage or jbundlePackageExport with actual packages -->
-            <Import-Package>${jbundlePackageImport}</Import-Package>    <!-- Since I want these to be optional -->
+            <Export-Package>${jbundle-package-export}</Export-Package>    <!-- Override jbundlePackage or jbundle-package-export with actual packages -->
+            <Import-Package>${jbundle-package-import}</Import-Package>    <!-- Since I want these to be optional -->
           </instructions>
         </configuration>
       </plugin>
@@ -361,12 +361,12 @@
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>maven-jibx-plugin</artifactId>
-          <version>${jibxVersion}</version>
+          <version>${jibx-version}</version>
         </plugin>
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>jibx-maven-plugin</artifactId>
-          <version>${jibxVersion}</version>
+          <version>${jibx-version}</version>
         </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
@@ -509,90 +509,90 @@
     <!-- These are mine -->
     <dependency>
       <groupId>org.jbundle.util.osgi</groupId>
-      <version>${jbundleOsgiVersionRange}</version>
+      <version>${jbundle-osgi-version-range}</version>
       <artifactId>org.jbundle.util.osgi</artifactId>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util</groupId>
       <artifactId>org.jbundle.util.jbackup</artifactId>
-      <version>${jbundleUtilVersionRange}</version>
+      <version>${jbundle-util-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.redirect</artifactId>
-      <version>${jbundleUtilWebappVersionRange}</version>
+      <version>${jbundle-util-webapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.files</artifactId>
-      <version>${jbundleUtilWebappVersionRange}</version>
+      <version>${jbundle-util-webapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.webapp</groupId>
       <artifactId>org.jbundle.util.webapp.base</artifactId>
-      <version>${jbundleUtilWebappVersionRange}</version>
+      <version>${jbundle-util-webapp-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel</artifactId>
-      <version>${jbundleCalendarpanelVersionRange}</version>
+      <version>${jbundle-calendarpanel-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel.model</artifactId>
-      <version>${jbundleCalendarpanelVersionRange}</version>
+      <version>${jbundle-calendarpanel-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.jcalendarbutton</groupId>
       <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
-      <version>${jbundleJcalendarbuttonVersionRange}</version>
+      <version>${jbundle-jcalendarbutton-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util</groupId>
       <artifactId>org.jbundle.util.muffinmanager</artifactId>
-      <version>${jbundleUtilMuffinmanagerVersionRange}</version>
+      <version>${jbundle-util-muffinmanager-version-range}</version>
     </dependency>
     
     <!-- External dependencies -->
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-run</artifactId>
-      <version>${jibxVersion}</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-extras</artifactId>
-      <version>${jibxVersion}</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-bind</artifactId>
-      <version>${jibxVersion}</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-schema</artifactId>
-      <version>${jibxVersion}</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx</groupId>
       <artifactId>jibx-tools</artifactId>
-      <version>${jibxVersion}</version>
+      <version>${jibx-version}</version>
     </dependency>
     <dependency>
       <groupId>org.osgi</groupId>
       <artifactId>org.osgi.core</artifactId>
-      <version>${osgi.version}</version>
+      <version>${osgi-version}</version>
     </dependency>
     <dependency>
         <groupId>org.osgi</groupId>
         <artifactId>org.osgi.compendium</artifactId>
-        <version>${osgi.version}</version>
+        <version>${osgi-version}</version>
     </dependency>
             <dependency>
                 <groupId>org.apache.felix</groupId>
                 <artifactId>org.apache.felix.bundlerepository</artifactId>
-                <version>${felix.bundlerepository.version}</version>
+                <version>${felix-bundlerepository-version}</version>
                 <exclusions>
                     <exclusion>
                         <groupId>org.apache.felix</groupId>
@@ -651,12 +651,12 @@
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
       <artifactId>httpclient</artifactId>
-      <version>${httpclientVersion}</version>
+      <version>${httpclient-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.tomcat</groupId>
       <artifactId>tomcat-catalina</artifactId>
-      <version>${tomcat-catalinaVersion}</version>
+      <version>${tomcat-catalina-version}</version>
     </dependency>
     <dependency>
       <groupId>net.sf.jtidy</groupId>
@@ -681,7 +681,7 @@
     <dependency>
       <groupId>javax.mail</groupId>
       <artifactId>mail</artifactId>
-      <version>${mailVersion}</version>
+      <version>${mail-version}</version>
     </dependency>
     <dependency>
       <groupId>com.sun.messaging.mq</groupId>
@@ -706,32 +706,32 @@
     <dependency>
        <groupId>biz.source_code</groupId>
        <artifactId>base64coder</artifactId>
-       <version>${base64coderVersion}</version>
+       <version>${base64coder-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx.schema.org.opentravel._2012B</groupId>
       <artifactId>org.jibx.schema.org.opentravel._2012B.ping</artifactId>
-      <version>${jibxSchemaVersion}</version>
+      <version>${jibx-schema-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx.schema.org.opentravel._2012B</groupId>
       <artifactId>org.jibx.schema.org.opentravel._2012B.hotel</artifactId>
-      <version>${jibxSchemaVersion}</version>
+      <version>${jibx-schema-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx.schema.org.xmlsoap.schemas</groupId>
       <artifactId>org.jibx.schema.org.xmlsoap.schemas.wsdl</artifactId>
-      <version>${jibxSchemaVersion}</version>
+      <version>${jibx-schema-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx.schema.org.w3</groupId>
       <artifactId>org.jibx.schema.org.w3._2006._03.wsdl.wsdl20</artifactId>
-      <version>${jibxSchemaVersion}</version>
+      <version>${jibx-schema-version}</version>
     </dependency>
     <dependency>
       <groupId>org.jibx.schema.net.webservicex</groupId>
       <artifactId>org.jibx.schema.net.webservicex.currencyconvertor</artifactId>
-      <version>${jibxSchemaVersion}</version>
+      <version>${jibx-schema-version}</version>
     </dependency>
     </dependencies>
   </dependencyManagement>
