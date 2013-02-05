@@ -133,7 +133,8 @@
     <jbundle-workspace>${user.home}/workspace/workspace</jbundle-workspace>
     <jbundle-policyfile>${jbundle-workspace}/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle-policyfile>
 
-    <documentationSite>http://www.jbundle.org</documentationSite>
+    <documentationSite>www.jbundle.org</documentationSite>
+    <documentationSiteURL>http://${documentationSite}</documentationSiteURL>
     <documentationPath>web</documentationPath>
     <documentationURL>scp:/${documentationSite}://${documentationPath}</documentationURL>
 
