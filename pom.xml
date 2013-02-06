@@ -136,7 +136,7 @@
     <documentationSite>www.jbundle.org</documentationSite>
     <documentationSiteURL>http://${documentationSite}</documentationSiteURL>
     <documentationPath>web</documentationPath>
-    <documentationURL>scp:/${documentationSite}://${documentationPath}</documentationURL>
+    <documentationURL>scp://${documentationSite}://${documentationPath}</documentationURL>
 
     <!-- Runtime parameter (dot notation is okay) -->
     <jbundle.db.databaseproduct />
