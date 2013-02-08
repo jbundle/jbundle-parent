@@ -100,7 +100,7 @@
     <jbundle-swing-version-range>[${jbundle-swing-version},2.0.0)</jbundle-swing-version-range>
     <jbundle-android-version>1.0.0-SNAPSHOT</jbundle-android-version>
     <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
-    <jbundle-javafx-version>1.0.0-SNAPSHOT</jbundle-javafx-version>
+    <jbundle-javafx-version>1.0.1-SNAPSHOT</jbundle-javafx-version>
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
     <javaFX-version>2.1</javaFX-version>
 
@@ -375,7 +375,7 @@
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-site-plugin</artifactId>
-            <version>3.1</version>
+            <version>3.2</version>
         </plugin>
         <plugin>
             <groupId>org.apache.maven.plugins</groupId>
