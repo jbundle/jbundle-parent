@@ -107,7 +107,7 @@
     <tourapp-version>0.8.0-SNAPSHOT</tourapp-version>
     <tourapp-version-range>[${tourapp-version},1.0.0)</tourapp-version-range>
     
-    <jibx-version>1.2.4.5</jibx-version>
+    <jibx-version>1.2.5</jibx-version>
     <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
     <jibx-schema-version>1.0.9</jibx-schema-version>    <!-- Note: Some schema have a different version -->
     <jibx-schema-version-range>[${jibx-schema-version},2.0.0)</jibx-schema-version-range>    <!-- Note: Some schema have a different version -->
