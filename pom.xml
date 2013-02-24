@@ -83,7 +83,7 @@
     <jbundle-osgi-version-range>[${jbundle-osgi-version},3.0.0)</jbundle-osgi-version-range>
     <jbundle-util-webapp-version>1.3.1</jbundle-util-webapp-version>
     <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
-    <jbundle-auto-webstart-version>1.6.3</jbundle-auto-webstart-version>
+    <jbundle-auto-webstart-version>1.6.4-SNAPSHOT</jbundle-auto-webstart-version>
     <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
     
     <jbundle-version>1.0.1-SNAPSHOT</jbundle-version>
