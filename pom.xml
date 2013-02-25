@@ -86,25 +86,25 @@
     <jbundle-auto-webstart-version>1.6.4</jbundle-auto-webstart-version>
     <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
     
-    <jbundle-version>1.0.1</jbundle-version>
+    <jbundle-version>1.0.1-SNAPSHOT</jbundle-version>
     <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range>
 
-    <jbundle-app-office-version>1.1.0</jbundle-app-office-version>
+    <jbundle-app-office-version>1.1.0-SNAPSHOT</jbundle-app-office-version>
     <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
-    <jbundle-app-picture-version>0.7.8</jbundle-app-picture-version>
+    <jbundle-app-picture-version>0.7.8-SNAPSHOT</jbundle-app-picture-version>
     <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
-    <jbundle-app-dance-version>0.7.8</jbundle-app-dance-version>
+    <jbundle-app-dance-version>0.7.8-SNAPSHOT</jbundle-app-dance-version>
     <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
 
-    <jbundle-swing-version>1.0.0</jbundle-swing-version>
+    <jbundle-swing-version>1.0.0-SNAPSHOT</jbundle-swing-version>
     <jbundle-swing-version-range>[${jbundle-swing-version},2.0.0)</jbundle-swing-version-range>
-    <jbundle-android-version>1.0.0</jbundle-android-version>
+    <jbundle-android-version>1.0.0-SNAPSHOT</jbundle-android-version>
     <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
-    <jbundle-javafx-version>1.0.1</jbundle-javafx-version>
+    <jbundle-javafx-version>1.0.1-SNAPSHOT</jbundle-javafx-version>
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
     <javaFX-version>2.1</javaFX-version>
 
-    <tourapp-version>0.8.0</tourapp-version>
+    <tourapp-version>0.8.0-SNAPSHOT</tourapp-version>
     <tourapp-version-range>[${tourapp-version},1.0.0)</tourapp-version-range>
     
     <jibx-version>1.2.5</jibx-version>
