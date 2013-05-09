@@ -86,7 +86,7 @@
     <jbundle-auto-webstart-version>1.6.4</jbundle-auto-webstart-version>
     <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
     
-    <jbundle-version>1.0.1</jbundle-version>
+    <jbundle-version>1.0.2-SNAPSHOT</jbundle-version>
     <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range>
 
     <jbundle-app-office-version>1.1.0</jbundle-app-office-version>
@@ -104,7 +104,7 @@
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
     <javaFX-version>2.1</javaFX-version>
 
-    <tourapp-version>0.8.0</tourapp-version>
+    <tourapp-version>0.8.1-SNAPSHOT</tourapp-version>
     <tourapp-version-range>[${tourapp-version},1.0.0)</tourapp-version-range>
     
     <jibx-version>1.2.5</jibx-version>
