@@ -77,7 +77,7 @@
     <jbundle-calendarpanel-version-range>[${jbundle-calendarpanel-version},2.0.0)</jbundle-calendarpanel-version-range>
 
     <jbundle-util-other-version>0.7.7</jbundle-util-other-version>
-    <jbundle-util-biorhythm-version>0.8.2</jbundle-util-biorhythm-version>
+    <jbundle-util-biorhythm-version>0.8.3-SNAPSHOT</jbundle-util-biorhythm-version>
     
     <jbundle-osgi-version>2.0.5</jbundle-osgi-version>
     <jbundle-osgi-version-range>[${jbundle-osgi-version},3.0.0)</jbundle-osgi-version-range>
