@@ -356,8 +356,40 @@
           </instructions>
         </configuration>
       </plugin>
-
+      <plugin>
+          <groupId>org.codehaus.mojo</groupId>
+          <artifactId>exec-maven-plugin</artifactId>
+          <executions>
+              <execution>
+                  <phase>run</phase>
+                  <goals>
+                      <goal>exec</goal>
+                  </goals>
+              </execution>
+          </executions>
+          <configuration>
+              <mainClass>${mainClass}</mainClass>
+              <arguments>
+                  <argument>background=${jbundle.background}</argument>
+                  <argument>backgroundcolor=${jbundle.backgroundcolor}</argument>
+                  <argument>messageserver=${jbundle.messageserver}</argument>
+                  <argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
+                  <argument>local=${jbundle.db.local}</argument>
+                  <argument>remote=${jbundle.db.remote}</argument>
+                  <argument>table=${jbundle.db.table}</argument>
+                  <argument>systemname=${systemname}</argument>
+                  <argument>mode=${jbundle.mode}</argument>
+                  <argument>record=${record}</argument>
+                  <argument>screen=${screen}</argument>
+                  <argument>menu=${menu}</argument>
+                  <argument>connectionType=${jbundle.connectiontype}</argument>
+                  <argument>remotehost=${jbundle.server}</argument>
+                  <argument>codebase=${jbundle.codebase}</argument>
+              </arguments>
+          </configuration>
+      </plugin>
     </plugins>
+    
     <pluginManagement>
       <plugins>
         <plugin>
@@ -440,40 +472,6 @@
         <artifactId>maven-project-info-reports-plugin</artifactId>
         <version>2.4</version>
       </plugin>
-
-      <plugin>
-          <groupId>org.codehaus.mojo</groupId>
-          <artifactId>exec-maven-plugin</artifactId>
-          <executions>
-              <execution>
-                  <phase>run</phase>
-                  <goals>
-                      <goal>exec</goal>
-                  </goals>
-              </execution>
-          </executions>
-          <configuration>
-              <mainClass>${mainClass}</mainClass>
-              <arguments>
-                  <argument>background=${jbundle.background}</argument>
-                  <argument>backgroundcolor=${jbundle.backgroundcolor}</argument>
-                  <argument>messageserver=${jbundle.messageserver}</argument>
-                  <argument>databaseproduct=${jbundle.db.databaseproduct}</argument>
-                  <argument>local=${jbundle.db.local}</argument>
-                  <argument>remote=${jbundle.db.remote}</argument>
-                  <argument>table=${jbundle.db.table}</argument>
-                  <argument>systemname=${systemname}</argument>
-                  <argument>mode=${jbundle.mode}</argument>
-                  <argument>record=${record}</argument>
-                  <argument>screen=${screen}</argument>
-                  <argument>menu=${menu}</argument>
-                  <argument>connectionType=${jbundle.connectiontype}</argument>
-                  <argument>remotehost=${jbundle.server}</argument>
-                  <argument>codebase=${jbundle.codebase}</argument>
-              </arguments>
-          </configuration>
-      </plugin>
-
      </plugins>
     </pluginManagement>
 
