@@ -91,7 +91,7 @@
 
     <jbundle-app-office-version>1.1.0</jbundle-app-office-version>
     <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
-    <jbundle-app-picture-version>0.8.0</jbundle-app-picture-version>
+    <jbundle-app-picture-version>0.8.0-SNAPSHOT</jbundle-app-picture-version>
     <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
     <jbundle-app-dance-version>0.8.0-SNAPSHOT</jbundle-app-dance-version>
     <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
