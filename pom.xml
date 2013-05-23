@@ -118,7 +118,8 @@
     <osgi-version>4.2.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
     <felix-bundlerepository-version>1.6.6</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
     <jnlp-servlet.version>1.0-6.0.02_ea_b02.1</jnlp-servlet.version>
-
+    <cxf-version>2.7.5</cxf-version>	<!-- cxf is not required for any jbundle code - only for jibx demos -->
+    
     <javaws-version>${java.specification.version}</javaws-version>
     <plugin-version>${java.specification.version}</plugin-version>
     <dojo-version>1.8.1</dojo-version>
