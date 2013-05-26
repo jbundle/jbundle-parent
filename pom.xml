@@ -122,7 +122,7 @@
     
     <javaws-version>${java.specification.version}</javaws-version>
     <plugin-version>${java.specification.version}</plugin-version>
-    <dojo-version>1.8.1</dojo-version>
+    <dojo-version>1.9.0</dojo-version>
     <httpclient-version>4.2.2</httpclient-version>
     <tomcat-catalina-version>7.0.33</tomcat-catalina-version>
     <j2ee-version>6</j2ee-version>
