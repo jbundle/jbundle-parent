@@ -151,6 +151,7 @@
     <record />
     <screen />
     <menu />
+    <language />
 
     <systemname>${projectName}</systemname>
     <jbundle.db.local>Client</jbundle.db.local>
