@@ -197,7 +197,7 @@
     <profile>
         <id>tour</id>
         <properties>
-            <systemname>tour</systemname>
+            <systemname>tourapp</systemname>
         </properties>
     </profile>
     <profile>
@@ -255,6 +255,7 @@
 	                  <argument>connectionType=${jbundle.connectiontype}</argument>
 	                  <argument>remotehost=${jbundle.server}</argument>
 	                  <argument>codebase=${jbundle.codebase}</argument>
+	                  <argument>language=${language}</argument>
 	              </arguments>
 	          </configuration>
 	      </plugin>
@@ -386,6 +387,7 @@
                   <argument>connectionType=${jbundle.connectiontype}</argument>
                   <argument>remotehost=${jbundle.server}</argument>
                   <argument>codebase=${jbundle.codebase}</argument>
+                  <argument>language=${language}</argument>
               </arguments>
           </configuration>
       </plugin>
