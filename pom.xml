@@ -109,7 +109,7 @@
     
     <jibx-version>1.2.5</jibx-version>
     <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
-    <jibx-schema-version>1.0.9</jibx-schema-version>    <!-- Note: Some schema have a different version -->
+    <jibx-schema-version>1.1.0</jibx-schema-version>    <!-- Note: Some schema have a different version -->
     <jibx-schema-version-range>[${jibx-schema-version},2.0.0)</jibx-schema-version-range>    <!-- Note: Some schema have a different version -->
     <ota-version>1.1.0</ota-version>
     <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have a different version -->
@@ -124,7 +124,7 @@
     <plugin-version>${java.specification.version}</plugin-version>
     <dojo-version>1.9.0</dojo-version>
     <httpclient-version>4.2.2</httpclient-version>
-    <tomcat-catalina-version>7.0.33</tomcat-catalina-version>
+    <tomcat-catalina-version>7.0.41</tomcat-catalina-version>
     <j2ee-version>6</j2ee-version>
     <mail-version>1.4.5</mail-version>
     <android-version>4.0.3_r3</android-version>
@@ -645,12 +645,12 @@
     <dependency>     <!-- **** NOTE: This should be a 'runtime' dependency! Fix your code ***** -->
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.22</version>
+      <version>5.1.25</version>
     </dependency>
     <dependency>
         <groupId>org.apache.derby</groupId>
         <artifactId>derby</artifactId>
-        <version>10.9.1.0</version>
+        <version>10.10.1.1</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -705,7 +705,7 @@
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
-      <version>2.1</version>
+      <version>2.2</version>
     </dependency>
     <dependency>
        <groupId>biz.source_code</groupId>
