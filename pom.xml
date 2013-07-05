@@ -104,8 +104,8 @@
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
     <javaFX-version>2.1</javaFX-version>
 
-    <tourapp-version>0.8.1</tourapp-version>
-    <tourapp-version-range>[${tourapp-version},1.0.0)</tourapp-version-range>
+    <tourgeek-version>0.8.1</tourgeek-version>
+    <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
     
     <jibx-version>1.2.5</jibx-version>
     <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
@@ -198,7 +198,7 @@
     <profile>
         <id>tour</id>
         <properties>
-            <systemname>tourapp</systemname>
+            <systemname>tourgeek</systemname>
         </properties>
     </profile>
     <profile>
