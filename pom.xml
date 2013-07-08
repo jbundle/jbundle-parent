@@ -65,46 +65,46 @@
     <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
     <mainClass>org.jbundle.Main</mainClass>
 
-    <jbundle-jcalendarbutton-version>1.6.2-SNAPSHOT</jbundle-jcalendarbutton-version>
+    <jbundle-jcalendarbutton-version>1.6.2</jbundle-jcalendarbutton-version>
     <jbundle-jcalendarbutton-version-range>[${jbundle-jcalendarbutton-version},2.0.0)</jbundle-jcalendarbutton-version-range>
-    <jbundle-util-version>2.0.5-SNAPSHOT</jbundle-util-version>
+    <jbundle-util-version>2.0.5</jbundle-util-version>
     <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
     <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
     <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
-    <jbundle-util-wsdl-version>1.0.2-SNAPSHOT</jbundle-util-wsdl-version>
+    <jbundle-util-wsdl-version>1.0.2</jbundle-util-wsdl-version>
     <jbundle-util-wsdl-version-range>[${jbundle-util-wsdl-version},2.0.0)</jbundle-util-wsdl-version-range>
-    <jbundle-calendarpanel-version>1.1.3-SNAPSHOT</jbundle-calendarpanel-version>
+    <jbundle-calendarpanel-version>1.1.3</jbundle-calendarpanel-version>
     <jbundle-calendarpanel-version-range>[${jbundle-calendarpanel-version},2.0.0)</jbundle-calendarpanel-version-range>
 
-    <jbundle-util-other-version>0.7.8-SNAPSHOT</jbundle-util-other-version>
-    <jbundle-util-biorhythm-version>0.8.4-SNAPSHOT</jbundle-util-biorhythm-version>
+    <jbundle-util-other-version>0.7.8</jbundle-util-other-version>
+    <jbundle-util-biorhythm-version>0.8.4</jbundle-util-biorhythm-version>
     
-    <jbundle-osgi-version>2.0.6-SNAPSHOT</jbundle-osgi-version>
+    <jbundle-osgi-version>2.0.6</jbundle-osgi-version>
     <jbundle-osgi-version-range>[${jbundle-osgi-version},3.0.0)</jbundle-osgi-version-range>
-    <jbundle-util-webapp-version>1.3.4-SNAPSHOT</jbundle-util-webapp-version>
+    <jbundle-util-webapp-version>1.3.4</jbundle-util-webapp-version>
     <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
-    <jbundle-auto-webstart-version>1.6.6-SNAPSHOT</jbundle-auto-webstart-version>
+    <jbundle-auto-webstart-version>1.6.6</jbundle-auto-webstart-version>
     <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
     
-    <jbundle-version>1.0.3-SNAPSHOT</jbundle-version>
+    <jbundle-version>1.0.3</jbundle-version>
     <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range>
 
-    <jbundle-app-office-version>1.1.1-SNAPSHOT</jbundle-app-office-version>
+    <jbundle-app-office-version>1.1.1</jbundle-app-office-version>
     <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
-    <jbundle-app-picture-version>0.8.1-SNAPSHOT</jbundle-app-picture-version>
+    <jbundle-app-picture-version>0.8.1</jbundle-app-picture-version>
     <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
-    <jbundle-app-dance-version>0.8.1-SNAPSHOT</jbundle-app-dance-version>
+    <jbundle-app-dance-version>0.8.1</jbundle-app-dance-version>
     <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
 
-    <jbundle-swing-version>1.0.1-SNAPSHOT</jbundle-swing-version>
+    <jbundle-swing-version>1.0.1</jbundle-swing-version>
     <jbundle-swing-version-range>[${jbundle-swing-version},2.0.0)</jbundle-swing-version-range>
-    <jbundle-android-version>1.0.1-SNAPSHOT</jbundle-android-version>
+    <jbundle-android-version>1.0.1</jbundle-android-version>
     <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
-    <jbundle-javafx-version>1.0.2-SNAPSHOT</jbundle-javafx-version>
+    <jbundle-javafx-version>1.0.2</jbundle-javafx-version>
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
     <javaFX-version>2.1</javaFX-version>
 
-    <tourgeek-version>0.8.2-SNAPSHOT</tourgeek-version>
+    <tourgeek-version>0.8.2</tourgeek-version>
     <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
     
     <jibx-version>1.2.5</jibx-version>
