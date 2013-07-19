@@ -78,17 +78,17 @@
 
     <jbundle-util-other-version>0.7.8</jbundle-util-other-version>
     <jbundle-util-biorhythm-version>0.8.4</jbundle-util-biorhythm-version>
-    
+
     <jbundle-osgi-version>2.0.7</jbundle-osgi-version>
     <jbundle-osgi-version-range>[${jbundle-osgi-version},3.0.0)</jbundle-osgi-version-range>
     <jbundle-util-webapp-version>1.3.4</jbundle-util-webapp-version>
     <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
     <jbundle-auto-webstart-version>1.6.7</jbundle-auto-webstart-version>
     <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
-    
+
     <jbundle-version>1.0.5</jbundle-version>
     <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range>
-    <jbundle-plugin-version>1.0.3</jbundle-plugin-version>	<!-- Fix this - should be ${jbundle-version} -->
+    <jbundle-plugin-version>${jbundle-version}</jbundle-plugin-version>
 
     <jbundle-app-office-version>1.1.1</jbundle-app-office-version>
     <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
