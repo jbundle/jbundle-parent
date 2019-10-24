@@ -460,7 +460,7 @@
       <plugin>
         <groupId>org.codehaus.mojo.webstart</groupId>
         <artifactId>webstart-maven-plugin</artifactId>
-        <version>1.0-beta-3</version>
+        <version>1.0-beta-7</version>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
