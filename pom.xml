@@ -11,12 +11,6 @@
    micro – A change that does not affect the interface: for example, a bug fix (Release individual sub-projects)
    -qualifier – I tend not to use qualifiers because they don't end up correctly in the OSGi manifest
   ********** -->
-  <parent>
-    <artifactId>oss-parent</artifactId>
-    <groupId>org.sonatype.oss</groupId>
-    <version>9</version>
-  </parent>
-
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
   <version>1.4.1-SNAPSHOT</version>
@@ -42,10 +36,26 @@
   </developers>
   
   <prerequisites>
-     <maven>2.2.1</maven>
+     <maven>3.6.0</maven>
    </prerequisites>
 
+   <repositories>
+        <repository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <releases>
+                <enabled>false</enabled>
+            </releases>
+            <snapshots>
+                <enabled>true</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+
   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
     <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
     <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
     <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
@@ -175,6 +185,50 @@
         <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
         <publicReleaseRepository>http://repo.maven.apache.org/maven2</publicReleaseRepository>	<!-- Maven central -->
       </properties>
+        <build>
+            <plugins>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-source-plugin</artifactId>
+                    <version>3.1.0</version>
+                    <executions>
+                        <execution>
+                            <id>attach-sources</id>
+                            <goals>
+                                <goal>jar-no-fork</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-javadoc-plugin</artifactId>
+                    <version>3.1.1</version>
+                    <executions>
+                        <execution>
+                            <id>attach-javadocs</id>
+                            <goals>
+                                <goal>jar</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-gpg-plugin</artifactId>
+                    <version>1.6</version>
+                    <executions>
+                        <execution>
+                            <id>sign-artifacts</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>sign</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+            </plugins>
+        </build>
     </profile>
     
     <profile>
