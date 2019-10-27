@@ -43,7 +43,7 @@
         <repository>
             <id>sonatype-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
+            <url>${snapshotRepository}</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -56,16 +56,11 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
-    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
-    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
-    <publicReleaseRepository>${publicRepository}</publicReleaseRepository>
-    <!-- releaseRepository>http://repository.jbundle.org:8081/nexus/content/repositories/releases</releaseRepository>
-    <snapshotRepository>http://repository.jbundle.org:8081/nexus/content/repositories/snapshots</snapshotRepository>
-    <publicRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicRepository>
-    <stagingRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</stagingRepository>
-    <publicReleaseRepository>http://repository.jbundle.org:8081/nexus/content/groups/public</publicReleaseRepository -->
+    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
+    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository> <!-- Snapshot upload -->
+    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository> <!-- Release access -->
+    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
+    <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
@@ -177,15 +172,11 @@
   </properties>
 
   <profiles>
-    <profile> 
+    <profile>
       <id>sonatype-oss-release</id>
-      <properties>
-        <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository>
-        <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository>
-        <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository>
-        <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository>
-        <publicReleaseRepository>http://repo.maven.apache.org/maven2</publicReleaseRepository>	<!-- Maven central -->
-      </properties>
+        <properties>
+            <publicReleaseRepository>https://repo.maven.apache.org/maven2</publicReleaseRepository>	<!-- Maven central -->
+        </properties>
         <build>
             <plugins>
                 <plugin>
@@ -357,6 +348,15 @@
         </plugins>
       </build>
     </profile>
+      <profile>
+      <id>local-repository</id>
+      <properties>
+          <releaseRepository>http://nexus.tourgeek.com/repository/maven-releases</releaseRepository>
+          <snapshotRepository>http://nexus.tourgeek.com/repository/maven-snapshots</snapshotRepository>
+          <publicRepository>http://nexus.tourgeek.com/repository/maven-public</publicRepository>
+          <stagingRepository>http://nexus.tourgeek.com/repository/maven-staging</stagingRepository>
+      </properties>
+      </profile>
   </profiles>
 
   <licenses>
@@ -596,7 +596,7 @@
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-project-info-reports-plugin</artifactId>
-        <version>2.3.1</version>
+        <version>3.0.0</version>
       </plugin>
     </plugins>
   </reporting>
@@ -695,33 +695,33 @@
         <artifactId>org.osgi.compendium</artifactId>
         <version>${osgi-version}</version>
     </dependency>
-            <dependency>
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.bundlerepository</artifactId>
+        <version>${felix-bundlerepository-version}</version>
+        <exclusions>
+            <exclusion>
                 <groupId>org.apache.felix</groupId>
-                <artifactId>org.apache.felix.bundlerepository</artifactId>
-                <version>${felix-bundlerepository-version}</version>
-                <exclusions>
-                    <exclusion>
-                        <groupId>org.apache.felix</groupId>
-                        <artifactId>org.osgi.service.obr</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.apache.felix</groupId>
-                        <artifactId>org.apache.felix.shell</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>net.sf.kxml</groupId>
-                        <artifactId>kxml2</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.osgi</groupId>
-                        <artifactId>org.osgi.core</artifactId>
-                    </exclusion>
-                    <exclusion>
-                        <groupId>org.easymock</groupId>
-                        <artifactId>easymock</artifactId>
-                    </exclusion>
-                </exclusions>
-            </dependency>
+                <artifactId>org.osgi.service.obr</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>org.apache.felix</groupId>
+                <artifactId>org.apache.felix.shell</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>net.sf.kxml</groupId>
+                <artifactId>kxml2</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>org.osgi</groupId>
+                <artifactId>org.osgi.core</artifactId>
+            </exclusion>
+            <exclusion>
+                <groupId>org.easymock</groupId>
+                <artifactId>easymock</artifactId>
+            </exclusion>
+        </exclusions>
+    </dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
