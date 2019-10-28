@@ -34,7 +34,7 @@
         <timezone>-8</timezone> <!-- -8:00 PDT – Pacific Daylight Time (UTC -08:00) -->
     </developer>
   </developers>
-  
+
   <prerequisites>
      <maven>3.5.0</maven>
    </prerequisites>
@@ -56,10 +56,10 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
-    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository> <!-- Snapshot upload -->
-    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository> <!-- Release access -->
-    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
+      <releaseRepository>http://nexus.tourgeek.com/repository/maven-releases</releaseRepository>
+      <snapshotRepository>http://nexus.tourgeek.com/repository/maven-snapshots</snapshotRepository>
+      <publicRepository>http://nexus.tourgeek.com/repository/maven-public</publicRepository>
+      <stagingRepository>http://nexus.tourgeek.com/repository/maven-staging</stagingRepository>
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
@@ -133,7 +133,7 @@
     <mail-version>1.4.5</mail-version>
     <android-version>4.0.3_r3</android-version>
     <androidMin-version>4.0.3_r3</androidMin-version>
-    
+
     <commapiPath>/usr/local/java/lib/commapi/jar/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
 
@@ -175,6 +175,10 @@
     <profile>
       <id>sonatype-oss-release</id>
         <properties>
+            <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
+            <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository> <!-- Snapshot upload -->
+            <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository> <!-- Release access -->
+            <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
             <publicReleaseRepository>https://repo.maven.apache.org/maven2</publicReleaseRepository>	<!-- Maven central -->
         </properties>
         <build>
@@ -242,8 +246,8 @@
             </plugins>
         </build>
     </profile>
-    
-    <profile>
+
+      <profile>
         <id>dev</id>   <!-- Used with exec:java for local development -->
         <properties>
             <jbundle.mode>dev</jbundle.mode>
@@ -348,15 +352,6 @@
         </plugins>
       </build>
     </profile>
-      <profile>
-      <id>local-repository</id>
-      <properties>
-          <releaseRepository>http://nexus.tourgeek.com/repository/maven-releases</releaseRepository>
-          <snapshotRepository>http://nexus.tourgeek.com/repository/maven-snapshots</snapshotRepository>
-          <publicRepository>http://nexus.tourgeek.com/repository/maven-public</publicRepository>
-          <stagingRepository>http://nexus.tourgeek.com/repository/maven-staging</stagingRepository>
-      </properties>
-      </profile>
   </profiles>
 
   <licenses>
@@ -382,12 +377,12 @@
       </notifier>
     </notifiers>
   </ciManagement>
-  
+
   <issueManagement>
     <system>github issues</system>
     <url>https://github.com/jbundle/jbundle/issues</url>
   </issueManagement>
-  
+
   <distributionManagement>
     <snapshotRepository>
       <id>sonatype-nexus-snapshots</id>
@@ -412,7 +407,7 @@
           <target>1.6</target>
         </configuration>
       </plugin>
-      
+
       <plugin>
         <groupId>org.apache.felix</groupId>
         <artifactId>maven-bundle-plugin</artifactId>
@@ -465,7 +460,7 @@
           </configuration>
       </plugin>
     </plugins>
-    
+
     <pluginManagement>
       <plugins>
         <plugin>
@@ -581,13 +576,13 @@
     </plugins>
     </pluginManagement>
 
-    <extensions> 
-      <extension> 
-        <groupId>org.apache.maven.wagon</groupId> 
-         <artifactId>wagon-ssh</artifactId> 
-         <version>1.0-beta-7</version> 
-      </extension> 
-    </extensions> 
+    <extensions>
+      <extension>
+        <groupId>org.apache.maven.wagon</groupId>
+         <artifactId>wagon-ssh</artifactId>
+         <version>1.0-beta-7</version>
+      </extension>
+    </extensions>
 
   </build>
 
@@ -608,7 +603,7 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
+
   <!-- TODO Should move this to a dependency POM and do an import (only works after maven 2.0.9) -->
   <dependencyManagement>
     <dependencies>
@@ -658,7 +653,7 @@
       <artifactId>org.jbundle.util.muffinmanager</artifactId>
       <version>${jbundle-util-muffinmanager-version-range}</version>
     </dependency>
-    
+
     <!-- External dependencies -->
     <dependency>
       <groupId>org.jibx</groupId>
@@ -841,5 +836,5 @@
     </dependency>
     </dependencies>
   </dependencyManagement>
-  
+
 </project>
