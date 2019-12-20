@@ -56,10 +56,10 @@
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
-      <releaseRepository>http://nexus.tourgeek.com/repository/maven-releases</releaseRepository>
-      <snapshotRepository>http://nexus.tourgeek.com/repository/maven-snapshots</snapshotRepository>
-      <publicRepository>http://nexus.tourgeek.com/repository/maven-public</publicRepository>
-      <stagingRepository>http://nexus.tourgeek.com/repository/maven-staging</stagingRepository>
+      <releaseRepository>https://nexus.jx.tourgeek.com/repository/maven-releases</releaseRepository>
+      <snapshotRepository>https://nexus.jx.tourgeek.com/repository/maven-snapshots</snapshotRepository>
+      <publicRepository>https://maven.jx.tourgeek.com/repository/maven-public</publicRepository>
+      <stagingRepository>https://nexus.jx.tourgeek.com/repository/maven-staging</stagingRepository>
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
     <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
