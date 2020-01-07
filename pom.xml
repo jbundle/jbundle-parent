@@ -131,9 +131,13 @@
     <tomcat-catalina-version>7.0.23</tomcat-catalina-version>
     <jetty-version>8.1.17.v20150415</jetty-version>
     <j2ee-version>6</j2ee-version>
-    <mail-version>1.4.4</mail-version>
+    <servlet-api-version>3.1.0</servlet-api-version>    <!-- 4.0.0 -->
+    <mail-version>1.4.4</mail-version>  <!-- 1.6.0 -->
     <android-version>4.0.3_r3</android-version>
     <androidMin-version>4.0.3_r3</androidMin-version>
+    <jaf-version>1.2.1</jaf-version>
+    <soap-api-version>1.4.1</soap-api-version>
+    <saaj-impl-version>1.5.1</saaj-impl-version>
 
     <commapiPath>/usr/local/java/lib/commapi/jar/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
@@ -762,7 +766,7 @@
     <dependency>
       <groupId>javax.servlet</groupId>	<!-- This must be supported in OSGi web server -->
       <artifactId>javax.servlet-api</artifactId>	<!-- Make sure to match tomcat-catalina version -->
-      <version>3.1.0</version>
+      <version>${servlet-api-version}</version>
     </dependency>
     <dependency>
       <groupId>servlets.com</groupId>
