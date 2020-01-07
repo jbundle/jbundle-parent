@@ -118,8 +118,9 @@
     <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have a different version -->
     <base64coder-version>2010-12-19</base64coder-version>
     <tycho-version>0.11.0</tycho-version>
-    <osgi-version>4.2.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
-    <felix-bundlerepository-version>1.6.6</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
+    <osgi-version>6.0.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
+    <felix-framework-version>5.6.12</felix-framework-version>
+    <felix-bundlerepository-version>2.0.10</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
     <jnlp-servlet.version>1.0-6.0.02_ea_b02.1</jnlp-servlet.version>
     <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
 
@@ -130,7 +131,7 @@
     <tomcat-catalina-version>7.0.23</tomcat-catalina-version>
     <jetty-version>8.1.17.v20150415</jetty-version>
     <j2ee-version>6</j2ee-version>
-    <mail-version>1.4.5</mail-version>
+    <mail-version>1.4.4</mail-version>
     <android-version>4.0.3_r3</android-version>
     <androidMin-version>4.0.3_r3</androidMin-version>
 
@@ -681,39 +682,28 @@
       <version>${jibx-version}</version>
     </dependency>
     <dependency>
-      <groupId>org.osgi</groupId>
-      <artifactId>org.osgi.core</artifactId>
-      <version>${osgi-version}</version>
+        <groupId>org.osgi</groupId>
+        <artifactId>osgi.core</artifactId>
+        <version>${osgi-version}</version>
     </dependency>
     <dependency>
         <groupId>org.osgi</groupId>
-        <artifactId>org.osgi.compendium</artifactId>
+        <artifactId>osgi.cmpn</artifactId>
         <version>${osgi-version}</version>
     </dependency>
     <dependency>
         <groupId>org.apache.felix</groupId>
         <artifactId>org.apache.felix.bundlerepository</artifactId>
         <version>${felix-bundlerepository-version}</version>
+    </dependency>
+    <dependency>
+        <groupId>org.apache.felix</groupId>
+        <artifactId>org.apache.felix.framework</artifactId>
+        <version>${felix-framework-version}</version>
         <exclusions>
             <exclusion>
                 <groupId>org.apache.felix</groupId>
-                <artifactId>org.osgi.service.obr</artifactId>
-            </exclusion>
-            <exclusion>
-                <groupId>org.apache.felix</groupId>
-                <artifactId>org.apache.felix.shell</artifactId>
-            </exclusion>
-            <exclusion>
-                <groupId>net.sf.kxml</groupId>
-                <artifactId>kxml2</artifactId>
-            </exclusion>
-            <exclusion>
-                <groupId>org.osgi</groupId>
-                <artifactId>org.osgi.core</artifactId>
-            </exclusion>
-            <exclusion>
-                <groupId>org.easymock</groupId>
-                <artifactId>easymock</artifactId>
+                <artifactId>org.osgi.compendium</artifactId>
             </exclusion>
         </exclusions>
     </dependency>
@@ -771,8 +761,8 @@
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>	<!-- This must be supported in OSGi web server -->
-      <artifactId>servlet-api</artifactId>	<!-- Make sure to match tomcat-catalina version -->
-      <version>2.5</version>
+      <artifactId>javax.servlet-api</artifactId>	<!-- Make sure to match tomcat-catalina version -->
+      <version>3.1.0</version>
     </dependency>
     <dependency>
       <groupId>servlets.com</groupId>
