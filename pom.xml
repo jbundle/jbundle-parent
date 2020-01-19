@@ -62,11 +62,12 @@
     <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
-    <remoteOBRName>${projectName}-repository-${project.version}.xml</remoteOBRName>
+    <remoteOBRName>${projectName}-repository-${parent.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <projectName>jbundle-parent</projectName>
     <obrDeploy>local-file::default::file://${jbundle-workspace}/artifacts/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
     <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
+    <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
 
     <jbundle-package>${project.artifactId}</jbundle-package>  <!-- artifactId is usually the package -->
     <jbundle-package-filter>${jbundle-package}.*</jbundle-package-filter>    <!-- All packages in this filter and beyond -->
@@ -107,37 +108,47 @@
     <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
     <jbundle-javafx-version>1.0.5-SNAPSHOT</jbundle-javafx-version>
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
+    <jbundle-wrapped-version>1.0.6-SNAPSHOT</jbundle-wrapped-version>
     <javaFX-version>2.1</javaFX-version>
     <tourgeek-version>0.8.4-SNAPSHOT</tourgeek-version>
     <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
-    <jibx-version>1.3.2</jibx-version>
+    <jibx-version>1.3.3-SNAPSHOT</jibx-version>
     <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
-    <jibx-schema-version>1.2.0</jibx-schema-version>    <!-- Note: Some schema have a different version -->
+    <jibx-schema-version>1.2.1-SNAPSHOT</jibx-schema-version>    <!-- Note: Some schema have a different version -->
     <jibx-schema-version-range>[${jibx-schema-version},2.0.0)</jibx-schema-version-range>    <!-- Note: Some schema have a different version -->
-    <ota-version>1.1.6</ota-version>
+    <ota-version>1.1.7-SNAPSHOT</ota-version>
     <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have a different version -->
+
     <base64coder-version>2010-12-19</base64coder-version>
     <tycho-version>0.11.0</tycho-version>
     <osgi-version>6.0.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
     <felix-framework-version>5.6.12</felix-framework-version>
     <felix-bundlerepository-version>2.0.10</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
-    <jnlp-servlet.version>1.0-6.0.02_ea_b02.1</jnlp-servlet.version>
+    <jnlp-servlet-version>1.0-beta-7</jnlp-servlet-version>
     <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
+    <c3p0-version>0.9.5.5</c3p0-version>
+    <mysql-connector-java-version>5.1.48</mysql-connector-java-version>
+    <derby-version>10.14.2.0</derby-version>
+    <json-version>20190722</json-version>
+    <commons-collections-version>3.2.1</commons-collections-version>
+    <jakarta.xml.activation-version>1.2.1</jakarta.xml.activation-version>
+    <jakarta.xml.bind-version>2.3.2</jakarta.xml.bind-version>
 
     <javaws-version>${java.specification.version}</javaws-version>
     <plugin-version>${java.specification.version}</plugin-version>
     <dojo-version>1.9.0</dojo-version>
     <httpclient-version>4.5.10</httpclient-version>
-    <tomcat-catalina-version>7.0.23</tomcat-catalina-version>
+    <tomcat-catalina-version>7.0.99</tomcat-catalina-version>
     <jetty-version>8.1.17.v20150415</jetty-version>
     <j2ee-version>6</j2ee-version>
     <servlet-api-version>3.1.0</servlet-api-version>    <!-- 4.0.1 -->
     <mail-version>1.4.4</mail-version>  <!-- 1.6.0 -->
     <android-version>4.0.3_r3</android-version>
     <androidMin-version>4.0.3_r3</androidMin-version>
-    <jaf-version>1.2.1</jaf-version>
     <soap-api-version>1.4.1</soap-api-version>
     <saaj-impl-version>1.5.1</saaj-impl-version>
+    <stax-impl-version>1.8.1</stax-impl-version>
+    <mimepull-version>1.9.11</mimepull-version>
 
     <commapiPath>/usr/local/java/lib/commapi/jar/comm.jar</commapiPath>
     <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
@@ -428,6 +439,7 @@
           <prefixUrl>${publicReleaseRepository}</prefixUrl>
           <remoteOBR>${remoteOBRName}</remoteOBR> <!-- The filename of the remote obj (NONE if not used) -->
           <obrDeploymentRepository>${obrDeploy}</obrDeploymentRepository>   <!-- The location to deploy obr xml file -->
+            <bundleUrl>${bundleUrl}</bundleUrl>
           <!-- bundleUrl>${publicReleaseRepository}/${groupPath}/${project.artifact}</bundleUrl --> <!-- Location of this bundle -->
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
@@ -729,11 +741,11 @@
       <version>1.2.17</version>
     </dependency>
     <dependency>
-      <!-- groupId>org.codehaus.mojo.webstart</groupId>
-      <artifactId>webstart-jnlp-servlet</artifactId -->
-      <groupId>org.jbundle.util.osgi.wrapped</groupId>
-      <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId>
-      <version>${jnlp-servlet.version}</version>
+      <groupId>org.codehaus.mojo</groupId>
+      <artifactId>webstart-jnlp-servlet</artifactId>
+      <!-- groupId>org.jbundle.util.osgi.wrapped</groupId>
+      <artifactId>org.jbundle.util.osgi.wrapped.jnlp.sample</artifactId -->
+      <version>${jnlp-servlet-version}</version>
     </dependency>
     <dependency>
       <groupId>jardiff</groupId>
@@ -743,12 +755,12 @@
     <dependency>     <!-- **** NOTE: This should be a 'runtime' dependency! Fix your code ***** -->
       <groupId>mysql</groupId>
       <artifactId>mysql-connector-java</artifactId>
-      <version>5.1.48</version>
+      <version>${mysql-connector-java-version}</version>
     </dependency>
     <dependency>
         <groupId>org.apache.derby</groupId>
         <artifactId>derby</artifactId>
-        <version>10.15.1.3</version>
+        <version>${derby-version}</version>
     </dependency>
     <dependency>
       <groupId>org.apache.httpcomponents</groupId>
@@ -768,7 +780,7 @@
     <dependency>
       <groupId>org.json</groupId>
       <artifactId>json</artifactId>
-      <version>20190722</version>
+      <version>${json-version}</version>
     </dependency>
     <dependency>
       <groupId>javax.servlet</groupId>	<!-- This must be supported in OSGi web server -->
@@ -835,6 +847,46 @@
       <artifactId>org.jibx.schema.net.webservicex.currencyconvertor</artifactId>
       <version>${jibx-schema-version}</version>
     </dependency>
+        <dependency>
+            <groupId>jakarta.activation</groupId>
+            <artifactId>jakarta.activation-api</artifactId>
+            <version>${jakarta.xml.activation-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.activation</groupId>
+            <artifactId>jakarta.activation</artifactId>
+            <version>${jakarta.xml.activation-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.soap</groupId>
+            <artifactId>jakarta.xml.soap-api</artifactId>
+            <version>${soap-api-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.xml.bind</groupId>
+            <artifactId>jakarta.xml.bind-api</artifactId>
+            <version>${jakarta.xml.bind-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jvnet.mimepull</groupId>
+            <artifactId>mimepull</artifactId>
+            <version>${mimepull-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jvnet.staxex</groupId>
+            <artifactId>stax-ex</artifactId>
+            <version>${stax-impl-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>com.sun.xml.messaging.saaj</groupId>
+            <artifactId>saaj-impl</artifactId>
+            <version>${saaj-impl-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>commons-collections</groupId>
+            <artifactId>commons-collections</artifactId>
+            <version>${commons-collections-version}</version>
+        </dependency>
     </dependencies>
   </dependencyManagement>
 
