@@ -116,8 +116,8 @@
     <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
     <jibx-schema-version>1.2.1-SNAPSHOT</jibx-schema-version>    <!-- Note: Some schema have a different version -->
     <jibx-schema-version-range>[${jibx-schema-version},2.0.0)</jibx-schema-version-range>    <!-- Note: Some schema have a different version -->
-    <ota-version>1.1.7-SNAPSHOT</ota-version>
-    <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have a different version -->
+    <ota-version>1.1.6</ota-version>
+    <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have different versions -->
 
     <base64coder-version>2010-12-19</base64coder-version>
     <tycho-version>0.11.0</tycho-version>
@@ -127,8 +127,8 @@
     <jnlp-servlet-version>1.0-beta-7</jnlp-servlet-version>
     <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
     <c3p0-version>0.9.5.5</c3p0-version>
-    <mysql-connector-java-version>5.1.48</mysql-connector-java-version>
-    <derby-version>10.14.2.0</derby-version>
+    <mysql-connector-java-version>8.0.19</mysql-connector-java-version>
+    <derby-version>10.15.1.3</derby-version>
     <json-version>20190722</json-version>
     <commons-collections-version>3.2.1</commons-collections-version>
     <jakarta.xml.activation-version>1.2.1</jakarta.xml.activation-version>
@@ -439,7 +439,7 @@
           <prefixUrl>${publicReleaseRepository}</prefixUrl>
           <remoteOBR>${remoteOBRName}</remoteOBR> <!-- The filename of the remote obj (NONE if not used) -->
           <obrDeploymentRepository>${obrDeploy}</obrDeploymentRepository>   <!-- The location to deploy obr xml file -->
-            <bundleUrl>${bundleUrl}</bundleUrl>
+          <bundleUrl>${bundleUrl}</bundleUrl>
           <!-- bundleUrl>${publicReleaseRepository}/${groupPath}/${project.artifact}</bundleUrl --> <!-- Location of this bundle -->
           <instructions>
             <Bundle-ManifestVersion>2</Bundle-ManifestVersion>
