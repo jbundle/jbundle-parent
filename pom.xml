@@ -128,7 +128,7 @@
     <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
     <c3p0-version>0.9.5.5</c3p0-version>
     <mysql-connector-java-version>8.0.19</mysql-connector-java-version>
-    <derby-version>10.15.1.3</derby-version>
+    <derby-version>10.14.2.0</derby-version>    <!-- Note: This is the last version that runs on java8 -->
     <json-version>20190722</json-version>
     <commons-collections-version>3.2.1</commons-collections-version>
     <jakarta.xml.activation-version>1.2.1</jakarta.xml.activation-version>
