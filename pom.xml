@@ -13,7 +13,7 @@
   ********** -->
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.4.2-SNAPSHOT</version>
+  <version>1.4.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -39,11 +39,11 @@
      <maven>3.5.0</maven>
    </prerequisites>
 
-   <repositories>
+    <repositories>
         <repository>
             <id>sonatype-nexus-snapshots</id>
             <name>Sonatype Nexus Snapshots</name>
-            <url>${snapshotRepository}</url>
+            <url>${snapshotRepository}/</url>
             <releases>
                 <enabled>false</enabled>
             </releases>
@@ -53,7 +53,20 @@
         </repository>
     </repositories>
 
-  <properties>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>sonatype-nexus-snapshots</id>
+            <name>Sonatype Nexus Snapshots</name>
+            <url>${snapshotRepository}</url>
+        </snapshotRepository>
+        <repository>
+            <id>sonatype-nexus-staging</id>
+            <name>Nexus Release Repository</name>
+            <url>${releaseRepository}/</url>
+        </repository>
+    </distributionManagement>
+
+    <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
@@ -414,19 +427,6 @@
     <url>https://github.com/jbundle/jbundle/issues</url>
   </issueManagement>
 
-  <distributionManagement>
-    <snapshotRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Nexus Snapshot Repository</name>
-      <url>${snapshotRepository}</url>
-    </snapshotRepository>
-    <repository>
-      <id>sonatype-nexus-staging</id>
-      <name>Nexus Release Repository</name>
-      <url>${releaseRepository}</url>
-    </repository>
-  </distributionManagement>
-
   <build>
     <plugins>
       <plugin>
@@ -588,12 +588,12 @@
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>2.5.2</version>
       </plugin>
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-surefire-plugin</artifactId>
-          <version>3.0.0-M3</version>
+          <version>2.22.2</version>
       </plugin>
       <plugin>
           <groupId>org.codehaus.mojo</groupId>
@@ -603,7 +603,7 @@
       <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-deploy-plugin</artifactId>
-          <version>3.0.0-M1</version>
+          <version>2.8.2</version>
       </plugin>
     </plugins>
     </pluginManagement>
