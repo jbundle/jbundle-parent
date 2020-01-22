@@ -65,7 +65,8 @@
     <remoteOBRName>${projectName}-repository-${parent.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <projectName>jbundle-parent</projectName>
-    <obrDeploy>local-file::default::file://${jbundle-workspace}/artifacts/artifacts/src/main/resources/obr/repository/</obrDeploy> <!-- Local -->
+    <artifactPath>artifacts/repositories/${projectName}-repository/src/main/resources/obr</artifactPath>
+    <obrDeploy>local-file::default::file://${jbundle-workspace}/${artifactPath}/repository/</obrDeploy> <!-- Local -->
     <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
     <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
 
@@ -75,24 +76,24 @@
     <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
     <mainClass>org.jbundle.Main</mainClass>
 
-    <jbundle-jcalendarbutton-version>1.6.5-SNAPSHOT</jbundle-jcalendarbutton-version>
-    <jbundle-jcalendarbutton-version-range>[${jbundle-jcalendarbutton-version},2.0.0)</jbundle-jcalendarbutton-version-range>
+    <jbundle-util-jcalendarbutton-version>1.6.5-SNAPSHOT</jbundle-util-jcalendarbutton-version>
+    <jbundle-util-jcalendarbutton-version-range>[${jbundle-util-jcalendarbutton-version},2.0.0)</jbundle-util-jcalendarbutton-version-range>
     <jbundle-util-version>2.0.8-SNAPSHOT</jbundle-util-version>
     <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
     <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
     <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
     <jbundle-util-wsdl-version>1.0.5-SNAPSHOT</jbundle-util-wsdl-version>
     <jbundle-util-wsdl-version-range>[${jbundle-util-wsdl-version},2.0.0)</jbundle-util-wsdl-version-range>
-    <jbundle-calendarpanel-version>1.1.6-SNAPSHOT</jbundle-calendarpanel-version>
-    <jbundle-calendarpanel-version-range>[${jbundle-calendarpanel-version},2.0.0)</jbundle-calendarpanel-version-range>
+    <jbundle-util-calendarpanel-version>1.1.6-SNAPSHOT</jbundle-util-calendarpanel-version>
+    <jbundle-util-calendarpanel-version-range>[${jbundle-util-calendarpanel-version},2.0.0)</jbundle-util-calendarpanel-version-range>
     <jbundle-util-other-version>0.7.10-SNAPSHOT</jbundle-util-other-version>
     <jbundle-util-biorhythm-version>0.8.7-SNAPSHOT</jbundle-util-biorhythm-version>
-    <jbundle-osgi-version>2.0.10-SNAPSHOT</jbundle-osgi-version>
-    <jbundle-osgi-version-range>[${jbundle-osgi-version},3.0.0)</jbundle-osgi-version-range>
+    <jbundle-util-osgi-version>2.0.10-SNAPSHOT</jbundle-util-osgi-version>
+    <jbundle-util-osgi-version-range>[${jbundle-util-osgi-version},3.0.0)</jbundle-util-osgi-version-range>
     <jbundle-util-webapp-version>1.3.7-SNAPSHOT</jbundle-util-webapp-version>
     <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
-    <jbundle-auto-webstart-version>1.6.10-SNAPSHOT</jbundle-auto-webstart-version>
-    <jbundle-auto-webstart-version-range>[${jbundle-auto-webstart-version},2.0.0)</jbundle-auto-webstart-version-range>
+    <jbundle-util-osgi-webstart-version>1.6.10-SNAPSHOT</jbundle-util-osgi-webstart-version>
+    <jbundle-util-osgi-webstart-version-range>[${jbundle-util-osgi-webstart-version},2.0.0)</jbundle-util-osgi-webstart-version-range>
     <jbundle-version>1.0.10-SNAPSHOT</jbundle-version>
     <jbundle-version-range>[1.0.10-SNAPSHOT,2.0.0)</jbundle-version-range> <!-- ${jbundle-version} -->
     <jbundle-plugin-version>1.0.1</jbundle-plugin-version> <!-- ${jbundle-version} -->
@@ -102,16 +103,18 @@
     <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
     <jbundle-app-dance-version>0.8.4-SNAPSHOT</jbundle-app-dance-version>
     <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
-    <jbundle-swing-version>1.0.5-SNAPSHOT</jbundle-swing-version>
-    <jbundle-swing-version-range>[${jbundle-swing-version},2.0.0)</jbundle-swing-version-range>
+    <jbundle-view-swing-version>1.0.5-SNAPSHOT</jbundle-view-swing-version>
+    <jbundle-view-swing-version-range>[${jbundle-view-swing-version},2.0.0)</jbundle-view-swing-version-range>
     <jbundle-android-version>1.0.1-SNAPSHOT</jbundle-android-version>
     <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
     <jbundle-javafx-version>1.0.5-SNAPSHOT</jbundle-javafx-version>
     <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
-    <jbundle-wrapped-version>1.0.6-SNAPSHOT</jbundle-wrapped-version>
+    <jbundle-util-osgi-wrapped-version>1.0.6-SNAPSHOT</jbundle-util-osgi-wrapped-version>
+    <jbundle-external-version>${jbundle-util-osgi-wrapped-version}</jbundle-external-version>
     <javaFX-version>2.1</javaFX-version>
     <tourgeek-version>0.8.4-SNAPSHOT</tourgeek-version>
     <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
+    <jibx-parent-version>7.1.6-SNAPSHOT</jibx-parent-version>
     <jibx-version>1.3.3-SNAPSHOT</jibx-version>
     <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
     <jibx-schema-version>1.2.1-SNAPSHOT</jibx-schema-version>    <!-- Note: Some schema have a different version -->
@@ -634,7 +637,7 @@
     <!-- These are mine -->
     <dependency>
       <groupId>org.jbundle.util.osgi</groupId>
-      <version>${jbundle-osgi-version-range}</version>
+      <version>${jbundle-util-osgi-version-range}</version>
       <artifactId>org.jbundle.util.osgi</artifactId>
     </dependency>
     <dependency>
@@ -660,17 +663,17 @@
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel</artifactId>
-      <version>${jbundle-calendarpanel-version-range}</version>
+      <version>${jbundle-util-calendarpanel-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.calendarpanel</groupId>
       <artifactId>org.jbundle.util.calendarpanel.model</artifactId>
-      <version>${jbundle-calendarpanel-version-range}</version>
+      <version>${jbundle-util-calendarpanel-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util.jcalendarbutton</groupId>
       <artifactId>org.jbundle.util.jcalendarbutton</artifactId>
-      <version>${jbundle-jcalendarbutton-version-range}</version>
+      <version>${jbundle-util-jcalendarbutton-version-range}</version>
     </dependency>
     <dependency>
       <groupId>org.jbundle.util</groupId>
