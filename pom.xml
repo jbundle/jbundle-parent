@@ -62,7 +62,7 @@
     <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
     <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
-    <remoteOBRName>${projectName}-repository-${parent.version}.xml</remoteOBRName>
+    <remoteOBRName>${projectName}-repository-${project.parent.version}.xml</remoteOBRName>
     <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
     <projectName>jbundle-parent</projectName>
     <artifactPath>artifacts/repositories/${projectName}-repository/src/main/resources/obr</artifactPath>
