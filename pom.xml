@@ -13,7 +13,7 @@
   ********** -->
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.4.3-SNAPSHOT</version>
+  <version>1.4.1-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -496,11 +496,6 @@
 
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>org.jibx</groupId>
-          <artifactId>maven-jibx-plugin</artifactId>
-          <version>${jibx-version}</version>
-        </plugin>
         <plugin>
           <groupId>org.jibx</groupId>
           <artifactId>jibx-maven-plugin</artifactId>
