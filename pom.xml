@@ -67,141 +67,142 @@
     </distributionManagement>
 
     <properties>
-    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <arguments />
 
-    <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
-    <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository> <!-- Snapshot upload -->
-    <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository> <!-- Release access -->
-    <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
-    <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
+        <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
+        <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository> <!-- Snapshot upload -->
+        <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository> <!-- Release access -->
+        <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
+        <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
 
-    <remoteOBRName>${projectName}-repository-${project.parent.version}.xml</remoteOBRName>
-    <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
-    <projectName>jbundle-parent</projectName>
-    <artifactPath>artifacts/repositories/${projectName}-repository/src/main/resources/obr</artifactPath>
-    <obrDeploy>local-file::default::file://${jbundle-workspace}/${artifactPath}/repository/</obrDeploy> <!-- Local -->
-    <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
-    <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
+        <remoteOBRName>${projectName}-repository-${project.parent.version}.xml</remoteOBRName>
+        <!-- remoteOBRName>NONE</remoteOBRName -->   <!-- Set to NONE if not used -->
+        <projectName>jbundle-parent</projectName>
+        <artifactPath>artifacts/repositories/${projectName}-repository/src/main/resources/obr</artifactPath>
+        <obrDeploy>local-file::default::file://${jbundle-workspace}/${artifactPath}/repository/</obrDeploy> <!-- Local -->
+        <!-- obrDeploy>sonatype-nexus-staging::obr::http://repository.jbundle.org:8081/nexus/content/repositories/repository</obrDeploy --> <!-- Remote -->
+        <bundleUrl>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundleUrl>  <!-- Dont's use the default - public repo -->
 
-    <jbundle-package>${project.artifactId}</jbundle-package>  <!-- artifactId is usually the package -->
-    <jbundle-package-filter>${jbundle-package}.*</jbundle-package-filter>    <!-- All packages in this filter and beyond -->
-    <jbundle-package-export>${jbundle-package-filter};version=${project.version}</jbundle-package-export> <!-- Bundle package to export -->
-    <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
-    <mainClass>org.jbundle.Main</mainClass>
+        <jbundle-package>${project.artifactId}</jbundle-package>  <!-- artifactId is usually the package -->
+        <jbundle-package-filter>${jbundle-package}.*</jbundle-package-filter>    <!-- All packages in this filter and beyond -->
+        <jbundle-package-export>${jbundle-package-filter};version=${project.version}</jbundle-package-export> <!-- Bundle package to export -->
+        <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
+        <mainClass>org.jbundle.Main</mainClass>
 
-    <jbundle-util-jcalendarbutton-version>1.6.5</jbundle-util-jcalendarbutton-version>
-    <jbundle-util-jcalendarbutton-version-range>[${jbundle-util-jcalendarbutton-version},2.0.0)</jbundle-util-jcalendarbutton-version-range>
-    <jbundle-util-version>2.0.8</jbundle-util-version>
-    <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
-    <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
-    <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
-    <jbundle-util-wsdl-version>1.0.5</jbundle-util-wsdl-version>
-    <jbundle-util-wsdl-version-range>[${jbundle-util-wsdl-version},2.0.0)</jbundle-util-wsdl-version-range>
-    <jbundle-util-calendarpanel-version>1.1.6</jbundle-util-calendarpanel-version>
-    <jbundle-util-calendarpanel-version-range>[${jbundle-util-calendarpanel-version},2.0.0)</jbundle-util-calendarpanel-version-range>
-    <jbundle-util-other-version>0.7.10</jbundle-util-other-version>
-    <jbundle-util-biorhythm-version>0.8.7</jbundle-util-biorhythm-version>
-    <jbundle-util-osgi-version>2.0.10</jbundle-util-osgi-version>
-    <jbundle-util-osgi-version-range>[${jbundle-util-osgi-version},3.0.0)</jbundle-util-osgi-version-range>
-    <jbundle-util-webapp-version>1.3.7</jbundle-util-webapp-version>
-    <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
-    <jbundle-util-osgi-webstart-version>1.6.10</jbundle-util-osgi-webstart-version>
-    <jbundle-util-osgi-webstart-version-range>[${jbundle-util-osgi-webstart-version},2.0.0)</jbundle-util-osgi-webstart-version-range>
-    <jbundle-version>1.0.10</jbundle-version>
-    <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range> <!-- ${jbundle-version} -->
-    <jbundle-plugin-version>1.0.1</jbundle-plugin-version> <!-- ${jbundle-version} -->
-    <jbundle-app-office-version>1.1.4</jbundle-app-office-version>
-    <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
-    <jbundle-app-picture-version>0.8.4</jbundle-app-picture-version>
-    <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
-    <jbundle-app-dance-version>0.8.4</jbundle-app-dance-version>
-    <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
-    <jbundle-view-swing-version>1.0.5</jbundle-view-swing-version>
-    <jbundle-view-swing-version-range>[${jbundle-view-swing-version},2.0.0)</jbundle-view-swing-version-range>
-    <jbundle-android-version>1.0.1</jbundle-android-version>
-    <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
-    <jbundle-javafx-version>1.0.5</jbundle-javafx-version>
-    <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
-    <jbundle-util-osgi-wrapped-version>1.0.6</jbundle-util-osgi-wrapped-version>
-    <jbundle-external-version>${jbundle-util-osgi-wrapped-version}</jbundle-external-version>
-    <javaFX-version>2.1</javaFX-version>
-    <tourgeek-version>0.8.4</tourgeek-version>
-    <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
-    <jibx-parent-version>7.1.6</jibx-parent-version>
-    <jibx-version>1.3.3</jibx-version>
-    <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
-    <jibx-schema-version>1.2.1</jibx-schema-version>    <!-- Note: Some schema have a different version -->
-    <jibx-schema-version-range>[${jibx-schema-version},2.0.0)</jibx-schema-version-range>    <!-- Note: Some schema have a different version -->
-    <ota-version>1.1.6</ota-version>
-    <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have different versions -->
+        <jbundle-util-jcalendarbutton-version>1.6.5</jbundle-util-jcalendarbutton-version>
+        <jbundle-util-jcalendarbutton-version-range>[${jbundle-util-jcalendarbutton-version},2.0.0)</jbundle-util-jcalendarbutton-version-range>
+        <jbundle-util-version>2.0.8</jbundle-util-version>
+        <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
+        <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
+        <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
+        <jbundle-util-wsdl-version>1.0.5</jbundle-util-wsdl-version>
+        <jbundle-util-wsdl-version-range>[${jbundle-util-wsdl-version},2.0.0)</jbundle-util-wsdl-version-range>
+        <jbundle-util-calendarpanel-version>1.1.6</jbundle-util-calendarpanel-version>
+        <jbundle-util-calendarpanel-version-range>[${jbundle-util-calendarpanel-version},2.0.0)</jbundle-util-calendarpanel-version-range>
+        <jbundle-util-other-version>0.7.10</jbundle-util-other-version>
+        <jbundle-util-biorhythm-version>0.8.7</jbundle-util-biorhythm-version>
+        <jbundle-util-osgi-version>2.0.10</jbundle-util-osgi-version>
+        <jbundle-util-osgi-version-range>[${jbundle-util-osgi-version},3.0.0)</jbundle-util-osgi-version-range>
+        <jbundle-util-webapp-version>1.3.7</jbundle-util-webapp-version>
+        <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
+        <jbundle-util-osgi-webstart-version>1.6.10</jbundle-util-osgi-webstart-version>
+        <jbundle-util-osgi-webstart-version-range>[${jbundle-util-osgi-webstart-version},2.0.0)</jbundle-util-osgi-webstart-version-range>
+        <jbundle-version>1.0.10</jbundle-version>
+        <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range> <!-- ${jbundle-version} -->
+        <jbundle-plugin-version>1.0.1</jbundle-plugin-version> <!-- ${jbundle-version} -->
+        <jbundle-app-office-version>1.1.4</jbundle-app-office-version>
+        <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
+        <jbundle-app-picture-version>0.8.4</jbundle-app-picture-version>
+        <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
+        <jbundle-app-dance-version>0.8.4</jbundle-app-dance-version>
+        <jbundle-app-dance-version-range>[${jbundle-app-dance-version},1.0.0)</jbundle-app-dance-version-range>
+        <jbundle-view-swing-version>1.0.5</jbundle-view-swing-version>
+        <jbundle-view-swing-version-range>[${jbundle-view-swing-version},2.0.0)</jbundle-view-swing-version-range>
+        <jbundle-android-version>1.0.1</jbundle-android-version>
+        <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
+        <jbundle-javafx-version>1.0.5</jbundle-javafx-version>
+        <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
+        <jbundle-util-osgi-wrapped-version>1.0.6</jbundle-util-osgi-wrapped-version>
+        <jbundle-external-version>${jbundle-util-osgi-wrapped-version}</jbundle-external-version>
+        <javaFX-version>2.1</javaFX-version>
+        <tourgeek-version>0.8.4</tourgeek-version>
+        <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
+        <jibx-parent-version>7.1.6</jibx-parent-version>
+        <jibx-version>1.3.3</jibx-version>
+        <jibx-version-range>[${jibx-version},2.0.0)</jibx-version-range>
+        <jibx-schema-version>1.2.1</jibx-schema-version>    <!-- Note: Some schema have a different version -->
+        <jibx-schema-version-range>[${jibx-schema-version},2.0.0)</jibx-schema-version-range>    <!-- Note: Some schema have a different version -->
+        <ota-version>1.1.6</ota-version>
+        <ota-version-range>[${ota-version},2.0.0)</ota-version-range>    <!-- Note: Some schema have different versions -->
 
-    <base64coder-version>2010-12-19</base64coder-version>
-    <tycho-version>0.11.0</tycho-version>
-    <osgi-version>6.0.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
-    <felix-framework-version>5.6.12</felix-framework-version>
-    <felix-bundlerepository-version>2.0.10</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
-    <jnlp-servlet-version>1.0-beta-7</jnlp-servlet-version>
-    <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
-    <c3p0-version>0.9.5.5</c3p0-version>
-    <mysql-connector-java-version>8.0.19</mysql-connector-java-version>
-    <derby-version>10.14.2.0</derby-version>    <!-- Note: This is the last version that runs on java8 -->
-    <json-version>20190722</json-version>
-    <commons-collections-version>3.2.1</commons-collections-version>
-    <jakarta.xml.activation-version>1.2.1</jakarta.xml.activation-version>
-    <jakarta.xml.bind-version>2.3.2</jakarta.xml.bind-version>
+        <base64coder-version>2010-12-19</base64coder-version>
+        <tycho-version>0.11.0</tycho-version>
+        <osgi-version>6.0.0</osgi-version>  <!-- There are some weird problems between osgi.core and compendium and bundlerepository -->
+        <felix-framework-version>5.6.12</felix-framework-version>
+        <felix-bundlerepository-version>2.0.10</felix-bundlerepository-version> <!-- See all the exclusions under the bundlerespository dependency -->
+        <jnlp-servlet-version>1.0-beta-7</jnlp-servlet-version>
+        <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
+        <c3p0-version>0.9.5.5</c3p0-version>
+        <mysql-connector-java-version>8.0.19</mysql-connector-java-version>
+        <derby-version>10.14.2.0</derby-version>    <!-- Note: This is the last version that runs on java8 -->
+        <json-version>20190722</json-version>
+        <commons-collections-version>3.2.1</commons-collections-version>
+        <jakarta.xml.activation-version>1.2.1</jakarta.xml.activation-version>
+        <jakarta.xml.bind-version>2.3.2</jakarta.xml.bind-version>
 
-    <javaws-version>${java.specification.version}</javaws-version>
-    <plugin-version>${java.specification.version}</plugin-version>
-    <dojo-version>1.9.0</dojo-version>
-    <httpclient-version>4.5.10</httpclient-version>
-    <tomcat-catalina-version>7.0.99</tomcat-catalina-version>
-    <jetty-version>8.1.17.v20150415</jetty-version>
-    <j2ee-version>6</j2ee-version>
-    <servlet-api-version>3.1.0</servlet-api-version>    <!-- 4.0.1 -->
-    <mail-version>1.4.4</mail-version>  <!-- 1.6.0 -->
-    <android-version>4.0.3_r3</android-version>
-    <androidMin-version>4.0.3_r3</androidMin-version>
-    <soap-api-version>1.4.1</soap-api-version>
-    <saaj-impl-version>1.5.1</saaj-impl-version>
-    <stax-impl-version>1.8.1</stax-impl-version>
-    <mimepull-version>1.9.11</mimepull-version>
+        <javaws-version>${java.specification.version}</javaws-version>
+        <plugin-version>${java.specification.version}</plugin-version>
+        <dojo-version>1.9.0</dojo-version>
+        <httpclient-version>4.5.10</httpclient-version>
+        <tomcat-catalina-version>7.0.99</tomcat-catalina-version>
+        <jetty-version>8.1.17.v20150415</jetty-version>
+        <j2ee-version>6</j2ee-version>
+        <servlet-api-version>3.1.0</servlet-api-version>    <!-- 4.0.1 -->
+        <mail-version>1.4.4</mail-version>  <!-- 1.6.0 -->
+        <android-version>4.0.3_r3</android-version>
+        <androidMin-version>4.0.3_r3</androidMin-version>
+        <soap-api-version>1.4.1</soap-api-version>
+        <saaj-impl-version>1.5.1</saaj-impl-version>
+        <stax-impl-version>1.8.1</stax-impl-version>
+        <mimepull-version>1.9.11</mimepull-version>
 
-    <commapiPath>/usr/local/java/lib/commapi/jar/comm.jar</commapiPath>
-    <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
+        <commapiPath>/usr/local/java/lib/commapi/jar/comm.jar</commapiPath>
+        <j2eePath>/usr/local/java/web/glassfish/glassfish/lib/javaee.jar</j2eePath>
 
-    <!-- Move these to settings -->
-    <jbundle-workspace>${user.home}/workspace/workspace</jbundle-workspace>
-    <jbundle-policyfile>${jbundle-workspace}/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle-policyfile>
+        <!-- Move these to settings -->
+        <jbundle-workspace>${user.home}/workspace/workspace</jbundle-workspace>
+        <jbundle-policyfile>${jbundle-workspace}/jbundle/jbundle/res/docs/docs/src/main/resources/org/jbundle/res/bin/policy/policy.all</jbundle-policyfile>
 
-    <documentationSite>www.jbundle.org</documentationSite>
-    <documentationSiteURL>http://${documentationSite}</documentationSiteURL>
-    <documentationPath>web</documentationPath>
-    <documentationURL>scp://${documentationSite}://${documentationPath}</documentationURL>
+        <documentationSite>www.jbundle.org</documentationSite>
+        <documentationSiteURL>http://${documentationSite}</documentationSiteURL>
+        <documentationPath>web</documentationPath>
+        <documentationURL>scp://${documentationSite}://${documentationPath}</documentationURL>
 
-    <!-- Runtime parameter (dot notation is okay) -->
-    <jbundle.db.databaseproduct />
-    <jbundle.db.local>Client</jbundle.db.local>
-    <jbundle.db.remote>Client</jbundle.db.remote>
-    <jbundle.db.table>Net</jbundle.db.table>
+        <!-- Runtime parameter (dot notation is okay) -->
+        <jbundle.db.databaseproduct />
+        <jbundle.db.local>Client</jbundle.db.local>
+        <jbundle.db.remote>Client</jbundle.db.remote>
+        <jbundle.db.table>Net</jbundle.db.table>
 
-    <record />
-    <screen />
-    <menu />
-    <language />
+        <record />
+        <screen />
+        <menu />
+        <language />
 
-    <systemname>${projectName}</systemname>
-    <jbundle.db.local>Client</jbundle.db.local>
-    <jbundle.db.remote>Client</jbundle.db.remote>
-    <jbundle.db.table>Client</jbundle.db.table>
-    <jbundle.connectiontype>Proxy</jbundle.connectiontype>
-    <jbundle.server>localhost</jbundle.server>
-    <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
-    <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
-    <jbundle.mode />
-    <jbundle.messageserver />	<!-- (remote) -->
-    <jbundle.backgroundcolor>#EEEEFF</jbundle.backgroundcolor>
-    <jbundle.background>backgrounds/worldmapalpha.gif</jbundle.background>
-  </properties>
+        <systemname>${projectName}</systemname>
+        <jbundle.db.local>Client</jbundle.db.local>
+        <jbundle.db.remote>Client</jbundle.db.remote>
+        <jbundle.db.table>Client</jbundle.db.table>
+        <jbundle.connectiontype>Proxy</jbundle.connectiontype>
+        <jbundle.server>localhost</jbundle.server>
+        <jbundle.codebase>${jbundle.server}:8181/</jbundle.codebase>
+        <jbundle.rmicodebase>http://${jbundle.codebase}/classes/</jbundle.rmicodebase>
+        <jbundle.mode />
+        <jbundle.messageserver />	<!-- (remote) -->
+        <jbundle.backgroundcolor>#EEEEFF</jbundle.backgroundcolor>
+        <jbundle.background>backgrounds/worldmapalpha.gif</jbundle.background>
+    </properties>
 
   <profiles>
     <profile>
