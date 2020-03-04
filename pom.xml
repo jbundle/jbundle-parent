@@ -108,7 +108,7 @@
         <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
         <jbundle-util-osgi-webstart-version>1.6.10</jbundle-util-osgi-webstart-version>
         <jbundle-util-osgi-webstart-version-range>[${jbundle-util-osgi-webstart-version},2.0.0)</jbundle-util-osgi-webstart-version-range>
-        <jbundle-version>1.0.10</jbundle-version>
+        <jbundle-version>1.0.11-SNAPSHOT</jbundle-version>
         <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range> <!-- ${jbundle-version} -->
         <jbundle-plugin-version>1.0.1</jbundle-plugin-version> <!-- ${jbundle-version} -->
         <jbundle-view-swing-version>1.0.5</jbundle-view-swing-version>
@@ -126,7 +126,7 @@
         <jbundle-util-osgi-wrapped-version>1.0.6</jbundle-util-osgi-wrapped-version>
         <jbundle-external-version>${jbundle-util-osgi-wrapped-version}</jbundle-external-version>
         <javaFX-version>2.1</javaFX-version>
-        <tourgeek-version>0.8.4</tourgeek-version>
+        <tourgeek-version>0.8.5-SNAPSHOT</tourgeek-version>
         <tourgeek-version-range>[${tourgeek-version},1.0.0)</tourgeek-version-range>
         <jibx-parent-version>7.1.6</jibx-parent-version>
         <jibx-version>1.3.3</jibx-version>
@@ -307,6 +307,16 @@
             <jbundle.db.table>Jdbc</jbundle.db.table>
 	    <jbundle.messageserver>local</jbundle.messageserver>
         </properties>
+    </profile>
+    <profile>
+      <id>mongo</id>
+      <properties>
+          <jbundle.server />
+          <jbundle.db.local>Mongodb</jbundle.db.local>
+          <jbundle.db.remote>Mongodb</jbundle.db.remote>
+          <jbundle.db.table>Mongodb</jbundle.db.table>
+          <jbundle.messageserver>local</jbundle.messageserver>
+      </properties>
     </profile>
     <profile>
         <id>tour</id>
