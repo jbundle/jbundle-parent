@@ -288,8 +288,8 @@
       <profile>
           <id>local-snapshot</id>
           <properties>
-              <snapshotRepository>http://nexus.jx.tourgeek.com/repository/maven-snapshots</snapshotRepository>
-              <publicRepository>http://nexus.jx.tourgeek.com/repository/maven-public</publicRepository>
+              <snapshotRepository>https://nexus-jx.tourtenant.com/repository/maven-snapshots</snapshotRepository>
+              <publicRepository>https://nexus-jx.tourtenant.com/repository/maven-public</publicRepository>
           </properties>
       </profile>
       <profile>
