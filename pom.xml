@@ -90,7 +90,7 @@
         <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
         <mainClass>org.jbundle.Main</mainClass>
 
-        <jbundle-util-jcalendarbutton-version>1.6.6</jbundle-util-jcalendarbutton-version>
+        <jbundle-util-jcalendarbutton-version>1.6.7</jbundle-util-jcalendarbutton-version>
         <jbundle-util-jcalendarbutton-version-range>[${jbundle-util-jcalendarbutton-version},2.0.0)</jbundle-util-jcalendarbutton-version-range>
         <jbundle-util-version>2.0.8</jbundle-util-version>
         <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
