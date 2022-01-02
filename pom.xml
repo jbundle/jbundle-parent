@@ -71,7 +71,8 @@
         <arguments />
 
         <releaseRepository>https://oss.sonatype.org/service/local/staging/deploy/maven2</releaseRepository> <!-- Release upload -->
-        <snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository> <!-- Snapshot upload -->
+        <snapshotRepository>https://maven.jx.tourgeek.com/repository/maven-snapshots</snapshotRepository> <!-- Snapshot upload -->
+        <!-- snapshotRepository>https://oss.sonatype.org/content/repositories/snapshots</snapshotRepository --> <!-- Snapshot upload -->
         <publicRepository>https://oss.sonatype.org/content/groups/public</publicRepository> <!-- Release access -->
         <stagingRepository>https://oss.sonatype.org/content/groups/staging</stagingRepository> <!-- Staging access -->
         <publicReleaseRepository>${publicRepository}</publicReleaseRepository> <!-- Public release access -->
@@ -90,30 +91,30 @@
         <jbundle-package-import>*;resolution:=optional</jbundle-package-import>
         <mainClass>org.jbundle.Main</mainClass>
 
-        <jbundle-util-jcalendarbutton-version>1.6.7</jbundle-util-jcalendarbutton-version>
+        <jbundle-util-jcalendarbutton-version>1.6.8-SNAPSHOT</jbundle-util-jcalendarbutton-version>
         <jbundle-util-jcalendarbutton-version-range>[${jbundle-util-jcalendarbutton-version},2.0.0)</jbundle-util-jcalendarbutton-version-range>
-        <jbundle-util-version>2.0.8</jbundle-util-version>
+        <jbundle-util-version>2.0.9-SNAPSHOT</jbundle-util-version>
         <jbundle-util-version-range>[${jbundle-util-version},3.0.0)</jbundle-util-version-range>
         <jbundle-util-muffinmanager-version>${jbundle-util-version}</jbundle-util-muffinmanager-version>
         <jbundle-util-muffinmanager-version-range>${jbundle-util-version-range}</jbundle-util-muffinmanager-version-range>
-        <jbundle-util-wsdl-version>1.0.5</jbundle-util-wsdl-version>
+        <jbundle-util-wsdl-version>1.0.6-SNAPSHOT</jbundle-util-wsdl-version>
         <jbundle-util-wsdl-version-range>[${jbundle-util-wsdl-version},2.0.0)</jbundle-util-wsdl-version-range>
-        <jbundle-util-calendarpanel-version>1.1.6</jbundle-util-calendarpanel-version>
+        <jbundle-util-calendarpanel-version>1.1.7-SNAPSHOT</jbundle-util-calendarpanel-version>
         <jbundle-util-calendarpanel-version-range>[${jbundle-util-calendarpanel-version},2.0.0)</jbundle-util-calendarpanel-version-range>
-        <jbundle-util-other-version>0.7.10</jbundle-util-other-version>
-        <jbundle-util-biorhythm-version>0.8.7</jbundle-util-biorhythm-version>
-        <jbundle-util-osgi-version>2.0.10</jbundle-util-osgi-version>
+        <jbundle-util-other-version>0.7.11-SNAPSHOT</jbundle-util-other-version>
+        <jbundle-util-biorhythm-version>0.8.8-SNAPSHOT</jbundle-util-biorhythm-version>
+        <jbundle-util-osgi-version>2.0.11-SNAPSHOT</jbundle-util-osgi-version>
         <jbundle-util-osgi-version-range>[${jbundle-util-osgi-version},3.0.0)</jbundle-util-osgi-version-range>
-        <jbundle-util-webapp-version>1.3.7</jbundle-util-webapp-version>
+        <jbundle-util-webapp-version>1.3.8-SNAPSHOT</jbundle-util-webapp-version>
         <jbundle-util-webapp-version-range>[${jbundle-util-webapp-version},2.0.0)</jbundle-util-webapp-version-range>
-        <jbundle-util-osgi-webstart-version>1.6.10</jbundle-util-osgi-webstart-version>
+        <jbundle-util-osgi-webstart-version>1.6.11-SNAPSHOT</jbundle-util-osgi-webstart-version>
         <jbundle-util-osgi-webstart-version-range>[${jbundle-util-osgi-webstart-version},2.0.0)</jbundle-util-osgi-webstart-version-range>
         <jbundle-version>1.0.11-SNAPSHOT</jbundle-version>
         <jbundle-version-range>[${jbundle-version},2.0.0)</jbundle-version-range> <!-- ${jbundle-version} -->
         <jbundle-plugin-version>1.0.1</jbundle-plugin-version> <!-- ${jbundle-version} -->
-        <jbundle-view-swing-version>1.0.5</jbundle-view-swing-version>
+        <jbundle-view-swing-version>1.0.6-SNAPSHOT</jbundle-view-swing-version>
         <jbundle-view-swing-version-range>[${jbundle-view-swing-version},2.0.0)</jbundle-view-swing-version-range>
-        <jbundle-app-office-version>1.1.4</jbundle-app-office-version>
+        <jbundle-app-office-version>1.1.5-SNAPSHOT</jbundle-app-office-version>
         <jbundle-app-office-version-range>[${jbundle-app-office-version},2.0.0)</jbundle-app-office-version-range>
         <jbundle-app-picture-version>0.8.4</jbundle-app-picture-version>
         <jbundle-app-picture-version-range>[${jbundle-app-picture-version},1.0.0)</jbundle-app-picture-version-range>
@@ -123,7 +124,7 @@
         <jbundle-android-version-range>[${jbundle-android-version},2.0.0)</jbundle-android-version-range>
         <jbundle-javafx-version>1.0.5</jbundle-javafx-version>
         <jbundle-javafx-version-range>[${jbundle-javafx-version},2.0.0)</jbundle-javafx-version-range>
-        <jbundle-util-osgi-wrapped-version>1.0.6</jbundle-util-osgi-wrapped-version>
+        <jbundle-util-osgi-wrapped-version>1.0.7-SNAPSHOT</jbundle-util-osgi-wrapped-version>
         <jbundle-external-version>${jbundle-util-osgi-wrapped-version}</jbundle-external-version>
         <javaFX-version>2.1</javaFX-version>
         <tourgeek-version>0.8.5-SNAPSHOT</tourgeek-version>
