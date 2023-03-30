@@ -13,7 +13,7 @@
   ********** -->
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.4.4-SNAPSHOT</version>
+  <version>1.4.4</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -426,7 +426,7 @@
     <url>https://github.com/jbundle/jbundle-parent</url>
     <connection>scm:git:https://github.com/jbundle/jbundle-parent</connection>
     <developerConnection>scm:git:https://github.com/jbundle/jbundle-parent</developerConnection>
-    <tag>HEAD</tag>
+    <tag>jbundle-parent-1.4.4-0</tag>
   </scm>
 
   <ciManagement>
