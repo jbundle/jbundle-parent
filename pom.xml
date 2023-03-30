@@ -13,7 +13,7 @@
   ********** -->
   <groupId>org.jbundle.config</groupId>
   <artifactId>jbundle-parent</artifactId>
-  <version>1.4.5-SNAPSHOT</version>
+  <version>1.4.4-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>jbundle-parent - Shared properties</name>
@@ -242,6 +242,9 @@
                             <goals>
                                 <goal>jar</goal>
                             </goals>
+                            <configuration> <!-- add this to disable checking -->
+                                <additionalparam>-Xdoclint:none</additionalparam>
+                            </configuration>
                         </execution>
                     </executions>
                 </plugin>
