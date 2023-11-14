@@ -149,7 +149,7 @@
         <derby-version>10.14.2.0</derby-version>    <!-- Note: This is the last version that has the EmbeddedDriver with an osgi manifest -->
         <mongo-version>3.12.12</mongo-version>    <!-- Note: This is the last version that runs on java8 -->
         <google-bom-version>26.11.0</google-bom-version> <!-- POM Dependency file -->
-        <json-version>20230227</json-version>
+        <json-version>20231013</json-version>
         <commons-collections-version>3.2.2</commons-collections-version>
         <jakarta.xml.activation-version>1.2.2</jakarta.xml.activation-version>
         <jakarta.xml.bind-version>2.3.3</jakarta.xml.bind-version>
