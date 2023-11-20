@@ -146,7 +146,7 @@
         <cxf-version>3.0.3</cxf-version>   <!-- cxf is not required for any jbundle code - only for jibx demos -->
         <c3p0-version>0.9.5.5</c3p0-version>
         <mysql-connector-j-version>8.0.32</mysql-connector-j-version>
-        <derby-version>10.14.2.0</derby-version>    <!-- Note: This is the last version that has the EmbeddedDriver with an osgi manifest -->
+        <derby-version>10.17.1.0</derby-version>    <!-- Note: This is the last version that has the EmbeddedDriver with an osgi manifest -->
         <mongo-version>3.12.12</mongo-version>    <!-- Note: This is the last version that runs on java8 -->
         <google-bom-version>26.11.0</google-bom-version> <!-- POM Dependency file -->
         <json-version>20230227</json-version>
